@@ -5,8 +5,9 @@ import platform
 if platform.system() != 'Linux':
     matplotlib.use('TkAgg', force='True')
 import matplotlib.pyplot as plt
+import utils
 
-def prepare_plot(plots, plotTitles, path, title=""):
+def prepare_plot(plots, plotTitles, path, title="", mode="train"):
 	# Initialize our figures
     if len(plots) <=4:
         figure, ax = plt.subplots(nrows= 1, ncols=4, figsize=(20, 20))
@@ -35,7 +36,9 @@ def prepare_plot(plots, plotTitles, path, title=""):
         #figure.show()
 
         # Check if the file exists
-        folderExists(config.PLOT_TEST_PATH)
+        folderExists(config.PLOT_TRAIN_PATH)
+        if mode == "test":
+             folderExists(config.PLOT_TEST_PATH)
         figure.savefig(path)
     plt.close()
 
@@ -90,6 +93,8 @@ def logMsg(msg, type):
 def saveConfig():
     with open(os.path.join(config.WORKING_DIRECTORY_PATH, "model", "config.py"), 'r') as py_file:
         content = py_file.read()
+
+    utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
 
     with open(os.path.join(config.BASE_OUTPUT, config.ID_SESSION, "SaveConfig_ID_" + str(config.ID_SESSION)), 'w') as txt_file:
         txt_file.write(content)

@@ -102,14 +102,14 @@ class TestModel:
 				plotTitles.append(f"Probabilistic Prediction for dim {i}/{config.NBR_CLASSES - 1}")
 
 		# Build and check my folder for plots
-		path = os.path.join(config.BASE_OUTPUT, config.ID_SESSION, "plots")
-		utils.folderExists(path)
+		utils.folderExists(config.PLOT_TEST_PATH)
 
 		utils.prepare_plot(
 			plots,
 			plotTitles,
 			path + name + str(index),
-			"Plot training model samples for the first image of each batch"
+			"Plot training model samples for the first image of each batch",
+			mode="test"
 		)
 
 	def make_predictions(self, imagePath, index):

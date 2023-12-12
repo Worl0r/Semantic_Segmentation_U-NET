@@ -85,7 +85,8 @@ class TrainModel:
 			plots,
 			plotTitles,
 			os.path.join(config.PLOT_TRAIN_PATH, name + "_index_" + str(index) + "_batch_" + str(epoch)),
-			"Plot training model samples for the first image of each batch"
+			"Plot training model samples for the first image of each batch",
+			mode="train"
 		)
 
 	def createDataset(self, imagePaths, maskPaths):

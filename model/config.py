@@ -10,7 +10,7 @@ if platform.system() == "Darwin":
         DEVICE = torch.device("cpu")
     else:
         print ("MPS device for MacOS not found.")
-    WORKING_DIRECTORY_PATH = "./SICOM_DeepLearning/acceleration_material/"
+    WORKING_DIRECTORY_PATH = "./SICOM_DeepLearning/Semantic_Segmentation_U-NET/"
 
 elif platform.system() == 'Linux':
     WORKING_DIRECTORY_PATH = "/home/conversb/Semantic_Segmentation_U-NET/"
@@ -28,15 +28,15 @@ os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2"
 
 # Vizualization parameters
 # True if you want print graphs during the training
-MODE_VISUALIZATION = False
+MODE_VISUALIZATION = True
 VISUALIZATION_DIM = 6
 
 # Test or Train the model
-TYPE_PROCESS = "test"  #value: {"train", "test"}
-ID_SESSION = "train_12_12_23_part-3"
+TYPE_PROCESS = "train"  #value: {"train", "test"}
+ID_SESSION = "train_12_12_23_part-4"
 
 # Activate Parallelism
-ACTIVATE_PARALLELISM = True
+ACTIVATE_PARALLELISM = False
 NBR_WORKERS = 24
 NBR_GPU = 3
 
@@ -44,10 +44,10 @@ NBR_GPU = 3
 ENC_CHANNELS= (3, 16, 32, 64, 128, 256)
 DEC_CHANNELS = (256, 128, 64, 32, 16)
 NBR_CLASSES = 24
-INPUT_IMAGE_HEIGHT = 256
-INPUT_IMAGE_WIDTH = 256
+INPUT_IMAGE_HEIGHT = 128
+INPUT_IMAGE_WIDTH = 128
 BATCH_SIZE = 64
-NUM_EPOCHS = 10
+NUM_EPOCHS = 1
 INIT_LR = 0.001 # Initial learning rate
 THRESHOLD_TYPE = "mean"
 SELECTED_IMAGE_TEST = 10
@@ -64,9 +64,9 @@ BASE_OUTPUT = os.path.join(WORKING_DIRECTORY_PATH, "output")
 # The testing image path
 TEST_PATHS = os.path.sep.join([BASE_OUTPUT, ID_SESSION, "test_paths.txt"])
 # The model training plot path
-PLOT_TRAIN_PATH = os.path.sep.join([BASE_OUTPUT, "train_plots"])
+PLOT_TRAIN_PATH = os.path.sep.join([BASE_OUTPUT, ID_SESSION, "train_plots"])
 # The model test plot path
-PLOT_TEST_PATH = os.path.sep.join([BASE_OUTPUT, "test_plots"])
+PLOT_TEST_PATH = os.path.sep.join([BASE_OUTPUT, ID_SESSION, "test_plots"])
 # The output serialized model path to save it
 MODEL_PATH = os.path.join(BASE_OUTPUT, ID_SESSION, "unet_tgs_salt.pth")
 
