@@ -14,6 +14,8 @@ import torch.distributed as dist
 def funcParallelism(rank, world_size):
         transform = torchvision.transforms.Compose(
         [
+            torchvision.transforms.RandomResizedCrop(size=(224, 224), antialias=True),
+            torchvision.transforms.RandomHorizontalFlip(p=0.5),
             torchvision.transforms.ToPILImage(),
             torchvision.transforms.Resize(
                 (
