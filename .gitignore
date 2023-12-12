@@ -1,0 +1,20 @@
+# output
+output/
+dataset/
+plot.png
+test_plots/
+test_paths.txt
+unet_tgs_salt.pth
+
+torch/
+
+# model
+*.png
+*.pyc
+**/__pycache__/
+*.out
+*.err
+
+# secret folders
+
+.DS_Store
