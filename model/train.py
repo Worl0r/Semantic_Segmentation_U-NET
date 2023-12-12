@@ -175,7 +175,7 @@ class TrainModel:
 			self.optimizer.step()
 
 			# add the loss to the total training loss so far
-			totalTrainLoss += loss
+			totalTrainLoss += loss.item()
 
 		return totalTrainLoss
 
