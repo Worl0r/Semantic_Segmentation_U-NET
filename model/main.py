@@ -84,11 +84,10 @@ def main():
 
     device = config.DEVICE
 
-    # Save the config to keep track
-    utils.saveConfig()
-
     if config.TYPE_PROCESS == "train":
         ##################### TRAIN ####################
+         # Save the config to keep track
+        utils.saveConfig()
 
         # Activate Parallelism
         if config.ACTIVATE_PARALLELISM:

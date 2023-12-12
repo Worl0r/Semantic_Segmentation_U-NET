@@ -216,7 +216,7 @@ class TrainModel:
 				TrainModel.plotLoss(H)
 
 				# Save the model
-				utils.folderExists(os.join(config.BASE_OUTPUT, config.ID_SESSION))
+				utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
 				torch.save(self.model, config.MODEL_PATH)
 
 				# Stop the script
@@ -239,7 +239,7 @@ class TrainModel:
 
 		# Save the model
 		utils.logMsg(f"We are saving the model at epoch {e}.", "info")
-		utils.folderExists(os.join(config.BASE_OUTPUT, config.ID_SESSION))
+		utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
 		torch.save(self.model, config.MODEL_PATH)
 
 	def trainModel(self):
@@ -296,6 +296,6 @@ class TrainModel:
 		TrainModel.plotLoss(H)
 
 		# Save the model
-		utils.folderExists(os.join(config.BASE_OUTPUT, config.ID_SESSION))
+		utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
 		torch.save(self.model, config.MODEL_PATH)
 
