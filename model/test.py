@@ -94,7 +94,7 @@ class TestModel:
 
 		else:
 
-			plots.append(torchMask[0, 0].cpu().T)
+			plots.append(torchMask[0].cpu().T)
 			plotTitles.append("Segmented Mask Prediction")
 
 			for i in range(config.VISUALIZATION_DIM):
@@ -107,7 +107,7 @@ class TestModel:
 		utils.prepare_plot(
 			plots,
 			plotTitles,
-			path + name + str(index),
+			os.path.join(config.PLOT_TEST_PATH, name + str(index)),
 			"Plot training model samples for the first image of each batch",
 			mode="test"
 		)

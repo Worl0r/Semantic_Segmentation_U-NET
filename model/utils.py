@@ -96,7 +96,7 @@ def saveConfig():
 
     utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
 
-    with open(os.path.join(config.BASE_OUTPUT, config.ID_SESSION, "SaveConfig_ID_" + str(config.ID_SESSION)), 'w') as txt_file:
+    with open(os.path.join(config.BASE_OUTPUT, config.ID_SESSION, "SaveConfig_ID_" + str(config.ID_SESSION) + ".txt"), 'w') as txt_file:
         txt_file.write(content)
 
     logMsg("The config.py file has been saved in the id session folder.", "save")
