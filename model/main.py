@@ -27,11 +27,6 @@ def funcParallelism(rank, world_size):
         dist.init_process_group(backend='nccl', init_method='tcp://127.0.0.1:29500', rank=rank, world_size=world_size)
 
         if config.TYPE_PROCESS == "train":
-            # load the image paths in our testing file and randomly select 10
-            # image paths
-            print("[INFO] [TEST] loading up test image paths...")
-            imagePaths = open(config.TEST_PATHS).read().strip().split("\n")
-            imagePaths = np.random.choice(imagePaths, size=config.SELECTED_IMAGE_TEST)
 
             # Initialize our UNet model
             unet = model.UNet(
@@ -47,6 +42,12 @@ def funcParallelism(rank, world_size):
             trainModel.trainModel()
 
         else:
+            # load the image paths in our testing file and randomly select 10
+            # image paths
+            print("[INFO] [TEST] loading up test image paths...")
+            imagePaths = open(config.TEST_PATHS).read().strip().split("\n")
+            imagePaths = np.random.choice(imagePaths, size=config.SELECTED_IMAGE_TEST)
+
             unet = torch.load(config.MODEL_PATH).to(rank)
 
             print("[INFO] [TEST] Creation of the TestModel class...")
