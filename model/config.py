@@ -13,7 +13,7 @@ if platform.system() == "Darwin":
     WORKING_DIRECTORY_PATH = "./SICOM_DeepLearning/acceleration_material/"
 
 elif platform.system() == 'Linux':
-    WORKING_DIRECTORY_PATH = "/home/conversb/acceleration_material/"
+    WORKING_DIRECTORY_PATH = "/home/conversb/Semantic_Segmentation_U-NET/"
     DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 else:
@@ -32,7 +32,7 @@ MODE_VISUALIZATION = False
 VISUALIZATION_DIM = 6
 
 # Test or Train the model
-TYPE_PROCESS = "test"  #vallue: {"train", "test"}
+TYPE_PROCESS = "test"  #value: {"train", "test"}
 ID_SESSION = "train_12_12_23_part-3"
 
 # Activate Parallelism
