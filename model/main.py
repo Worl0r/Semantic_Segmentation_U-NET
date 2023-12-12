@@ -23,6 +23,9 @@ def funcParallelism(rank, world_size):
             torchvision.transforms.ToTensor()
         ])
 
+        # Init the process to parallize
+        dist.init_process_group(backend='nccl', init_method='tcp://127.0.0.1:29500', rank=rank, world_size=world_size)
+
         if config.TYPE_PROCESS == "train":
 
             # Initialize our UNet model
@@ -34,8 +37,6 @@ def funcParallelism(rank, world_size):
             # Initialize the TrainModel class
             trainModel = train.TrainModel(unet, transform, "metricsClass", device=rank)
 
-             # Init the process to parallize
-            dist.init_process_group(backend='nccl', init_method='tcp://127.0.0.1:29500', rank=rank, world_size=world_size)
             trainModel.setDevice(rank)
             trainModel.trainModel()
 
@@ -47,8 +48,6 @@ def funcParallelism(rank, world_size):
             imagePaths = np.random.choice(imagePaths, size=config.SELECTED_IMAGE_TEST)
 
             unet = torch.load(config.MODEL_PATH).to(rank)
-            # Init the process to parallize
-            dist.init_process_group(backend='nccl', init_method='tcp://127.0.0.1:29500', rank=rank, world_size=world_size)
 
             print("[INFO] [TEST] Creation of the TestModel class...")
             testModel = test.TestModel(unet, transform)
