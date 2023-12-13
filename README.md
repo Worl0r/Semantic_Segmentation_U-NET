@@ -69,7 +69,7 @@ Tune the variables in the *config.py* file :
 
 * The learning rate : *INIT_LR = 0.000001*
 
-* The type of the threshold to create the masks from the original images : *THRESHOLD_TYPE = "mean"*
+* The type of the threshold to create the segmentation masks from the original images in case of binary classification : *THRESHOLD_TYPE = "mean"*
 
 * The number of randomly selected images from the testing set used for the validation : *SELECTED_IMAGE_TEST = 10*
 
