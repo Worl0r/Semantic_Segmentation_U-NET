@@ -9,7 +9,7 @@ Here is the architecture of a UNet model :
 
 ### How to get started
 
-Please organize the *dataset* folder with the following arborescence :
+Please organize the *dataset* folder with the following tree :
 ```bash
 |---dataset
       |---semantic_drone_dataset
