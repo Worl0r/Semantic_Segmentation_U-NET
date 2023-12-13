@@ -28,8 +28,8 @@ os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2"
 
 # Vizualization parameters
 # True if you want print graphs during the training
-MODE_VISUALIZATION = True
-VISUALIZATION_DIM = 6  # TODO: There are some buts, it needed to avoid multiples of 4
+MODE_VISUALIZATION = False
+VISUALIZATION_DIM = 17  # TODO: There are some buts, it needed to avoid multiples of 4
 
 # Test or Train the model
 TYPE_PROCESS = "train"  #value: {"train", "test"}
@@ -45,13 +45,13 @@ EARLY_STOPPING_ACTIVATE = False
 PATIENCE = 5
 
 # Define some model parameters
-ENC_CHANNELS= (3, 16, 32, 64, 128)
-DEC_CHANNELS = (128, 64, 32, 16)
+ENC_CHANNELS= (3, 16, 32, 64)
+DEC_CHANNELS = (64, 32, 16)
 NBR_CLASSES = 24
 INPUT_IMAGE_HEIGHT = 512
 INPUT_IMAGE_WIDTH = 512
 BATCH_SIZE = 4
-NUM_EPOCHS = 1
+NUM_EPOCHS = 45
 INIT_LR = 0.000001 # Initial learning rate
 THRESHOLD_TYPE = "mean"
 SELECTED_IMAGE_TEST = 10
