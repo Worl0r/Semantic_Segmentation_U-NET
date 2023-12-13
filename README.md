@@ -9,7 +9,15 @@ Here is the architecture of a UNet model :
 
 ### How to get started
 
-Tune the following variables in the *config.py* file :
+Please organize the *dataset* folder with the following arborescence :
+```bash
+|---dataset
+      |---semantic_drone_dataset
+            |---label_images_semantic  
+            |---original_images          
+            |---RGB_color_image_masks
+```
+Tune the variables in the *config.py* file :
 
 **Split the dataset**
 
