@@ -11,6 +11,7 @@ class TestModel:
 		self.model = model
 		self.transforms = transforms
 
+	@staticmethod
 	def classToColorForPred(pred):
 		# We pick up the list of labeled classes in the csv file.
 		labeledClasses = dataset.SegmentationDataset.openColorizedClassesCSV()

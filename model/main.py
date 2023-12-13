@@ -61,6 +61,7 @@ def main():
 
     # Time
     utils.logMsg("Script stats at: " + str(datetime.now()), "time")
+    utils.logMsg("You start a process related with the ID: " + str(config.ID_SESSION), "info")
 
     # Define and apply transformations
     # IMPORTANT: "ToTensor()" has to be in last position. It is important for SegmentationDataset class.
@@ -112,7 +113,7 @@ def main():
         utils.logMsg("Training model finished", "info")
         ################################################
 
-    if config.TYPE_PROCESS == "test":
+    elif config.TYPE_PROCESS == "test":
         ##################### TEST #####################
 
         print("[INFO] [TEST] load up model...")
