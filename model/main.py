@@ -78,7 +78,7 @@ def main():
         ])
 
     # Initialize the Metrics Class
-    metricsClass = metrics.Metrics()
+    metricsClass = metrics.Metrics(config.DEVICE)
 
     # Check info about parallelism
     utils.logMsg("The status of cuda is: " + str(torch.cuda.is_available()) + ".", "parallelism")

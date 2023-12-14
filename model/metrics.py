@@ -4,19 +4,19 @@ import config
 import os
 
 class Metrics:
-    def __init__(self, model):
-        self.model = model
+    def __init__(self, device):
+        self.device = device
         self.metrics = {"F1-score": [], "Confusion matrix": [], "Precision-Recall curve": [], "mAP":[], "Computation time":[]}
         # Metrics
         if config.NBR_CLASSES==1:
-            self.metricF1 = BinaryF1Score().to(self.model)
-            self.metricConfusionMatrix = BinaryConfusionMatrix().to(self.model)
-            self.metricPrecisionRecallCruve = BinaryPrecisionRecallCurve().to(self.model)
+            self.metricF1 = BinaryF1Score().to(self.device)
+            self.metricConfusionMatrix = BinaryConfusionMatrix().to(self.device)
+            self.metricPrecisionRecallCruve = BinaryPrecisionRecallCurve().to(self.device)
             #self.metricAveragePrecision = MeanAveragePrecision()
         else :
-            self.metricF1 = MulticlassF1Score().to(self.model)
-            self.metricConfusionMatrix = MulticlassConfusionMatrix().to(self.model)
-            self.metricPrecisionRecallCruve = MulticlassPrecisionRecallCurve().to(self.model)
+            self.metricF1 = MulticlassF1Score().to(self.device)
+            self.metricConfusionMatrix = MulticlassConfusionMatrix().to(self.device)
+            self.metricPrecisionRecallCruve = MulticlassPrecisionRecallCurve().to(self.device)
             #self.metricAveragePrecision = MeanAveragePrecision()
 
     def addValueToMetrics(self, original, prediction):
