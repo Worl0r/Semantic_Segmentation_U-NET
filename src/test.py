@@ -75,7 +75,9 @@ class TestModel:
 		# and resize it
 		groundTruthPath = os.path.join(config.MASK_DATASET_PATH, filename)
 		gtMask = torchvision.io.read_image(groundTruthPath, torchvision.io.ImageReadMode.RGB)
-		return  self.transforms(gtMask)
+		# We want to retun a result without a transformation in tensor
+		transformForMaskRGB = torchvision.transforms.Compose(self.transforms.transforms[:-1])
+		return  self.transforms(gtMask), transformForMaskRGB(gtMask)
 
 	def plotPrediction(input, torchMask, pred, maskRGB, name, index=""):
 		plots =[]
@@ -131,7 +133,7 @@ class TestModel:
 			filename = TestModel.createFilename(imagePath)
 
 			# Open the ground-truth related with the image
-			gtMask = TestModel.openTorchGTImage(self, filename)
+			gtMask, gtMask255range = TestModel.openTorchGTImage(self, filename)
 
 			# Make the prediction, pass the results through the sigmoid
 			# function, and convert the result to a NumPy array
@@ -144,7 +146,7 @@ class TestModel:
 
 			# Add value to metrics class
 			gtMaskTensor = dataset.SegmentationDataset.convertToLabeledTensorMask(
-				gtMask.T,
+				gtMask255range,
 				shape=[
 					config.NBR_CLASSES,
 					config.INPUT_IMAGE_HEIGHT,
