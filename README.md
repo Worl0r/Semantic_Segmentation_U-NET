@@ -187,4 +187,4 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 
 ## Troubleshootings:
 
-* When you start a training with the interactive mode. Make your to be consistent with your number of GPU. In fact, it is recommended to be on the same interactive mode session to test and train, even if in the test mode you use always one GPU.
+* When you start a training with the interactive mode. Make sure to be consistent with your number of GPU. In fact, it is recommended to be on the same interactive mode session to test and train, even if in the test mode you use always one GPU.
