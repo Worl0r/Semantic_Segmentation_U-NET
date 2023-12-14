@@ -158,7 +158,12 @@ class TestModel:
 			pred_indices = torch.argmax(torch.from_numpy(prediction), dim=0)
 			gt_indices = torch.argmax(gtMaskTensor, dim=0)
 			utils.folderExists(config.PLOT_METRICS)
+
+			# Plot confusion matrix
 			self.metrics.confusionMatrix("PlotPrediction_" + str(index), pred_indices, gt_indices, True)
+
+			# Save other metrics
+			self.metrics.addValueToMetrics(pred_indices, gt_indices)
 
 			# We plot our predictions
 			TestModel.plotPrediction(
@@ -181,6 +186,9 @@ class TestModel:
 
 		# Plot mean metrics
 		self.metrics.meanConfusionMatrix()
+
+		# Write other metrics
+		self.metrics.writeMeanMetrics()
 
 		# We save all logs and errors in our specific id file
 		#utils.saveLogs()

@@ -57,7 +57,7 @@ THRESHOLD_TYPE = "mean"
 # Vizualization parameters
 # True if you want print graphs during the training
 MODE_VISUALIZATION = False
-VISUALIZATION_DIM = 3 # Lower or egual to NBR_CLASSES
+VISUALIZATION_DIM = 1 # Lower or egual to NBR_CLASSES
 
 # Early Stopping
 EARLY_STOPPING_ACTIVATE = False

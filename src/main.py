@@ -114,7 +114,7 @@ def main():
         utils.logMsg("Training model finished", "info")
         ################################################
 
-    elif config.TYPE_PROCESS == "test" or config.TYPE_PROCESS == "train":
+    elif config.TYPE_PROCESS == "test":
         ##################### TEST #####################
 
         print("[INFO] [TEST] load up model...")

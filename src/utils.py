@@ -125,3 +125,10 @@ def saveLogs():
         txt_file.write(content)
 
     logMsg("The Logs file has been saved in the id session folder.", "save")
+
+def writeFile(meanMetrics, path):
+    logMsg("We save metrics file.", "data")
+    with open(path, 'w') as fichier:
+        fichier.write("Mean Metrics :\n")
+        for cle, moyenne in meanMetrics.items():
+            fichier.write(f"{cle}: {moyenne}\n")

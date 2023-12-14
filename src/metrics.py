@@ -1,56 +1,47 @@
-from torchmetrics.classification import BinaryF1Score, BinaryConfusionMatrix, BinaryPrecisionRecallCurve, MulticlassF1Score, MulticlassConfusionMatrix, MulticlassPrecisionRecallCurve
+from torchmetrics.classification import BinaryF1Score, BinaryConfusionMatrix, BinaryPrecisionRecallCurve, MulticlassF1Score, MulticlassPrecisionRecallCurve
+from torchmetrics.detection.mean_ap import MeanAveragePrecision
 import matplotlib.pyplot as plt
 from torchmetrics import ConfusionMatrix
 import config
 import os
 import numpy as np
 import dataset
-from matplotlib import colors
 import utils
 
 class Metrics:
     def __init__(self, device):
         self.device = device
         self.epsilon = 1e-15
-        self.metrics = {"F1-score": [], "Confusion_matrix": [], "Precision-Recall curve": [], "mAP":[], "Computation_time_training":[]}
+        self.metrics = {"F1-score": [], "Confusion_matrix": [], "Precision-Recall_curve": [], "mAP":[], "Computation_time_training":[]}
         # Metrics
         if config.NBR_CLASSES==1:
             self.metricF1 = BinaryF1Score()
             self.metricConfusionMatrix = BinaryConfusionMatrix()
-            self.metricPrecisionRecallCruve = BinaryPrecisionRecallCurve()
+            #self.metricPrecisionRecallCruve = BinaryPrecisionRecallCurve()
             #self.metricAveragePrecision = MeanAveragePrecision()
         else :
             self.metricF1 = MulticlassF1Score(num_classes=config.NBR_CLASSES)
             self.metricConfusionMatrix = ConfusionMatrix(task='multiclass', num_classes=config.NBR_CLASSES)
-            self.metricPrecisionRecallCruve = MulticlassPrecisionRecallCurve(num_classes=config.NBR_CLASSES)
+            #self.metricPrecisionRecallCruve = MulticlassPrecisionRecallCurve(num_classes=config.NBR_CLASSES)
             #self.metricAveragePrecision = MeanAveragePrecision(num_classes=config.NBR_CLASSES)
 
     def setMetric(self, target, value):
         self.metrics["Computation_time_training"].append(value)
 
     def addValueToMetrics(self, prediction, original):
-
-        #self.metrics["F1-score"].append(self.metricF1(original, prediction))
-        self.metrics["Confusion_matrix"].append(self.metricConfusionMatrix.update(prediction, original))
-        #self.metrics["Precision-Recall curve"].append(self.metricPrecisionRecallCruve(original, prediction))
+        self.metrics["F1-score"].append(self.metricF1(prediction, original))
+        #self.metrics["Precision-Recall_curve"].append(self.metricPrecisionRecallCruve(prediction, original))
         #self.metrics["mAP"].append(self.metricAveragePrecision(original, prediction))
 
+    def writeMeanMetrics(self):
+        # mean of F1
+        metricF1 = np.array(self.metrics["F1-score"])
+        meanMetricF1 = np.sum(metricF1) / metricF1.shape[0]
 
-    def plotMetrics(self, name):
-        print('test')
+        meanMetrics = {"F1": meanMetricF1}
+        path =  os.path.join(config.BASE_OUTPUT, config.ID_SESSION, "Metrics.txt")
 
-        # plt.figure() # F1 score
-        # plt.plot(self.metrics["F1-score"])
-        # plt.title("F1 score on Dataset")
-        # plt.xlabel("Epoch #")
-        # plt.ylabel("F1 score")
-        # plt.legend(loc="lower left")
-        # plt.savefig(os.path.join(config.PLOT_METRICS, name, "_F1score.png"))
-
-        # plt.figure() # Precision-Recall curve
-        # plt.plot(self.metrics["Precision-Recall curve"][-1], score = 'True')
-        # plt.title("Precision-Recall curve on Dataset")
-        # plt.savefig(os.path.join(config.PLOT_METRICS, name, "_PrecisionRecallcurve.png"))
+        utils.writeFile(meanMetrics, path)
 
     def confusionMatrix(self, name, prediction, original, normalize):
         self.metrics["Confusion_matrix"].append(self.metricConfusionMatrix(prediction, original))

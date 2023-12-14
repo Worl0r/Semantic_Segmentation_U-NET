@@ -16,7 +16,7 @@ We used the following link as the basis of our architecture : **[(link)](https:/
 <br/>
 
 <p align="center">
-	<img style="border-radius: 25px" src="https://media.geeksforgeeks.org/wp-content/uploads/20220614121231/Group14.jpg" width="700">
+	<img style="border-radius:25px" src="https://media.geeksforgeeks.org/wp-content/uploads/20220614121231/Group14.jpg" width="700">
 </p>
 
 ## How to get started
