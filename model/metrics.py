@@ -20,6 +20,7 @@ class Metrics:
             #self.metricAveragePrecision = MeanAveragePrecision(num_classes=config.NBR_CLASSES)
 
     def addValueToMetrics(self, original, prediction):
+        print(original.shape, prediction.shape)
         self.metrics["F1-score"].append(self.metricF1(original.mT, prediction.mT))
         self.metrics["Confusion matrix"].append(self.metricConfusionMatrix(original, prediction))
         self.metrics["Precision-Recall curve"].append(self.metricPrecisionRecallCruve(original, prediction))
