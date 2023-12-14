@@ -68,6 +68,9 @@ PATIENCE = 5
 
 SELECTED_IMAGE_TEST = 2
 
+# Metrics
+ALL_CONFUSION_MATRIX = False
+
 ##################################################################################################
 
 # Define different paths
