@@ -39,7 +39,7 @@ def funcParallelism(rank, world_size):
                 ).to(rank)
 
             # Initialize the TrainModel class
-            trainModel = train.TrainModel(unet, transform, "metricsClass", device=rank)
+            trainModel = train.TrainModel(unet, transform, metricsClass, device=rank)
 
             trainModel.setDevice(rank)
             trainModel.trainModel()
@@ -106,7 +106,7 @@ def main():
                 ).to(device)
 
             # Initialize the TrainModel class
-            trainModel = train.TrainModel(unet, transform, "metricsClass", device=device)
+            trainModel = train.TrainModel(unet, transform, metricsClass, device=device)
 
             # Start the training
             trainModel.trainModel()
@@ -114,7 +114,7 @@ def main():
         utils.logMsg("Training model finished", "info")
         ################################################
 
-    elif config.TYPE_PROCESS == "test":
+    elif config.TYPE_PROCESS == "test" or config.TYPE_PROCESS == "train":
         ##################### TEST #####################
 
         print("[INFO] [TEST] load up model...")

@@ -142,20 +142,21 @@ class TestModel:
 			# We change the prediction matrix in colored image instead of class matrix
 			colorPred = TestModel.classToColorForPred(prediction)
 
-			# # Add value to metrics class
-			# gtMaskTensor = dataset.SegmentationDataset.convertToLabeledTensorMask(
-			# 	gtMask.T,
-			# 	shape=[
-			# 		config.NBR_CLASSES,
-			# 		config.INPUT_IMAGE_HEIGHT,
-			# 		config.INPUT_IMAGE_WIDTH
-			# 	]
-			# 	)
+			# Add value to metrics class
+			gtMaskTensor = dataset.SegmentationDataset.convertToLabeledTensorMask(
+				gtMask.T,
+				shape=[
+					config.NBR_CLASSES,
+					config.INPUT_IMAGE_HEIGHT,
+					config.INPUT_IMAGE_WIDTH
+				]
+				)
 
-			# self.metrics.addValueToMetrics(gtMaskTensor, torch.from_numpy(prediction))
-
-			# # We plot some metrics
-			# self.metrics.plotMetrics("PlotPrediction_" + str(index))
+			# We want a matrix who code index labels
+			pred_indices = torch.argmax(torch.from_numpy(prediction), dim=0)
+			gt_indices = torch.argmax(gtMaskTensor, dim=0)
+			utils.folderExists(config.PLOT_METRICS)
+			self.metrics.confusionMatrix("PlotPrediction_" + str(index), pred_indices, gt_indices, True)
 
 			# We plot our predictions
 			TestModel.plotPrediction(
@@ -175,3 +176,9 @@ class TestModel:
 			# make predictions and visualize the results
 			TestModel.make_predictions(self, path, index)
 			print(f"[INFO] [TEST] Prediction {index+1} on {len(imagePaths)} done.")
+
+		# Plot mean metrics
+		self.metrics.meanConfusionMatrix()
+
+		# We save all logs and errors in our specific id file
+		utils.saveLogs()

@@ -100,3 +100,28 @@ def saveConfig():
         txt_file.write(content)
 
     logMsg("The config.py file has been saved in the id session folder.", "save")
+
+def saveLogs():
+    pathOutput = os.path.join(config.WORKING_DIRECTORY_PATH, "output.out")
+    if os.path.isfile(pathOutput):
+        with open(pathOutput, 'r') as py_file:
+            content = py_file.read()
+    else:
+        pathOutput = ""
+        content = ""
+
+    pathError = os.path.join(config.WORKING_DIRECTORY_PATH, "error.err")
+    if os.path.isfile(pathError):
+        with open(pathError, 'r') as py_file:
+            content = content + py_file.read()
+    else:
+        pathError = ""
+        content = ""
+
+
+    utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
+
+    with open(os.path.join(config.BASE_OUTPUT, config.ID_SESSION, "SaveOutputAndError" + str(config.ID_SESSION) + ".txt"), 'w') as txt_file:
+        txt_file.write(content)
+
+    logMsg("The Logs file has been saved in the id session folder.", "save")

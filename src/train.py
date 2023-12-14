@@ -206,7 +206,7 @@ class TrainModel:
 
 			# Set Metrics
 			# self.metrics.setMetric("F1-score", self.metrics.metricF1(pred, torchMask))
-			# self.metrics.setMetric("Confusion matrix", self.metrics.metricConfusionMatrix(pred, torchMask))
+			# self.metrics.setMetric("Confusion_matrix", self.metrics.metricConfusionMatrix(pred, torchMask))
 			# self.metrics.setMetric("Precision-Recall curve", self.metrics.metricPrecisionRecallCruve(pred, torchMask.int()))
 			#self.metrics.setMetric("mAP", self.metricAveragePrecision(pred, torchMask))
 
@@ -290,10 +290,10 @@ class TrainModel:
 
 		# display the total time needed to perform the training
 		endTime = time.time()
-		utils.logMsg("total time taken to train the model: {:.2f}s".format(endTime - startTime), "time")
+		utils.logMsg("Total time taken to train the model: {:.2f}s".format(endTime - startTime), "time")
 
 		# Set the computation time metric
-		#self.metrics.setMetric("Computation time", endTime - startTime)
+		self.metrics.setMetric("Computation_time_training", endTime - startTime)
 
 		# Plot Loss function
 		TrainModel.plotLoss(H)

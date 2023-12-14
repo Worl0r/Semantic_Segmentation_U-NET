@@ -25,7 +25,7 @@ TYPE_PROCESS = "test"  #value: {"train", "test"}
 ID_SESSION = "train_13_12_23_part-1" # unique ID
 
 # Activate Parallelism
-ACTIVATE_PARALLELISM = True # Recommended to activate just for Gricad
+ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
 NBR_WORKERS = 24 # 24 is the maximum for Gricad
 
 if TYPE_PROCESS == "test":
@@ -42,7 +42,7 @@ TEST_SPLIT = 0.15
 ENC_CHANNELS= (3, 16, 32, 64)
 DEC_CHANNELS = (64, 32, 16)
 # Number of class
-NBR_CLASSES = 7
+NBR_CLASSES = 3
 ACTIVATE_LABELED_CLASSES = True
 # Size of input images
 INPUT_IMAGE_HEIGHT = 128
@@ -57,7 +57,7 @@ THRESHOLD_TYPE = "mean"
 # Vizualization parameters
 # True if you want print graphs during the training
 MODE_VISUALIZATION = False
-VISUALIZATION_DIM = 7 # Lower or egual to NBR_CLASSES
+VISUALIZATION_DIM = 3 # Lower or egual to NBR_CLASSES
 
 # Early Stopping
 EARLY_STOPPING_ACTIVATE = False
@@ -66,7 +66,7 @@ PATIENCE = 5
 ######################################## Test Settings ###########################################
 # Number of image to test
 
-SELECTED_IMAGE_TEST = 10
+SELECTED_IMAGE_TEST = 2
 
 ##################################################################################################
 
