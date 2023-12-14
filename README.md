@@ -16,8 +16,19 @@ Please organize the *dataset* folder with the following tree :
             |---label_images_semantic  
             |---original_images          
             |---RGB_color_image_masks
+            |---class_dict_seg.csv
 ```
-Tune the variables in the *config.py* file :
+
+Install the libraries dependencies with the *requirements.txt* : 
+```bash
+pip install -r requirements.txt
+```
+
+Install the right version of torch : 
+```bash
+pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio===0.12.1 -f https://download.pytorch.org/whl/torch_stable.html
+```
+Tune the variables in the *config.py* file (the values displayed here are the ones used for our results) :
 
 **Split the dataset**
 
@@ -102,11 +113,7 @@ Tune the variables in the *config.py* file :
 
 6. Bonus
 
-Install the right version of torch
-
-* pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio===0.12.1 -f https://download.pytorch.org/whl/torch_stable.html
-
-* List of GPU for Gricas: : -p "gpumodel='A100'"  or -p "gpumodel='V100'"  or -p "gpumodel!='T4'"
+* List of GPU for Gricad: : -p "gpumodel='A100'"  or -p "gpumodel='V100'"  or -p "gpumodel!='T4'"
 
 * To make executable the script bash: chmod +x SingleGPUScript.sh
 
