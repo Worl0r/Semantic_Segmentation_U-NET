@@ -91,7 +91,7 @@ def logMsg(msg, type):
         print("[INFO] ", msg)
 
 def saveConfig():
-    with open(os.path.join(config.WORKING_DIRECTORY_PATH, "model", "config.py"), 'r') as py_file:
+    with open(os.path.join(config.WORKING_DIRECTORY_PATH, "src", "config.py"), 'r') as py_file:
         content = py_file.read()
 
     utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
