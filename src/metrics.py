@@ -80,7 +80,7 @@ class Metrics:
         classes = np.array(list(labeledDic.keys()))
         classes = classes[:config.NBR_CLASSES]
 
-        fig, ax = plt.subplots(figsize=(200, 200))
+        fig, ax = plt.subplots(figsize=(20, 20))
         im = ax.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
         ax.figure.colorbar(im, ax=ax)
         ax.set(xticks=np.arange(cm.shape[1]),
