@@ -139,20 +139,20 @@ class TestModel:
 			prediction = torch.sigmoid(prediction)
 			prediction = prediction.cpu().numpy()
 
-			# We change the prediction matrix in colored image instead of class matrix
-			colorPred = TestModel.classToColorForPred(prediction)
+			# # We change the prediction matrix in colored image instead of class matrix
+			# colorPred = TestModel.classToColorForPred(prediction)
 
-			# Add value to metrics class
-			gtMaskTensor = dataset.SegmentationDataset.convertToLabeledTensorMask(
-				gtMask.mT,
-				shape=[
-					config.NBR_CLASSES,
-					config.INPUT_IMAGE_HEIGHT,
-					config.INPUT_IMAGE_WIDTH
-				]
-				)
+			# # Add value to metrics class
+			# gtMaskTensor = dataset.SegmentationDataset.convertToLabeledTensorMask(
+			# 	gtMask.T,
+			# 	shape=[
+			# 		config.NBR_CLASSES,
+			# 		config.INPUT_IMAGE_HEIGHT,
+			# 		config.INPUT_IMAGE_WIDTH
+			# 	]
+			# 	)
 
-			self.metrics.addValueToMetrics(gtMaskTensor, torch.from_numpy(prediction))
+			# self.metrics.addValueToMetrics(gtMaskTensor, torch.from_numpy(prediction))
 
 			# We plot some metrics
 			self.metrics.plotMetrics("PlotPrediction_" + str(index))

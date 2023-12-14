@@ -21,7 +21,7 @@ class Metrics:
 
     def addValueToMetrics(self, original, prediction):
         print(original.shape, prediction.shape)
-        self.metrics["F1-score"].append(self.metricF1(original.mT, prediction.mT))
+        self.metrics["F1-score"].append(self.metricF1(original, prediction))
         self.metrics["Confusion matrix"].append(self.metricConfusionMatrix(original, prediction))
         self.metrics["Precision-Recall curve"].append(self.metricPrecisionRecallCruve(original, prediction))
         #self.metrics["mAP"].append(self.metricAveragePrecision(original, prediction))
