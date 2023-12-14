@@ -143,7 +143,7 @@ class TestModel:
 			colorPred = TestModel.classToColorForPred(prediction)
 
 			# Add value to metrics class
-			self.metrics.addValueToMetrics(gtMask, colorPred)
+			self.metrics.addValueToMetrics(torch.from_numpy(gtMask), colorPred)
 
 			# We plot some metrics
 			self.metrics.plotMetrics("PlotPrediction_" + str(index))
