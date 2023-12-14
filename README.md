@@ -36,7 +36,7 @@ git clone https://github.com/Worl0r/Semantic_Segmentation_U-NET.git
             |---class_dict_seg.csv
 ```
 
-*Note 1 :* label_images_semantic folder is curently unused.
+*Note 1 :* label_images_semantic folder is currently unused.
 
 *Note 2 :* You can download it here: **[(link)](https://www.kaggle.com/datasets/bulentsiyah/semantic-drone-dataset)**
 
@@ -50,7 +50,7 @@ Install the right version of torch :
 pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio===0.12.1 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
-*Note:* These version are mandatory for the **[Gricad Calculator]( https://gricad.univ-grenoble-alpes.fr/)**. Feel free to adapt these versions to your own environement.
+*Note:* These version are mandatory for the **[Gricad Calculator]( https://gricad.univ-grenoble-alpes.fr/)**. Feel free to adapt these versions to your own environment.
 
 3. Your first step is to train a model. Tune the variables in the *config.py* file (the values displayed here are the ones used for our results) :
 
