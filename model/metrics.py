@@ -14,10 +14,10 @@ class Metrics:
             self.metricPrecisionRecallCruve = BinaryPrecisionRecallCurve().to(self.device)
             #self.metricAveragePrecision = MeanAveragePrecision()
         else :
-            self.metricF1 = MulticlassF1Score().to(self.device)
-            self.metricConfusionMatrix = MulticlassConfusionMatrix().to(self.device)
-            self.metricPrecisionRecallCruve = MulticlassPrecisionRecallCurve().to(self.device)
-            #self.metricAveragePrecision = MeanAveragePrecision()
+            self.metricF1 = MulticlassF1Score(num_classes=config.NBR_CLASSES).to(self.device)
+            self.metricConfusionMatrix = MulticlassConfusionMatrix(num_classes=config.NBR_CLASSES).to(self.device)
+            self.metricPrecisionRecallCruve = MulticlassPrecisionRecallCurve(num_classes=config.NBR_CLASSES).to(self.device)
+            #self.metricAveragePrecision = MeanAveragePrecision(num_classes=config.NBR_CLASSES)
 
     def addValueToMetrics(self, original, prediction):
         self.metrics["F1-score"].append(self.metricF1(original, prediction))
