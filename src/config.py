@@ -21,8 +21,8 @@ else:
 
 ######################################## General Settings ########################################
 # Test or Train the model
-TYPE_PROCESS = "test"  #value: {"train", "test"}
-ID_SESSION = "train_15_12_23_part-1" # unique ID
+TYPE_PROCESS = "train"  #value: {"train", "test"}
+ID_SESSION = "train_13_12_23_part-2" # unique ID
 
 # Activate Parallelism
 ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
@@ -32,6 +32,10 @@ if TYPE_PROCESS == "test":
     NBR_GPU = 1 # Work on gricad just with one GPU for testing
 else:
     NBR_GPU = 3 # Adapt this one for the training mode
+
+# Data Augmentation
+AUG_DATA = True
+GENERATE_AUGMENTED_DATA = False
 
 ######################################## Training Settings #######################################
 # Define some model parameters
@@ -57,7 +61,7 @@ THRESHOLD_TYPE = "mean"
 # Vizualization parameters
 # True if you want print graphs during the training
 MODE_VISUALIZATION = False
-VISUALIZATION_DIM = 1 # Lower or egual to NBR_CLASSES
+VISUALIZATION_DIM = 0 # Lower or egual to NBR_CLASSES
 
 # Early Stopping
 EARLY_STOPPING_ACTIVATE = False
