@@ -1,8 +1,7 @@
-torch
 scikit-learn
 torchvision
 imutils
 tqdm
 matplotlib
-torch
 torchmetrics
+time
