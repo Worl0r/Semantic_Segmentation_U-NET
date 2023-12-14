@@ -1,5 +1,4 @@
 # Configure the parameters of our project
-
 import os
 import torch
 import platform
@@ -20,42 +19,56 @@ else:
     DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
     WORKING_DIRECTORY_PATH = ""
 
+######################################## General Settings ########################################
+# Test or Train the model
+TYPE_PROCESS = "test"  #value: {"train", "test"}
+ID_SESSION = "train_13_12_23_part-1" # unique ID
+
+# Activate Parallelism
+ACTIVATE_PARALLELISM = True # Recommended to activate just for Gricad
+NBR_WORKERS = 24 # 24 is the maximum for Gricad
+
+if TYPE_PROCESS == "test":
+    NBR_GPU = 1 # Work on gricad just with one GPU for testing
+else:
+    NBR_GPU = 3 # Adapt this one for the training mode
+
+######################################## Training Settings #######################################
+# Define some model parameters
 # Define the test split which will separate our dataset into train and test
 TEST_SPLIT = 0.15
 
-# List of gpu
-os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2"
+# Unet Architecture
+ENC_CHANNELS= (3, 16, 32, 64)
+DEC_CHANNELS = (64, 32, 16)
+# Number of class
+NBR_CLASSES = 7
+ACTIVATE_LABELED_CLASSES = True
+# Size of input images
+INPUT_IMAGE_HEIGHT = 128
+INPUT_IMAGE_WIDTH = 128
+BATCH_SIZE = 4
+NUM_EPOCHS = 1
+# Learning rate
+INIT_LR = 0.01
+# Threshold just usefull of one class unlabeled
+THRESHOLD_TYPE = "mean"
 
 # Vizualization parameters
 # True if you want print graphs during the training
 MODE_VISUALIZATION = False
-VISUALIZATION_DIM = 7  # TODO: There are some buts, it needed to avoid multiples of 4
-
-# Test or Train the model
-TYPE_PROCESS = "test"  #value: {"train", "test"}
-ID_SESSION = "train_12_12_23_part-6"
-
-# Activate Parallelism
-ACTIVATE_PARALLELISM = True
-NBR_WORKERS = 24
-NBR_GPU = 1
+VISUALIZATION_DIM = 7 # Lower or egual to NBR_CLASSES
 
 # Early Stopping
 EARLY_STOPPING_ACTIVATE = False
 PATIENCE = 5
 
-# Define some model parameters
-ENC_CHANNELS= (3, 16, 32, 64)
-DEC_CHANNELS = (64, 32, 16)
-NBR_CLASSES = 3
-ACTIVATE_LABELED_CLASSES = True
-INPUT_IMAGE_HEIGHT = 512
-INPUT_IMAGE_WIDTH = 512
-BATCH_SIZE = 4
-NUM_EPOCHS = 1
-INIT_LR = 0.01
-THRESHOLD_TYPE = "mean"
+######################################## Test Settings ###########################################
+# Number of image to test
+
 SELECTED_IMAGE_TEST = 10
+
+##################################################################################################
 
 # Define different paths
 # The images dataset
