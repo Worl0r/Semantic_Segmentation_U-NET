@@ -181,4 +181,4 @@ class TestModel:
 		self.metrics.meanConfusionMatrix()
 
 		# We save all logs and errors in our specific id file
-		utils.saveLogs()
+		#utils.saveLogs()

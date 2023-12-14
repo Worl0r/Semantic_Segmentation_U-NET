@@ -5,6 +5,7 @@ import config
 import os
 import numpy as np
 import dataset
+from matplotlib import colors
 
 class Metrics:
     def __init__(self, device):
@@ -53,13 +54,15 @@ class Metrics:
     def confusionMatrix(self, name, prediction, original, normalize):
         self.metrics["Confusion_matrix"].append(self.metricConfusionMatrix(prediction, original))
 
-        cm = self.metrics["Confusion_matrix"][-1].numpy()
+        if config.ALL_CONFUSION_MATRIX:
+            cm = self.metrics["Confusion_matrix"][-1].numpy()
 
-        if normalize:
-            cm = cm.astype('float') / (cm.sum(axis=1)[:, np.newaxis] + self.epsilon)
+            if normalize:
+                cm = cm.astype('float') / (cm.sum(axis=1)[:, np.newaxis] + self.epsilon)
 
-        path = os.path.join(config.PLOT_METRICS, name + "_ConfusionMatrix.png")
-        Metrics.plotConfusionMatrix(cm, "Normalized Confusion Matrix for Image : " + name, normalize, path)
+
+            path = os.path.join(config.PLOT_METRICS, name + "_ConfusionMatrix.png")
+            Metrics.plotConfusionMatrix(cm, "Normalized Confusion Matrix for Image : " + name, normalize, path)
 
     def meanConfusionMatrix(self):
         meanCm = np.zeros((config.NBR_CLASSES, config.NBR_CLASSES))
@@ -81,7 +84,7 @@ class Metrics:
         classes = classes[:config.NBR_CLASSES]
 
         fig, ax = plt.subplots(figsize=(20, 20))
-        im = ax.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
+        im = ax.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues, norm=colors.LogNorm())
         ax.figure.colorbar(im, ax=ax)
         ax.set(xticks=np.arange(cm.shape[1]),
         yticks=np.arange(cm.shape[0]),
