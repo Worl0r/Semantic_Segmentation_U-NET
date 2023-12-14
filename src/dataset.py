@@ -166,7 +166,7 @@ class SegmentationDataset(Dataset):
 		for x,y in tqdm(zip(images, masks), total=len(images)):
 			name = x.split("/")[-1].split(".")
 			image_name = name[0]
-			image_extn = name[1]
+			image_extn = "png"
 
 			name = y.split("/")[-1].split(".")
 			mask_name = name[0]

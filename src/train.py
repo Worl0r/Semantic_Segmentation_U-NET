@@ -19,6 +19,7 @@ import sys
 import config
 import dataset
 from datetime import datetime
+import random
 
 class TrainModel:
 	def __init__(self, model, transforms, metrics, device = config.DEVICE):
@@ -245,6 +246,37 @@ class TrainModel:
 		utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
 		torch.save(self.model, config.MODEL_PATH)
 
+	def checkAugmentedData():
+		utils.logMsg("You activated the option for augmented data.", "info")
+
+		# Create Paths if it needed
+		path = os.path.join(config.WORKING_DIRECTORY_PATH, "dataset", "semantic_drone_dataset", "augmented_data")
+		utils.folderExists(path)
+		pathImage = os.path.join(path, "images")
+		pathMask = os.path.join(path, "masks")
+		utils.folderExists(pathImage)
+		utils.folderExists(pathMask)
+
+		# load the image and mask filepaths in a sorted manner
+		imagePaths = sorted(list(utils.list_images(config.IMAGE_DATASET_PATH)))
+		maskPaths = sorted(list(utils.list_images(config.MASK_DATASET_PATH)))
+		print(f"Original images:  {len(imagePaths)} - Original masks: {len(maskPaths)}")
+
+		# Create more data
+		if config.GENERATE_AUGMENTED_DATA == True:
+			dataset.SegmentationDataset.augment_data(imagePaths, maskPaths, path, augment=True)
+
+		# Load new images
+		imagePaths = sorted(list(utils.list_images(os.path.join(path, "images"))))
+		maskPaths = sorted(list(utils.list_images(os.path.join(path, "masks"))))
+		print(f"Augmented images:  {len(imagePaths)} - Augmented masks: {len(maskPaths)}")
+
+		if len(imagePaths) == 0 or len(maskPaths) == 0:
+			utils.logMsg("You do not have augmented data, please active the option to create them.", "error")
+			RuntimeError("You do not have augmented data in the folder: dataset/augmented_data")
+
+		return imagePaths, maskPaths
+
 	def trainModel(self):
 		utils.logMsg("Start of model training", "info")
 
@@ -252,34 +284,15 @@ class TrainModel:
 			# We parallelize the model and it works even if there is just a single node
 			self.model = DistributedDataParallel(self.model)
 
+		# We can use another special dataset with more data
 		if config.AUG_DATA == True:
-			utils.logMsg("You activated the option for augmented data.", "info")
-
-			# Create Paths if it needed
-			path = os.path.join(config.WORKING_DIRECTORY_PATH, "dataset", "semantic_drone_dataset", "augmented_data")
-			utils.folderExists(path)
-			pathImage = os.path.join(path, "images")
-			pathMask = os.path.join(path, "masks")
-			utils.folderExists(pathImage)
-			utils.folderExists(pathMask)
-
-			# load the image and mask filepaths in a sorted manner
-			imagePaths = sorted(list(utils.list_images(config.IMAGE_DATASET_PATH)))
-			maskPaths = sorted(list(utils.list_images(config.MASK_DATASET_PATH)))
-			print(f"Original images:  {len(imagePaths)} - Original masks: {len(maskPaths)}")
-
-			# Create more data
-			if config.GENERATE_AUGMENTED_DATA == True:
-				dataset.SegmentationDataset.augment_data(imagePaths, maskPaths, path, augment=True)
-
-			# Load new images
-			imagePaths = sorted(list(utils.list_images(os.path.join(path, "images"))))
-			maskPaths = sorted(list(utils.list_images(os.path.join(path, "masks"))))
-			print(f"Augmented images:  {len(imagePaths)} - Augmented masks: {len(maskPaths)}")
-
-			if len(imagePaths) == 0 or len(maskPaths) == 0:
-				utils.logMsg("You do not have augmented data, please active the option to create them.", "error")
-				RuntimeError("You do not have augmented data in the folder: dataset/augmented_data")
+			imagePaths, maskPaths = TrainModel.checkAugmentedData()
+			shuffledImagePaths = imagePaths.copy()
+			shuffledMaskPaths = maskPaths.copy()
+			random.shuffle(shuffledImagePaths)
+			random.shuffle(shuffledMaskPaths)
+			imagePaths = shuffledImagePaths[:int(config.AUGMENTED_DATA_SPLIT*len(shuffledImagePaths))]
+			maskPaths = shuffledMaskPaths[:int(config.AUGMENTED_DATA_SPLIT*len(shuffledMaskPaths))]
 
 		else:
 			# load the image and mask filepaths in a sorted manner

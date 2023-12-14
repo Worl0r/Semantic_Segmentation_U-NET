@@ -188,3 +188,9 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 ## Troubleshootings:
 
 * When you start a training with the interactive mode. Make sure to be consistent with your number of GPU. In fact, it is recommended to be on the same interactive mode session to test and train, even if in the test mode you use always one GPU.
+
+## References:
+
+[1] [*U-Net: Training Image Segmentation Models in PyTorch*](https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/) For the U-NET architecutre.
+
+[2] [*Semantic Segmentation Drone Dataset (U-Net)*](https://www.kaggle.com/code/nicopaolinelli/semantic-segmentation-drone-dataset-u-net) For the augmented data on our project.

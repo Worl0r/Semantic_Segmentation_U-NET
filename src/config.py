@@ -35,7 +35,8 @@ else:
 
 # Data Augmentation
 AUG_DATA = True
-GENERATE_AUGMENTED_DATA = False
+GENERATE_AUGMENTED_DATA = True
+AUGMENTED_DATA_SPLIT = 0.15
 
 ######################################## Training Settings #######################################
 # Define some model parameters
