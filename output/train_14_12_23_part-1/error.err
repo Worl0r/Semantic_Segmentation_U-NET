@@ -1,0 +1,1156 @@
++ python main.py
+Traceback (most recent call last):
+  File "/home/conversb/Semantic_Segmentation_U-NET/model/main.py", line 148, in <module>
+    main()
+  File "/home/conversb/Semantic_Segmentation_U-NET/model/main.py", line 129, in main
+    imagePaths = open(config.TEST_PATHS).read().strip().split("\n")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/output/train_12_12_23_part-6/test_paths.txt'
++ python main.py
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [05:31<4:31:01, 331.86s/it]  4%|▍         | 2/50 [10:50<4:19:22, 324.22s/it]  6%|▌         | 3/50 [16:42<4:23:59, 337.02s/it]  8%|▊         | 4/50 [22:11<4:15:45, 333.61s/it] 10%|█         | 5/50 [27:40<4:09:02, 332.06s/it] 12%|█▏        | 6/50 [33:59<4:15:15, 348.08s/it] 14%|█▍        | 7/50 [39:36<4:06:52, 344.49s/it] 16%|█▌        | 8/50 [44:56<3:55:36, 336.57s/it] 18%|█▊        | 9/50 [50:38<3:51:14, 338.40s/it] 20%|██        | 10/50 [56:10<3:44:10, 336.26s/it] 22%|██▏       | 11/50 [1:01:47<3:38:44, 336.52s/it] 24%|██▍       | 12/50 [1:07:29<3:34:05, 338.04s/it] 26%|██▌       | 13/50 [1:13:10<3:29:09, 339.18s/it] 28%|██▊       | 14/50 [1:18:57<3:24:49, 341.36s/it] 30%|███       | 15/50 [1:24:38<3:19:01, 341.18s/it] 32%|███▏      | 16/50 [1:30:17<3:13:07, 340.81s/it] 34%|███▍      | 17/50 [1:35:49<3:05:57, 338.10s/it] 36%|███▌      | 18/50 [1:41:18<2:58:45, 335.16s/it] 38%|███▊      | 19/50 [1:46:52<2:52:58, 334.81s/it] 40%|████      | 20/50 [1:52:17<2:46:03, 332.11s/it] 42%|████▏     | 21/50 [1:57:54<2:41:11, 333.51s/it] 44%|████▍     | 22/50 [2:03:34<2:36:28, 335.31s/it] 46%|████▌     | 23/50 [2:09:26<2:33:10, 340.40s/it] 48%|████▊     | 24/50 [2:15:44<2:32:23, 351.69s/it] 50%|█████     | 25/50 [2:21:43<2:27:30, 354.02s/it] 52%|█████▏    | 26/50 [2:27:22<2:19:45, 349.39s/it] 54%|█████▍    | 27/50 [2:33:11<2:13:51, 349.21s/it] 56%|█████▌    | 28/50 [2:38:33<2:05:01, 340.97s/it] 58%|█████▊    | 29/50 [2:44:07<1:58:37, 338.93s/it] 60%|██████    | 30/50 [2:49:24<1:50:49, 332.48s/it] 62%|██████▏   | 31/50 [2:55:23<1:47:49, 340.49s/it] 64%|██████▍   | 32/50 [3:00:58<1:41:36, 338.70s/it] 66%|██████▌   | 33/50 [3:06:22<1:34:42, 334.26s/it] 68%|██████▊   | 34/50 [3:12:20<1:31:02, 341.43s/it] 70%|███████   | 35/50 [3:17:54<1:24:50, 339.36s/it] 72%|███████▏  | 36/50 [3:23:42<1:19:45, 341.79s/it] 74%|███████▍  | 37/50 [3:29:17<1:13:38, 339.89s/it] 76%|███████▌  | 38/50 [3:34:35<1:06:40, 333.36s/it] 78%|███████▊  | 39/50 [3:40:44<1:03:03, 343.92s/it] 80%|████████  | 40/50 [3:46:45<58:10, 349.03s/it]   82%|████████▏ | 41/50 [3:52:42<52:42, 351.35s/it] 84%|████████▍ | 42/50 [3:58:43<47:13, 354.20s/it] 86%|████████▌ | 43/50 [4:04:13<40:28, 346.98s/it] 88%|████████▊ | 44/50 [4:09:42<34:09, 341.57s/it] 90%|█████████ | 45/50 [4:15:14<28:14, 338.88s/it] 92%|█████████▏| 46/50 [4:20:47<22:28, 337.08s/it] 94%|█████████▍| 47/50 [4:26:47<17:11, 344.00s/it] 96%|█████████▌| 48/50 [4:32:29<11:26, 343.16s/it] 98%|█████████▊| 49/50 [4:38:45<05:53, 353.25s/it]100%|██████████| 50/50 [4:44:46<00:00, 355.34s/it]100%|██████████| 50/50 [4:44:46<00:00, 341.72s/it]
++ python main.py
+Traceback (most recent call last):
+  File "/home/conversb/Semantic_Segmentation_U-NET/model/main.py", line 148, in <module>
+    main()
+  File "/home/conversb/Semantic_Segmentation_U-NET/model/main.py", line 97, in main
+    mp.spawn(funcParallelism, args=(config.NBR_GPU,), nprocs=config.NBR_GPU)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 240, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 198, in start_processes
+    while not context.join():
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 160, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 2 terminated with the following error:
+Traceback (most recent call last):
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 69, in _wrap
+    fn(i, *args)
+  File "/home/conversb/Semantic_Segmentation_U-NET/model/main.py", line 17, in funcParallelism
+    torchvision.transforms.RandomResizedCrop(size=(224, 224), antialias=True),
+TypeError: __init__() got an unexpected keyword argument 'antialias'
+
++ python main.py
+  0%|          | 0/50 [00:00<?, ?it/s]  0%|          | 0/50 [00:00<?, ?it/s]  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [06:00<4:54:21, 360.45s/it]  2%|▏         | 1/50 [06:03<4:57:07, 363.83s/it]  2%|▏         | 1/50 [06:05<4:58:51, 365.94s/it]  4%|▍         | 2/50 [12:01<4:48:11, 360.23s/it]  4%|▍         | 2/50 [12:06<4:50:46, 363.46s/it]  4%|▍         | 2/50 [12:06<4:50:09, 362.70s/it]  6%|▌         | 3/50 [18:00<4:41:39, 359.57s/it]  6%|▌         | 3/50 [18:05<4:43:00, 361.29s/it]  6%|▌         | 3/50 [18:07<4:44:00, 362.55s/it]  8%|▊         | 4/50 [24:06<4:36:46, 361.01s/it]  8%|▊         | 4/50 [24:06<4:37:35, 362.07s/it]  8%|▊         | 4/50 [24:08<4:37:27, 361.91s/it] 10%|█         | 5/50 [30:09<4:30:59, 361.32s/it] 10%|█         | 5/50 [30:10<4:32:02, 362.71s/it] 10%|█         | 5/50 [30:11<4:31:52, 362.51s/it] 12%|█▏        | 6/50 [36:06<4:24:32, 360.73s/it] 12%|█▏        | 6/50 [36:10<4:24:54, 361.24s/it] 12%|█▏        | 6/50 [36:11<4:25:09, 361.58s/it] 14%|█▍        | 7/50 [42:06<4:17:44, 359.63s/it] 14%|█▍        | 7/50 [42:06<4:17:50, 359.77s/it] 14%|█▍        | 7/50 [42:10<4:19:09, 361.62s/it] 16%|█▌        | 8/50 [48:08<4:12:16, 360.40s/it] 16%|█▌        | 8/50 [48:09<4:12:33, 360.80s/it] 16%|█▌        | 8/50 [48:10<4:12:33, 360.79s/it] 18%|█▊        | 9/50 [54:07<4:05:56, 359.91s/it] 18%|█▊        | 9/50 [54:08<4:06:05, 360.13s/it] 18%|█▊        | 9/50 [54:09<4:06:18, 360.46s/it] 20%|██        | 10/50 [1:00:06<3:59:51, 359.79s/it] 20%|██        | 10/50 [1:00:07<3:59:57, 359.94s/it] 20%|██        | 10/50 [1:00:08<3:59:59, 360.00s/it] 22%|██▏       | 11/50 [1:06:00<3:52:40, 357.95s/it] 22%|██▏       | 11/50 [1:06:07<3:53:43, 359.58s/it] 22%|██▏       | 11/50 [1:06:08<3:54:13, 360.36s/it] 24%|██▍       | 12/50 [1:11:55<3:46:01, 356.88s/it] 24%|██▍       | 12/50 [1:12:04<3:47:19, 358.94s/it] 24%|██▍       | 12/50 [1:12:05<3:47:34, 359.34s/it] 26%|██▌       | 13/50 [1:17:55<3:40:44, 357.97s/it] 26%|██▌       | 13/50 [1:18:02<3:41:10, 358.66s/it] 26%|██▌       | 13/50 [1:18:03<3:41:11, 358.70s/it] 28%|██▊       | 14/50 [1:23:55<3:35:04, 358.45s/it] 28%|██▊       | 14/50 [1:24:01<3:35:10, 358.62s/it] 28%|██▊       | 14/50 [1:24:02<3:35:23, 358.99s/it] 30%|███       | 15/50 [1:29:54<3:29:14, 358.70s/it] 30%|███       | 15/50 [1:29:59<3:28:56, 358.19s/it] 30%|███       | 15/50 [1:30:00<3:29:11, 358.60s/it] 32%|███▏      | 16/50 [1:35:51<3:22:59, 358.21s/it] 32%|███▏      | 16/50 [1:35:58<3:23:14, 358.67s/it] 32%|███▏      | 16/50 [1:35:58<3:23:13, 358.62s/it] 34%|███▍      | 17/50 [1:41:52<3:17:24, 358.92s/it] 34%|███▍      | 17/50 [1:41:57<3:17:16, 358.67s/it] 34%|███▍      | 17/50 [1:41:58<3:17:20, 358.81s/it] 36%|███▌      | 18/50 [1:47:48<3:10:57, 358.03s/it] 36%|███▌      | 18/50 [1:47:51<3:10:31, 357.23s/it] 36%|███▌      | 18/50 [1:47:53<3:10:55, 357.98s/it] 38%|███▊      | 19/50 [1:53:49<3:05:26, 358.93s/it] 38%|███▊      | 19/50 [1:53:50<3:04:47, 357.67s/it] 38%|███▊      | 19/50 [1:53:52<3:05:05, 358.24s/it] 40%|████      | 20/50 [1:59:43<2:58:48, 357.61s/it] 40%|████      | 20/50 [1:59:48<2:58:53, 357.77s/it] 40%|████      | 20/50 [1:59:48<2:58:48, 357.63s/it] 42%|████▏     | 21/50 [2:05:47<2:52:56, 357.82s/it] 42%|████▏     | 21/50 [2:05:48<2:53:50, 359.68s/it] 42%|████▏     | 21/50 [2:05:50<2:53:32, 359.05s/it] 44%|████▍     | 22/50 [2:11:41<2:47:00, 357.87s/it] 44%|████▍     | 22/50 [2:11:42<2:46:34, 356.94s/it] 44%|████▍     | 22/50 [2:11:44<2:46:54, 357.65s/it] 46%|████▌     | 23/50 [2:17:41<2:40:50, 357.44s/it] 46%|████▌     | 23/50 [2:17:44<2:41:39, 359.24s/it] 46%|████▌     | 23/50 [2:17:44<2:41:21, 358.56s/it] 48%|████▊     | 24/50 [2:23:40<2:35:02, 357.77s/it] 48%|████▊     | 24/50 [2:23:40<2:35:17, 358.38s/it] 48%|████▊     | 24/50 [2:23:45<2:35:46, 359.47s/it] 50%|█████     | 25/50 [2:29:45<2:30:01, 360.04s/it] 50%|█████     | 25/50 [2:29:46<2:29:51, 359.68s/it] 50%|█████     | 25/50 [2:29:47<2:30:21, 360.85s/it]Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+Traceback (most recent call last):
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+Traceback (most recent call last):
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    exitcode = _main(fd, parent_sentinel)
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+Traceback (most recent call last):
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+ 50%|█████     | 25/50 [2:34:53<2:34:53, 371.73s/it]
+ 50%|█████     | 25/50 [2:34:53<2:34:53, 371.73s/it]
+ 50%|█████     | 25/50 [2:34:53<2:34:53, 371.73s/it]
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 287, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/conversb/Semantic_Segmentation_U-NET/model/main.py'
+Traceback (most recent call last):
+  File "/home/conversb/Semantic_Segmentation_U-NET/model/main.py", line 150, in <module>
+  File "/home/conversb/Semantic_Segmentation_U-NET/model/main.py", line 99, in main
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 240, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 198, in start_processes
+    while not context.join():
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 160, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 1 terminated with the following error:
+Traceback (most recent call last):
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1163, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 2647504) exited unexpectedly with exit code 1. Details are lost due to multiprocessing. Rerunning with num_workers=0 may give better error trace.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 69, in _wrap
+    fn(i, *args)
+  File "/home/conversb/Semantic_Segmentation_U-NET/model/main.py", line 45, in funcParallelism
+  File "/home/conversb/Semantic_Segmentation_U-NET/model/train.py", line 286, in trainModel
+  File "/home/conversb/Semantic_Segmentation_U-NET/model/train.py", line 196, in batchTesting
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1359, in _next_data
+    idx, data = self._get_data()
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1315, in _get_data
+    success, data = self._try_get_data()
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1176, in _try_get_data
+    raise RuntimeError('DataLoader worker (pid(s) {}) exited unexpectedly'.format(pids_str)) from e
+RuntimeError: DataLoader worker (pid(s) 2647373, 2647375, 2647378, 2647381, 2647384, 2647454, 2647457, 2647462, 2647466, 2647472, 2647477, 2647480, 2647483, 2647486, 2647490, 2647493, 2647496, 2647498, 2647501, 2647504, 2647507, 2647510, 2647513, 2647516) exited unexpectedly
+
