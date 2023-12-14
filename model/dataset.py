@@ -69,11 +69,15 @@ class SegmentationDataset(Dataset):
 		maskRGB = np.array(maskRGB)
 		# We pick up the list of labeledClasses
 		self.labeledClasses = SegmentationDataset.openColorizedClassesCSV()
-		# We adapt the shape in case the config is not consistent with csv file
-		shape[0] = len(self.labeledClasses)
+
 		maskRGBChanged = np.zeros(shape)
+
 		# We change maskRGB to fit with the shape
 		for index, (_, value) in enumerate(self.labeledClasses.items()):
+			# When we have less classes than the csv file we need to stop
+			if index >= config.NBR_CLASSES:
+				break
+
 			mask = [
 						[
 							all(pixel == value) for pixel in row
@@ -112,7 +116,7 @@ class SegmentationDataset(Dataset):
 			mask = normalization(mask)
 
 		# Check the number of class
-		if config.NBR_CLASSES < self.sizeLabeledClasses:
+		if config.NBR_CLASSES == 1 or config.ACTIVATE_LABELED_CLASSES == False:
 			# We make the training mask dataset according the right number of class
 			mask = SegmentationDataset.convertToAdaptedTensorMask(
 				mask=mask,
@@ -129,7 +133,7 @@ class SegmentationDataset(Dataset):
 				self,
 				maskRGB=maskRGB,
 				shape=[
-					self.sizeLabeledClasses,
+					config.NBR_CLASSES,
 					config.INPUT_IMAGE_HEIGHT,
 					config.INPUT_IMAGE_WIDTH
 				]

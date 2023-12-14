@@ -8,8 +8,8 @@ from torch.optim import Adam
 from tqdm import tqdm
 import matplotlib
 import platform
-if platform.system() != 'Linux':
-    matplotlib.use('Agg', force='True')
+# if platform.system() != 'Linux':
+#     matplotlib.use('Agg', force='True')
 import matplotlib.pyplot as plt
 import torch
 import time
@@ -63,6 +63,8 @@ class TrainModel:
 		plotTitles.append("Original Image")
 		plots.append(maskRGB[0].T)
 		plotTitles.append("Original Mask RGB")
+
+		# Prediction colored mask
 
 		# We plot just one dimension for nbr_classes egual to 1
 		if config.NBR_CLASSES == 1:

@@ -1,7 +1,7 @@
 import config
 import train
 import test
-#import metrics
+import metrics
 from datetime import datetime
 import utils
 import model
@@ -14,7 +14,6 @@ import torch.distributed as dist
 def funcParallelism(rank, world_size):
         transform = torchvision.transforms.Compose(
         [
-            torchvision.transforms.RandomResizedCrop(size=(224, 224), antialias=True),
             torchvision.transforms.RandomHorizontalFlip(p=0.5),
             torchvision.transforms.ToPILImage(),
             torchvision.transforms.Resize(
@@ -27,6 +26,9 @@ def funcParallelism(rank, world_size):
 
         # Init the process to parallize
         dist.init_process_group(backend='nccl', init_method='tcp://127.0.0.1:29500', rank=rank, world_size=world_size)
+
+        # Initialize the Metrics Class
+        metricsClass = metrics.Metrics(rank)
 
         if config.TYPE_PROCESS == "train":
 
@@ -43,8 +45,7 @@ def funcParallelism(rank, world_size):
             trainModel.trainModel()
 
         else:
-            # load the image paths in our testing file and randomly select 10
-            # image paths
+            # load the image paths in our testing file and randomly select n images
             print("[INFO] [TEST] loading up test image paths...")
             imagePaths = open(config.TEST_PATHS).read().strip().split("\n")
             imagePaths = np.random.choice(imagePaths, size=config.SELECTED_IMAGE_TEST)
@@ -52,7 +53,7 @@ def funcParallelism(rank, world_size):
             unet = torch.load(config.MODEL_PATH).to(rank)
 
             print("[INFO] [TEST] Creation of the TestModel class...")
-            testModel = test.TestModel(unet, transform)
+            testModel = test.TestModel(unet, transform, metricsClass)
 
             testModel.makePredictionDataset(imagePaths)
 
@@ -61,6 +62,7 @@ def main():
 
     # Time
     utils.logMsg("Script stats at: " + str(datetime.now()), "time")
+    utils.logMsg("You start a process related with the ID: " + str(config.ID_SESSION), "info")
 
     # Define and apply transformations
     # IMPORTANT: "ToTensor()" has to be in last position. It is important for SegmentationDataset class.
@@ -76,7 +78,7 @@ def main():
         ])
 
     # Initialize the Metrics Class
-    #metricsClass = metrics.Metrics()
+    metricsClass = metrics.Metrics()
 
     # Check info about parallelism
     utils.logMsg("The status of cuda is: " + str(torch.cuda.is_available()) + ".", "parallelism")
@@ -112,7 +114,7 @@ def main():
         utils.logMsg("Training model finished", "info")
         ################################################
 
-    if config.TYPE_PROCESS == "test":
+    elif config.TYPE_PROCESS == "test":
         ##################### TEST #####################
 
         print("[INFO] [TEST] load up model...")
@@ -123,7 +125,7 @@ def main():
             mp.spawn(funcParallelism, args=(config.NBR_GPU,), nprocs=config.NBR_GPU)
 
         else:
-             # load the image paths in our testing file and randomly select 10
+            # load the image paths in our testing file and randomly select 10
             # image paths
             print("[INFO] [TEST] loading up test image paths...")
             imagePaths = open(config.TEST_PATHS).read().strip().split("\n")
@@ -133,7 +135,7 @@ def main():
             unet = torch.load(config.MODEL_PATH).to(device)
 
             print("[INFO] [TEST] Creation of the TestModel class...")
-            testModel = test.TestModel(unet, transform)
+            testModel = test.TestModel(unet, transform, metricsClass)
 
             testModel.makePredictionDataset(imagePaths)
 

@@ -2,8 +2,8 @@ import os
 import config
 import matplotlib
 import platform
-if platform.system() != 'Linux':
-    matplotlib.use('TkAgg', force='True')
+# if platform.system() != 'Linux':
+#     matplotlib.use('TkAgg', force='True')
 import matplotlib.pyplot as plt
 import utils
 
@@ -17,12 +17,12 @@ def prepare_plot(plots, plotTitles, path, title="", mode="train"):
             ax[index].imshow(value)
             ax[index].set_title(plotTitles[index])
 
-    elif len(plots) % 4 == 0:
-        figure, ax = plt.subplots(nrows= (len(plots) // 4), ncols=4, figsize=(20, 20))
+    # elif len(plots) % 4 == 0:
+    #     figure, ax = plt.subplots(nrows= (len(plots) // 4), ncols=4, figsize=(20, 20))
 
-        for index, value in enumerate(plots):
-            ax[index].imshow(value)
-            ax[index].set_title(plotTitles[index])
+    #     for index, value in enumerate(plots):
+    #         ax[index].imshow(value)
+    #         ax[index].set_title(plotTitles[index])
 
     else:
         figure, ax = plt.subplots(nrows= (len(plots) // 4) + 1, ncols=4, figsize=(20, 20))
