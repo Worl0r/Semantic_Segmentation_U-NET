@@ -144,7 +144,7 @@ class TestModel:
 
 			# Add value to metrics class
 			gtMaskTensor = dataset.SegmentationDataset.convertToLabeledTensorMask(
-				gtMask,
+				gtMask.mT,
 				shape=[
 					config.NBR_CLASSES,
 					config.INPUT_IMAGE_HEIGHT,
