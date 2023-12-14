@@ -252,9 +252,39 @@ class TrainModel:
 			# We parallelize the model and it works even if there is just a single node
 			self.model = DistributedDataParallel(self.model)
 
-		# load the image and mask filepaths in a sorted manner
-		imagePaths = sorted(list(utils.list_images(config.IMAGE_DATASET_PATH)))
-		maskPaths = sorted(list(utils.list_images(config.MASK_DATASET_PATH)))
+		if config.AUG_DATA == True:
+			utils.logMsg("You activated the option for augmented data.", "info")
+
+			# Create Paths if it needed
+			path = os.path.join(config.WORKING_DIRECTORY_PATH, "dataset", "semantic_drone_dataset", "augmented_data")
+			utils.folderExists(path)
+			pathImage = os.path.join(path, "images")
+			pathMask = os.path.join(path, "masks")
+			utils.folderExists(pathImage)
+			utils.folderExists(pathMask)
+
+			# load the image and mask filepaths in a sorted manner
+			imagePaths = sorted(list(utils.list_images(config.IMAGE_DATASET_PATH)))
+			maskPaths = sorted(list(utils.list_images(config.MASK_DATASET_PATH)))
+			print(f"Original images:  {len(imagePaths)} - Original masks: {len(maskPaths)}")
+
+			# Create more data
+			if config.GENERATE_AUGMENTED_DATA == True:
+				dataset.SegmentationDataset.augment_data(imagePaths, maskPaths, path, augment=True)
+
+			# Load new images
+			imagePaths = sorted(list(utils.list_images(os.path.join(path, "images"))))
+			maskPaths = sorted(list(utils.list_images(os.path.join(path, "masks"))))
+			print(f"Augmented images:  {len(imagePaths)} - Augmented masks: {len(maskPaths)}")
+
+			if len(imagePaths) == 0 or len(maskPaths) == 0:
+				utils.logMsg("You do not have augmented data, please active the option to create them.", "error")
+				RuntimeError("You do not have augmented data in the folder: dataset/augmented_data")
+
+		else:
+			# load the image and mask filepaths in a sorted manner
+			imagePaths = sorted(list(utils.list_images(config.IMAGE_DATASET_PATH)))
+			maskPaths = sorted(list(utils.list_images(config.MASK_DATASET_PATH)))
 
 		# Create datasets
 		trainLoader, testLoader = TrainModel.createDataset(self, imagePaths, maskPaths)
