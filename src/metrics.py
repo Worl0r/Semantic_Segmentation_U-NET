@@ -80,7 +80,7 @@ class Metrics:
         classes = np.array(list(labeledDic.keys()))
         classes = classes[:config.NBR_CLASSES]
 
-        fig, ax = plt.subplots()
+        fig, ax = plt.subplots(figsize=(200, 200))
         im = ax.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
         ax.figure.colorbar(im, ax=ax)
         ax.set(xticks=np.arange(cm.shape[1]),
@@ -100,6 +100,6 @@ class Metrics:
                 ax.text(j, i, format(cm[i, j], fmt),
                         ha="center", va="center",
                         color="white" if cm[i, j] > thresh else "black")
-        fig.tight_layout()
+        #fig.tight_layout()
         plt.savefig(path)
         plt.close()
