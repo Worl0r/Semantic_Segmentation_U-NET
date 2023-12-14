@@ -151,7 +151,7 @@ class TrainModel:
 		return False
 
 	def batchTraining(self, trainLoader, epoch):
-		utils.logMsg(f"Training batch on epoch {epoch} done at " + str(datetime.now()) + ".","time")
+		utils.logMsg(f"Training batch on epoch {epoch+1} done at " + str(datetime.now()) + ".","time")
 
 		totalTrainLoss = 0
 
@@ -182,7 +182,7 @@ class TrainModel:
 		return totalTrainLoss
 
 	def batchTesting(self, testLoader, startTime, H, epoch):
-		utils.logMsg(f"Testing batch on epoch {epoch} done at " + str(datetime.now()) + ".","time")
+		utils.logMsg(f"Testing batch on epoch {epoch+1} done at " + str(datetime.now()) + ".","time")
 		totalTestLoss = 0
 
 		# set the model in evaluation mode
@@ -237,11 +237,11 @@ class TrainModel:
 		H["test_loss"].append(avgTestLoss.cpu().detach().numpy())
 
 		# Print the model training and validation information
-		utils.logMsg("EPOCH: {}/{} at {}".format(e , config.NUM_EPOCHS, datetime.now()), "time")
+		utils.logMsg("EPOCH: {}/{} at {}".format(e+1 , config.NUM_EPOCHS, datetime.now()), "time")
 		print("Train loss: {:.6f}, Test loss: {:.4f}".format(avgTrainLoss, avgTestLoss))
 
 		# Save the model
-		utils.logMsg(f"We are saving the model at epoch {e}.", "info")
+		utils.logMsg(f"We are saving the model at epoch {e+1}.", "info")
 		utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
 		torch.save(self.model, config.MODEL_PATH)
 
