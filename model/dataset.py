@@ -64,16 +64,17 @@ class SegmentationDataset(Dataset):
 
 		return torch.tensor(maskChanged, dtype=torch.float32)
 
-	def convertToLabeledTensorMask(self, maskRGB, shape):
+	@staticmethod
+	def convertToLabeledTensorMask(maskRGB, shape):
 		# MaskRGB is in format of PIL.Image
 		maskRGB = np.array(maskRGB)
 		# We pick up the list of labeledClasses
-		self.labeledClasses = SegmentationDataset.openColorizedClassesCSV()
+		labeledClasses = SegmentationDataset.openColorizedClassesCSV()
 
 		maskRGBChanged = np.zeros(shape)
 
 		# We change maskRGB to fit with the shape
-		for index, (_, value) in enumerate(self.labeledClasses.items()):
+		for index, (_, value) in enumerate(labeledClasses.items()):
 			# When we have less classes than the csv file we need to stop
 			if index >= config.NBR_CLASSES:
 				break
@@ -130,7 +131,6 @@ class SegmentationDataset(Dataset):
 		else:
 			# We make the training mask dataset according the labeled csv file for classes
 			mask = SegmentationDataset.convertToLabeledTensorMask(
-				self,
 				maskRGB=maskRGB,
 				shape=[
 					config.NBR_CLASSES,

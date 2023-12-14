@@ -143,7 +143,16 @@ class TestModel:
 			colorPred = TestModel.classToColorForPred(prediction)
 
 			# Add value to metrics class
-			self.metrics.addValueToMetrics(gtMask, torch.from_numpy(colorPred))
+			gtMaskTensor = dataset.SegmentationDataset.convertToLabeledTensorMask(
+				gtMask,
+				shape=[
+					config.NBR_CLASSES,
+					config.INPUT_IMAGE_HEIGHT,
+					config.INPUT_IMAGE_WIDTH
+				]
+				)
+
+			self.metrics.addValueToMetrics(gtMaskTensor, torch.from_numpy(prediction))
 
 			# We plot some metrics
 			self.metrics.plotMetrics("PlotPrediction_" + str(index))
