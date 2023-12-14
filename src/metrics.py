@@ -13,14 +13,14 @@ class Metrics:
         self.metrics = {"F1-score": [], "Confusion_matrix": [], "Precision-Recall curve": [], "mAP":[], "Computation_time_training":[]}
         # Metrics
         if config.NBR_CLASSES==1:
-            self.metricF1 = BinaryF1Score().to(self.device)
-            self.metricConfusionMatrix = BinaryConfusionMatrix().to(self.device)
-            self.metricPrecisionRecallCruve = BinaryPrecisionRecallCurve().to(self.device)
+            self.metricF1 = BinaryF1Score()
+            self.metricConfusionMatrix = BinaryConfusionMatrix()
+            self.metricPrecisionRecallCruve = BinaryPrecisionRecallCurve()
             #self.metricAveragePrecision = MeanAveragePrecision()
         else :
-            self.metricF1 = MulticlassF1Score(num_classes=config.NBR_CLASSES).to(self.device)
-            self.metricConfusionMatrix = ConfusionMatrix(task='multiclass', num_classes=config.NBR_CLASSES).to(self.device)
-            self.metricPrecisionRecallCruve = MulticlassPrecisionRecallCurve(num_classes=config.NBR_CLASSES).to(self.device)
+            self.metricF1 = MulticlassF1Score(num_classes=config.NBR_CLASSES)
+            self.metricConfusionMatrix = ConfusionMatrix(task='multiclass', num_classes=config.NBR_CLASSES)
+            self.metricPrecisionRecallCruve = MulticlassPrecisionRecallCurve(num_classes=config.NBR_CLASSES)
             #self.metricAveragePrecision = MeanAveragePrecision(num_classes=config.NBR_CLASSES)
 
     def setMetric(self, target, value):
