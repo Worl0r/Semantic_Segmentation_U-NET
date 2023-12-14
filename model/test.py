@@ -7,9 +7,10 @@ import utils
 import torchvision
 
 class TestModel:
-	def __init__(self, model, transforms):
+	def __init__(self, model, transforms, metrics):
 		self.model = model
 		self.transforms = transforms
+		self.metrics = metrics
 
 	@staticmethod
 	def classToColorForPred(pred):
@@ -76,7 +77,7 @@ class TestModel:
 		gtMask = torchvision.io.read_image(groundTruthPath, torchvision.io.ImageReadMode.RGB)
 		return  self.transforms(gtMask)
 
-	def plotSampleTraining(input, torchMask, pred, maskRGB, name, index=""):
+	def plotPrediction(input, torchMask, pred, maskRGB, name, index=""):
 		plots =[]
 		plotTitles = []
 
@@ -141,7 +142,14 @@ class TestModel:
 			# We change the prediction matrix in colored image instead of class matrix
 			colorPred = TestModel.classToColorForPred(prediction)
 
-			TestModel.plotSampleTraining(
+			# Add value to metrics class
+			self.metrics.addValueToMetrics(orig, prediction)
+
+			# We plot some metrics
+			self.metrics.plotMetrics("PlotPrediction_" + str(index))
+
+			# We plot our predictions
+			TestModel.plotPrediction(
 				orig,
 				torch.tensor(colorPred).unsqueeze(dim=0),
 				torch.tensor(prediction).unsqueeze(dim=0),

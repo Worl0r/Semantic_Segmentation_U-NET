@@ -15,7 +15,6 @@ import torch
 import time
 import os
 import utils
-import test
 import sys
 import config
 import dataset

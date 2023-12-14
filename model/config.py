@@ -74,6 +74,8 @@ PLOT_TRAIN_PATH = os.path.sep.join([BASE_OUTPUT, ID_SESSION, "train_plots"])
 PLOT_TEST_PATH = os.path.sep.join([BASE_OUTPUT, ID_SESSION, "test_plots"])
 # The output serialized model path to save it
 MODEL_PATH = os.path.join(BASE_OUTPUT, ID_SESSION, "unet_tgs_salt.pth")
+# metric plot path
+PLOT_METRICS = os.path.join([BASE_OUTPUT, ID_SESSION, "metrics_plots"])
 
 # List of image types
 IMAGE_TYPES = (".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff")
