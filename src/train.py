@@ -51,7 +51,7 @@ class TrainModel:
 		plt.xlabel("Epoch #")
 		plt.ylabel("Loss")
 		plt.legend(loc="lower left")
-		plt.savefig(os.path.join(config.BASE_OUTPUT, config.ID_SESSION, "TrainingLoss.png"))
+		plt.savefig(os.path.join(config.PLOT_TRAIN_PATH, "TrainingLoss.png"))
 
 	@staticmethod
 	def plotSampleTraining(input, torchMask, pred, maskRGB, name, index="", epoch=""):

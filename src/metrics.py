@@ -6,6 +6,7 @@ import os
 import numpy as np
 import dataset
 from matplotlib import colors
+import utils
 
 class Metrics:
     def __init__(self, device):
@@ -74,7 +75,7 @@ class Metrics:
 
         meanCm = meanCm.astype('float') / (meanCm.sum(axis=1)[:, np.newaxis] + self.epsilon)
 
-        path =  os.path.join(config.BASE_OUTPUT, config.ID_SESSION, "ConfusionMatrix.png")
+        path =  os.path.join(config.BASE_OUTPUT, config.ID_SESSION, config.PLOT_METRICS,"ConfusionMatrix.png")
         Metrics.plotConfusionMatrix(meanCm, "Normalized Confusion Matrix for all tested Image", True, path)
 
 
@@ -104,5 +105,6 @@ class Metrics:
                         ha="center", va="center",
                         color="white" if cm[i, j] > thresh else "black")
         #fig.tight_layout()
-        plt.savefig(path)
+        utils.folderExists(config.PLOT_METRICS)
+        plt.savefig(config.PLOT_METRICS + "\\ConfusionMatrix.png")
         plt.close()

@@ -22,7 +22,7 @@ else:
 ######################################## General Settings ########################################
 # Test or Train the model
 TYPE_PROCESS = "test"  #value: {"train", "test"}
-ID_SESSION = "train_13_12_23_part-1" # unique ID
+ID_SESSION = "train_15_12_23_part-1" # unique ID
 
 # Activate Parallelism
 ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
@@ -48,7 +48,7 @@ ACTIVATE_LABELED_CLASSES = True
 INPUT_IMAGE_HEIGHT = 128
 INPUT_IMAGE_WIDTH = 128
 BATCH_SIZE = 4
-NUM_EPOCHS = 1
+NUM_EPOCHS = 3
 # Learning rate
 INIT_LR = 0.01
 # Threshold just usefull of one class unlabeled
