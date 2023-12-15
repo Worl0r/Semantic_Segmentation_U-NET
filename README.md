@@ -120,6 +120,35 @@ pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio===0.12.1 -
 
 * The number of randomly selected images from the testing set used for the validation. This number has to be lower than your test set stored in test_paths.txt : *SELECTED_IMAGE_TEST = 10*
 
+### Output
+
+0. Once you've trained and saved your model, it is saved in a new folder called *train_ID_SESSION* in the *output* folder with the following tree :
+
+```bash
+|--- output
+	|--- train_ID_SESSION
+		|--- metrics_plots
+		|--- test_plots
+		|--- train_plots
+		|--- Save_config_ID_train_ID_session.txt
+		|--- test_paths.txt
+		|--- unet_tgs_paths.txt
+```
+
+* The folder *metrics_plot* contains the plots of the metrics from the testing process
+
+* The folder *test_plots* contains the predictions from the testing process
+
+* The folder *train_plots* contains the plots of the training model samples for the first image of each batch
+  
+* *Save_config_ID_train_ID_session.txt* is the *config.py* with the parameters you defined
+  
+* *test_paths.txt* is the paths of your test images
+
+* *unet_tgs_paths_salt.pth* is the output serialized model path
+
+1. 
+
 ## Useful command lines
 
 0. Connect to GRICAD
@@ -176,6 +205,7 @@ oarsub -l /nodes=1/gpu=1 -p "gpumodel='A100'"  -I --project pr-material-accelera
 cd /bettik/PROJECTS/pr-material-acceleration/login/
 ```
 ## Results
+
 **1. nbr_classes = 24 Learningrate = 0.01 batch = 4 epoch = 50**
 <br/>
 
