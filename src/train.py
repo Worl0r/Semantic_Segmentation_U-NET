@@ -263,8 +263,8 @@ class TrainModel:
 		print(f"Original images:  {len(imagePaths)} - Original masks: {len(maskPaths)}")
 
 		# Create more data
-		if config.GENERATE_AUGMENTED_DATA == True:
-			dataset.SegmentationDataset.augment_data(imagePaths, maskPaths, path, augment=True)
+		# if config.GENERATE_AUGMENTED_DATA == True:
+		# 	dataset.SegmentationDataset.augment_data(imagePaths, maskPaths, path, augment=True)
 
 		# Load new images
 		imagePaths = sorted(list(utils.list_images(os.path.join(path, "images"))))
