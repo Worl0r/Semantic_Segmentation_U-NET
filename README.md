@@ -122,7 +122,7 @@ pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio===0.12.1 -
 
 ### Output
 
-0. Once you've trained and saved your model, it is saved in a new folder called *train_ID_SESSION* in the *output* folder with the following tree :
+0. Once you've trained and tested your model, it is saved in a new folder called *train_ID_SESSION* in the *output* folder with the following tree :
 
 ```bash
 |--- output
