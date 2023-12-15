@@ -139,7 +139,7 @@ pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio===0.12.1 -
 
 * The folder *test_plots* contains the predictions from the testing process
 
-* The folder *train_plots* contains the plots of the training model samples for the first image of each batch
+* The folder *train_plots* contains the plots of the training model samples for the first image of each batch and the training loss curves
   
 * *Save_config_ID_train_ID_session.txt* is the *config.py* with the parameters you defined
   
