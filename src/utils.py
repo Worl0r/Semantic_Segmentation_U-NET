@@ -49,7 +49,7 @@ def folderExists(path):
 	# If folder doesn't exist, then create it.
 	if not CHECK_FOLDER:
 		os.makedirs(path)
-		print("created folder : ", path)
+		logMsg("You created a new folder : " +  str(path), "data")
 
 def list_files(basePath, validExts=None, contains=None):
     # loop over the directory structure

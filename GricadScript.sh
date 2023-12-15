@@ -9,6 +9,6 @@
 source /applis/environments/cuda_env.sh bigfoot 11.8
 source /applis/environments/conda.sh
 conda activate torch
-cd ~/acceleration_material/model
+cd ~/acceleration_material/src
 set -x
 python main.py
