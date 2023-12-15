@@ -21,12 +21,12 @@ else:
 
 ######################################## General Settings ########################################
 # Test or Train the model
-TYPE_PROCESS = "train"  #value: {"train", "test"}
+TYPE_PROCESS = "test"  #value: {"train", "test"}
 ID_SESSION = "train_13_12_23_part-2" # unique ID
 
 # Activate Parallelism
 ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
-NBR_WORKERS = 24 # 24 is the maximum for Gricad
+NBR_WORKERS = 8 # 24 is the maximum for Gricad
 
 if TYPE_PROCESS == "test":
     NBR_GPU = 1 # Work on gricad just with one GPU for testing
@@ -35,8 +35,8 @@ else:
 
 # Data Augmentation
 AUG_DATA = True
-GENERATE_AUGMENTED_DATA = True
-AUGMENTED_DATA_SPLIT = 0.15
+GENERATE_AUGMENTED_DATA = False
+AUGMENTED_DATA_SPLIT = 0.90
 
 ######################################## Training Settings #######################################
 # Define some model parameters
@@ -62,7 +62,7 @@ THRESHOLD_TYPE = "mean"
 # Vizualization parameters
 # True if you want print graphs during the training
 MODE_VISUALIZATION = False
-VISUALIZATION_DIM = 0 # Lower or egual to NBR_CLASSES
+VISUALIZATION_DIM = 1 # Lower or egual to NBR_CLASSES
 
 # Early Stopping
 EARLY_STOPPING_ACTIVATE = False
@@ -97,6 +97,9 @@ PLOT_TEST_PATH = os.path.sep.join([BASE_OUTPUT, ID_SESSION, "test_plots"])
 MODEL_PATH = os.path.join(BASE_OUTPUT, ID_SESSION, "unet_tgs_salt.pth")
 # metric plot path
 PLOT_METRICS = os.path.join(BASE_OUTPUT, ID_SESSION, "metrics_plots")
+# Path augmented data
+AUGMENTED_DATA_IMAGE_PATH = os.path.join(WORKING_DIRECTORY_PATH, "dataset", "semantic_drone_dataset", "augmented_data", "images")
+AUGMENTED_DATA_MASK_PATH = os.path.join(WORKING_DIRECTORY_PATH, "dataset", "semantic_drone_dataset", "augmented_data", "masks")
 
 # List of image types
 IMAGE_TYPES = (".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff")

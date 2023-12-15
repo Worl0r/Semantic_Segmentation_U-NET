@@ -39,7 +39,7 @@ def prepare_plot(plots, plotTitles, path, title="", mode="train"):
         folderExists(config.PLOT_TRAIN_PATH)
         if mode == "test":
              folderExists(config.PLOT_TEST_PATH)
-        figure.savefig(path)
+    figure.savefig(path)
     plt.close()
 
 def folderExists(path):
