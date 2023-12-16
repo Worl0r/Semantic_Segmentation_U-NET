@@ -25,7 +25,7 @@ def prepare_plot(plots, plotTitles, path, title="", mode="train"):
     #         ax[index].set_title(plotTitles[index])
 
     else:
-        figure, ax = plt.subplots(nrows= (len(plots) // 4) + 1, ncols=4, figsize=(20, 20))
+        figure, ax = plt.subplots(nrows= (len(plots) // 4) + 1, ncols=4, figsize=(20, 10))
 
         for index, value in enumerate(plots):
             ax[index // 4, index % 4].imshow(value)

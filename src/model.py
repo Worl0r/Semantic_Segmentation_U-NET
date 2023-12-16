@@ -102,4 +102,6 @@ class UNet(Module):
         if self.retainDim:
             map = F.interpolate(map, self.outSize)
 
+        map = F.softmax(map, dim=1)
+
         return map

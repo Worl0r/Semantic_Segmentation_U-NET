@@ -2,7 +2,7 @@
 # import the necessary packages
 from torch.utils.data import DataLoader
 from sklearn.model_selection import train_test_split
-from torch.nn import BCEWithLogitsLoss
+from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss
 from torch.nn.parallel import DistributedDataParallel
 from torch.optim import Adam
 from tqdm import tqdm
@@ -27,7 +27,8 @@ class TrainModel:
 		self.model = model
 
 		# Initialize loss function, optimizer and metrics
-		self.lossFunc  = BCEWithLogitsLoss()
+		self.lossFunc  = CrossEntropyLoss()
+		# BCEWithLogitsLoss for binary classification
 
 		# Define the optimizer
 		self.optimizer = Adam(model.parameters(), lr=config.INIT_LR)

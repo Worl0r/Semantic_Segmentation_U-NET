@@ -19,6 +19,12 @@ We used the following link as the basis of our architecture : **[(link)](https:/
 	<img style="border-radius:25px" src="https://media.geeksforgeeks.org/wp-content/uploads/20220614121231/Group14.jpg" width="700">
 </p>
 
+## Semantic Annotation
+
+The images are labeled densely using polygons and contain the following 24 classes:
+
+TODO: expliquer le dataset
+
 ## How to get started
 
 0. Clone the repository
@@ -191,8 +197,16 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 
 ## References:
 
-[1] [*U-Net: Training Image Segmentation Models in PyTorch :*](https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/) For the U-NET architecutre.
+[1] [*Aerial Semantic Segmentation Drone Dataset:*](https://www.kaggle.com/datasets/bulentsiyah/semantic-drone-dataset) For the dataset.
 
-[2] [*Semantic Segmentation Drone Dataset (U-Net) :*](https://www.kaggle.com/code/nicopaolinelli/semantic-segmentation-drone-dataset-u-net) For the augmented data on our project.
+[2] [*U-Net: Training Image Segmentation Models in PyTorch :*](https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/) For the U-NET architecutre.
 
-[3] [*Lecture's Dawood Al Chanti :*](https://scholar.google.fr/citations?user=osXo54QAAAAJ&hl=en) *Computer Vision :* TD-3: Bag of Visual Words for Scene Recognition
+[3] [*Semantic Segmentation Drone Dataset (U-Net) :*](https://www.kaggle.com/code/nicopaolinelli/semantic-segmentation-drone-dataset-u-net) For the augmented data on our project.
+
+[4] [*Lecture's Dawood Al Chanti :*](https://scholar.google.fr/citations?user=osXo54QAAAAJ&hl=en) *Computer Vision :* TD-3: Bag of Visual Words for Scene Recognition
+
+[5] [*Multiclass Semantic Segmentation of Aerial Drone Images Using Deep Learning :*](https://github.com/ayushdabra/drone-images-semantic-segmentation) For the augmented data on our project.
+
+## Authors
+- [Brice Convers](https://briceconvers.com)
+- [Jeanne Lemoine]()
