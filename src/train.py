@@ -288,15 +288,15 @@ class TrainModel:
 			# We import new augmented data
 			imagePaths, maskPaths = TrainModel.checkAugmentedData()
 
-			# We shuffle them
-			shuffledImagePaths = imagePaths.copy()
-			shuffledMaskPaths = maskPaths.copy()
-			random.shuffle(shuffledImagePaths)
-			random.shuffle(shuffledMaskPaths)
+			# # We shuffle them
+			# shuffledImagePaths = imagePaths.copy()
+			# shuffledMaskPaths = maskPaths.copy()
+			# random.shuffle(shuffledImagePaths)
+			# random.shuffle(shuffledMaskPaths)
 
-			# We crop this dataset accoding the config file
-			imagePaths = shuffledImagePaths[:int(config.AUGMENTED_DATA_SPLIT*len(shuffledImagePaths))]
-			maskPaths = shuffledMaskPaths[:int(config.AUGMENTED_DATA_SPLIT*len(shuffledMaskPaths))]
+			# # We crop this dataset accoding the config file
+			# imagePaths = shuffledImagePaths[:int(config.AUGMENTED_DATA_SPLIT*len(shuffledImagePaths))]
+			# maskPaths = shuffledMaskPaths[:int(config.AUGMENTED_DATA_SPLIT*len(shuffledMaskPaths))]
 
 		else:
 			# load the image and mask filepaths in a sorted manner

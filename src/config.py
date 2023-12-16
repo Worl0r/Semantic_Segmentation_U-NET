@@ -22,20 +22,17 @@ else:
 ######################################## General Settings ########################################
 # Test or Train the model
 TYPE_PROCESS = "train"  #value: {"train", "test"}
-ID_SESSION = "train_16_12_23_part-1" # unique ID
+ID_SESSION = "train_16_12_23_part-2" # unique ID
 
 # Activate Parallelism
 ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
 NBR_WORKERS = 8 # 24 is the maximum for Gricad
-
-if TYPE_PROCESS == "test":
-    NBR_GPU = 1 # Work on gricad just with one GPU for testing
-else:
-    NBR_GPU = 3 # Adapt this one for the training mode
+# Number or GPU
+NBR_GPU = 3 # Adapt this one for the training mode
 
 # Data Augmentation
 AUG_DATA = True
-GENERATE_AUGMENTED_DATA = True
+GENERATE_AUGMENTED_DATA = False
 AUGMENTED_DATA_SPLIT = 1
 
 ######################################## Training Settings #######################################
@@ -103,6 +100,10 @@ AUGMENTED_DATA_MASK_PATH = os.path.join(WORKING_DIRECTORY_PATH, "dataset", "sema
 
 # List of image types
 IMAGE_TYPES = (".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff")
+
+# Work on gricad just with one GPU for testing
+if TYPE_PROCESS == "test":
+    NBR_GPU = 1
 
 # If we will be pinning memory during data loading
 PIN_MEMORY = True if( DEVICE == "cuda" or DEVICE == "mps") else False
