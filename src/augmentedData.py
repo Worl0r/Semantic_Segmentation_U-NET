@@ -1,6 +1,6 @@
 import utils
 import config
-import dataset
+import torchvision.transforms.functional as TF
 import os
 from torchvision import transforms
 from tqdm import tqdm
@@ -48,21 +48,26 @@ def augment_data(images, masks, save_path, augment=True):
             # Horizontal Flip
             img_hflip = transforms.functional.hflip(image)
             msk_hflip = transforms.functional.hflip(mask)
-            save_image_and_mask(img_hflip, msk_hflip, image_name, mask_name, idx, save_path)
+            save_image_and_mask(img_hflip, msk_hflip, image_name+ "_1", mask_name + "_1", idx, save_path)
 
             # Vertical Flip
             img_vflip = transforms.functional.vflip(image)
             msk_vflip = transforms.functional.vflip(mask)
-            save_image_and_mask(img_vflip, msk_vflip, image_name, mask_name, idx, save_path)
+            save_image_and_mask(img_vflip, msk_vflip, image_name + "_2", mask_name + "_2", idx, save_path)
 
             # Random Crop
-            crop = transforms.RandomCrop((2 * H // 3, 2 * W // 3))
-            img_crop = crop(image)
-            msk_crop = crop(mask)
-            save_image_and_mask(img_crop, msk_crop, image_name, mask_name, idx, save_path)
+            img_crop, msk_crop = random_crop(image, mask, (2 * H // 3, 2 * W // 3))
+
+            save_image_and_mask(img_crop, msk_crop, image_name + "_3", mask_name + "_3", idx, save_path)
 
         # Original
-        save_image_and_mask(image, mask, image_name, mask_name, idx, save_path)
+        save_image_and_mask(image, mask, image_name + "_4", mask_name + "_4", idx, save_path)
+
+def random_crop(image, mask, size):
+    i, j, h, w = transforms.RandomCrop.get_params(image, output_size=size)
+    img_crop = TF.crop(image, i, j, h, w)
+    msk_crop = TF.crop(mask, i, j, h, w)
+    return img_crop, msk_crop
 
 def save_image_and_mask(image, mask, image_name, mask_name, idx, save_path):
     save_images = [image, mask]
