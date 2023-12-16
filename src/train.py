@@ -260,7 +260,7 @@ class TrainModel:
 		# load the image and mask filepaths in a sorted manner
 		imagePaths = sorted(list(utils.list_images(config.IMAGE_DATASET_PATH)))
 		maskPaths = sorted(list(utils.list_images(config.MASK_DATASET_PATH)))
-		print(f"Original images:  {len(imagePaths)} - Original masks: {len(maskPaths)}")
+		utils.logMsg(f"Original images:  {len(imagePaths)} - Original masks: {len(maskPaths)}", "data")
 
 		# Create more data
 		# if config.GENERATE_AUGMENTED_DATA == True:
@@ -269,11 +269,10 @@ class TrainModel:
 		# Load new images
 		imagePaths = sorted(list(utils.list_images(os.path.join(path, "images"))))
 		maskPaths = sorted(list(utils.list_images(os.path.join(path, "masks"))))
-		print(f"Augmented images:  {len(imagePaths)} - Augmented masks: {len(maskPaths)}")
+		utils.logMsg(f"Augmented images:  {len(imagePaths)} - Augmented masks: {len(maskPaths)}", "data")
 
-		if len(imagePaths) == 0 or len(maskPaths) == 0:
-			utils.logMsg("You do not have augmented data, please active the option to create them.", "error")
-			RuntimeError("You do not have augmented data in the folder: dataset/augmented_data")
+		utils.logMsg("You do not have augmented data, please active the option to create them.", "error")
+		RuntimeError("You do not have augmented data in the folder: dataset/augmented_data")
 
 		return imagePaths, maskPaths
 
@@ -286,11 +285,16 @@ class TrainModel:
 
 		# We can use another special dataset with more data
 		if config.AUG_DATA == True:
+			# We import new augmented data
 			imagePaths, maskPaths = TrainModel.checkAugmentedData()
+
+			# We shuffle them
 			shuffledImagePaths = imagePaths.copy()
 			shuffledMaskPaths = maskPaths.copy()
 			random.shuffle(shuffledImagePaths)
 			random.shuffle(shuffledMaskPaths)
+
+			# We crop this dataset accoding the config file
 			imagePaths = shuffledImagePaths[:int(config.AUGMENTED_DATA_SPLIT*len(shuffledImagePaths))]
 			maskPaths = shuffledMaskPaths[:int(config.AUGMENTED_DATA_SPLIT*len(shuffledMaskPaths))]
 

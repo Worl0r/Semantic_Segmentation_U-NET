@@ -191,6 +191,8 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 
 ## References:
 
-[1] [*U-Net: Training Image Segmentation Models in PyTorch*](https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/) For the U-NET architecutre.
+[1] [*U-Net: Training Image Segmentation Models in PyTorch :*](https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/) For the U-NET architecutre.
 
-[2] [*Semantic Segmentation Drone Dataset (U-Net)*](https://www.kaggle.com/code/nicopaolinelli/semantic-segmentation-drone-dataset-u-net) For the augmented data on our project.
+[2] [*Semantic Segmentation Drone Dataset (U-Net) :*](https://www.kaggle.com/code/nicopaolinelli/semantic-segmentation-drone-dataset-u-net) For the augmented data on our project.
+
+[3] [*Lecture's Dawood Al Chanti :*](https://scholar.google.fr/citations?user=osXo54QAAAAJ&hl=en) *Computer Vision :* TD-3: Bag of Visual Words for Scene Recognition

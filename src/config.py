@@ -21,8 +21,8 @@ else:
 
 ######################################## General Settings ########################################
 # Test or Train the model
-TYPE_PROCESS = "test"  #value: {"train", "test"}
-ID_SESSION = "train_13_12_23_part-2" # unique ID
+TYPE_PROCESS = "train"  #value: {"train", "test"}
+ID_SESSION = "train_16_12_23_part-1" # unique ID
 
 # Activate Parallelism
 ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
@@ -35,8 +35,8 @@ else:
 
 # Data Augmentation
 AUG_DATA = True
-GENERATE_AUGMENTED_DATA = False
-AUGMENTED_DATA_SPLIT = 0.90
+GENERATE_AUGMENTED_DATA = True
+AUGMENTED_DATA_SPLIT = 1
 
 ######################################## Training Settings #######################################
 # Define some model parameters
@@ -47,13 +47,13 @@ TEST_SPLIT = 0.15
 ENC_CHANNELS= (3, 16, 32, 64)
 DEC_CHANNELS = (64, 32, 16)
 # Number of class
-NBR_CLASSES = 3
+NBR_CLASSES = 24
 ACTIVATE_LABELED_CLASSES = True
 # Size of input images
 INPUT_IMAGE_HEIGHT = 128
 INPUT_IMAGE_WIDTH = 128
 BATCH_SIZE = 4
-NUM_EPOCHS = 1
+NUM_EPOCHS = 30
 # Learning rate
 INIT_LR = 0.01
 # Threshold just usefull of one class unlabeled
@@ -71,10 +71,10 @@ PATIENCE = 5
 ######################################## Test Settings ###########################################
 # Number of image to test
 
-SELECTED_IMAGE_TEST = 2
+SELECTED_IMAGE_TEST = 10
 
 # Metrics
-ALL_CONFUSION_MATRIX = False
+ALL_CONFUSION_MATRIX = True
 
 ##################################################################################################
 
