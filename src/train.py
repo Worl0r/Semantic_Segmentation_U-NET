@@ -271,8 +271,9 @@ class TrainModel:
 		maskPaths = sorted(list(utils.list_images(os.path.join(path, "masks"))))
 		utils.logMsg(f"Augmented images:  {len(imagePaths)} - Augmented masks: {len(maskPaths)}", "data")
 
-		utils.logMsg("You do not have augmented data, please active the option to create them.", "error")
-		RuntimeError("You do not have augmented data in the folder: dataset/augmented_data")
+		if len(imagePaths) == 0 or len(maskPaths) ==0:
+			utils.logMsg("You do not have augmented data, please active the option to create them.", "error")
+			RuntimeError("You do not have augmented data in the folder: dataset/augmented_data")
 
 		return imagePaths, maskPaths
 
