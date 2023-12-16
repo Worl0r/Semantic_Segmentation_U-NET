@@ -1,0 +1,199 @@
+Toolkit 11.8 doesn't exist for cluster bigfoot.
+[TIME]  Script stats at: 2023-12-16 13:11:45.616703
+[INFO]  You start a process related with the ID: train_16_12_23_part-4
+[PARALLELISM]  The status of cuda is: True.
+[PARALLELISM]  The status of MPS is: False.
+[PARALLELISM]  There are: 3 devices.
+[PARALLELISM]  Parallelism is activated : True
+[DATA]  You created a new folder : /home/conversb/Semantic_Segmentation_U-NET/output/train_16_12_23_part-4
+[SAVE]  The config.py file has been saved in the id session folder.
+[INFO]  Start of model training
+[INFO]  You activated the option for augmented data.
+[DATA]  Original images:  400 - Original masks: 400
+[DATA]  Augmented images:  1600 - Augmented masks: 1600
+[INFO]  Train and test paths spliting...
+[INFO]  Saving testing image paths...
+[INFO]  Segmentation in Dataset...
+[INFO]  found 1360 examples in the training set...
+[INFO]  found 240 examples in the test set...
+[INFO]  Creation of Torch DataLoader...
+[INFO]  Training the network...
+[INFO]  Start of model training
+[INFO]  You activated the option for augmented data.
+[DATA]  Original images:  400 - Original masks: 400
+[DATA]  Augmented images:  1600 - Augmented masks: 1600
+[INFO]  Train and test paths spliting...
+[INFO]  Saving testing image paths...
+[INFO]  Segmentation in Dataset...
+[INFO]  found 1360 examples in the training set...
+[INFO]  found 240 examples in the test set...
+[INFO]  Creation of Torch DataLoader...
+[INFO]  Training the network...
+[TIME]  Training batch on epoch 1 done at 2023-12-16 13:11:52.085772.
+[TIME]  Training batch on epoch 1 done at 2023-12-16 13:11:52.085422.
+[INFO]  Start of model training
+[INFO]  You activated the option for augmented data.
+[DATA]  Original images:  400 - Original masks: 400
+[DATA]  Augmented images:  1600 - Augmented masks: 1600
+[INFO]  Train and test paths spliting...
+[INFO]  Saving testing image paths...
+[INFO]  Segmentation in Dataset...
+[INFO]  found 1360 examples in the training set...
+[INFO]  found 240 examples in the test set...
+[INFO]  Creation of Torch DataLoader...
+[INFO]  Training the network...
+[TIME]  Training batch on epoch 1 done at 2023-12-16 13:11:52.089803.
+[TIME]  Testing batch on epoch 1 done at 2023-12-16 13:23:47.233947.
+[TIME]  Testing batch on epoch 1 done at 2023-12-16 13:23:47.264339.
+[TIME]  Testing batch on epoch 1 done at 2023-12-16 13:23:47.263169.
+[TIME]  EPOCH: 1/10 at 2023-12-16 13:25:54.091201
+Train loss: 0.290917, Test loss: 0.1147
+[INFO]  We are saving the model at epoch 1.
+[TIME]  Training batch on epoch 2 done at 2023-12-16 13:25:54.112313.
+[TIME]  EPOCH: 1/10 at 2023-12-16 13:25:55.401759
+Train loss: 0.291538, Test loss: 0.1147
+[INFO]  We are saving the model at epoch 1.
+[TIME]  Training batch on epoch 2 done at 2023-12-16 13:25:55.418959.
+[TIME]  EPOCH: 1/10 at 2023-12-16 13:25:58.257868
+Train loss: 0.291085, Test loss: 0.1147
+[INFO]  We are saving the model at epoch 1.
+[TIME]  Training batch on epoch 2 done at 2023-12-16 13:25:58.275029.
+[TIME]  Testing batch on epoch 2 done at 2023-12-16 13:37:45.600205.
+[TIME]  Testing batch on epoch 2 done at 2023-12-16 13:37:45.646095.
+[TIME]  Testing batch on epoch 2 done at 2023-12-16 13:37:46.549082.
+[TIME]  EPOCH: 2/10 at 2023-12-16 13:39:42.182761
+Train loss: 0.111784, Test loss: 0.1094
+[INFO]  We are saving the model at epoch 2.
+[TIME]  Training batch on epoch 3 done at 2023-12-16 13:39:42.205021.
+[TIME]  EPOCH: 2/10 at 2023-12-16 13:39:54.263590
+Train loss: 0.111881, Test loss: 0.1094
+[INFO]  We are saving the model at epoch 2.
+[TIME]  Training batch on epoch 3 done at 2023-12-16 13:39:54.283526.
+[TIME]  EPOCH: 2/10 at 2023-12-16 13:40:01.588979
+Train loss: 0.111834, Test loss: 0.1094
+[INFO]  We are saving the model at epoch 2.
+[TIME]  Training batch on epoch 3 done at 2023-12-16 13:40:01.608922.
+[TIME]  Testing batch on epoch 3 done at 2023-12-16 13:51:49.893599.
+[TIME]  Testing batch on epoch 3 done at 2023-12-16 13:51:49.907418.
+[TIME]  Testing batch on epoch 3 done at 2023-12-16 13:51:49.975853.
+[TIME]  EPOCH: 3/10 at 2023-12-16 13:53:55.415849
+Train loss: 0.109952, Test loss: 0.1087
+[INFO]  We are saving the model at epoch 3.
+[TIME]  Training batch on epoch 4 done at 2023-12-16 13:53:55.439299.
+[TIME]  EPOCH: 3/10 at 2023-12-16 13:53:57.080111
+Train loss: 0.109997, Test loss: 0.1087
+[INFO]  We are saving the model at epoch 3.
+[TIME]  Training batch on epoch 4 done at 2023-12-16 13:53:57.095365.
+[TIME]  EPOCH: 3/10 at 2023-12-16 13:54:01.459617
+Train loss: 0.110049, Test loss: 0.1087
+[INFO]  We are saving the model at epoch 3.
+[TIME]  Training batch on epoch 4 done at 2023-12-16 13:54:01.477366.
+[TIME]  Testing batch on epoch 4 done at 2023-12-16 14:06:06.067473.
+[TIME]  Testing batch on epoch 4 done at 2023-12-16 14:06:06.077126.
+[TIME]  Testing batch on epoch 4 done at 2023-12-16 14:06:11.027735.
+[TIME]  EPOCH: 4/10 at 2023-12-16 14:08:10.996300
+Train loss: 0.109549, Test loss: 0.1085
+[INFO]  We are saving the model at epoch 4.
+[TIME]  Training batch on epoch 5 done at 2023-12-16 14:08:11.018787.
+[TIME]  EPOCH: 4/10 at 2023-12-16 14:08:16.822121
+Train loss: 0.109507, Test loss: 0.1085
+[INFO]  We are saving the model at epoch 4.
+[TIME]  Training batch on epoch 5 done at 2023-12-16 14:08:16.843244.
+[TIME]  EPOCH: 4/10 at 2023-12-16 14:08:18.702865
+Train loss: 0.109656, Test loss: 0.1085
+[INFO]  We are saving the model at epoch 4.
+[TIME]  Training batch on epoch 5 done at 2023-12-16 14:08:18.723681.
+[TIME]  Testing batch on epoch 5 done at 2023-12-16 14:20:13.759514.
+[TIME]  Testing batch on epoch 5 done at 2023-12-16 14:20:13.816185.
+[TIME]  Testing batch on epoch 5 done at 2023-12-16 14:20:13.853449.
+[TIME]  EPOCH: 5/10 at 2023-12-16 14:22:00.542837
+Train loss: 0.108986, Test loss: 0.1093
+[INFO]  We are saving the model at epoch 5.
+[TIME]  Training batch on epoch 6 done at 2023-12-16 14:22:00.560090.
+[TIME]  EPOCH: 5/10 at 2023-12-16 14:22:24.337281
+Train loss: 0.109201, Test loss: 0.1093
+[INFO]  We are saving the model at epoch 5.
+[TIME]  Training batch on epoch 6 done at 2023-12-16 14:22:24.356864.
+[TIME]  EPOCH: 5/10 at 2023-12-16 14:22:26.323103
+Train loss: 0.109039, Test loss: 0.1093
+[INFO]  We are saving the model at epoch 5.
+[TIME]  Training batch on epoch 6 done at 2023-12-16 14:22:26.351949.
+[TIME]  Testing batch on epoch 6 done at 2023-12-16 14:34:07.146681.
+[TIME]  Testing batch on epoch 6 done at 2023-12-16 14:34:07.169326.
+[TIME]  Testing batch on epoch 6 done at 2023-12-16 14:34:07.215392.
+[TIME]  EPOCH: 6/10 at 2023-12-16 14:36:16.217703
+Train loss: 0.108343, Test loss: 0.1065
+[INFO]  We are saving the model at epoch 6.
+[TIME]  Training batch on epoch 7 done at 2023-12-16 14:36:16.238086.
+[TIME]  EPOCH: 6/10 at 2023-12-16 14:36:17.187385
+Train loss: 0.108175, Test loss: 0.1065
+[INFO]  We are saving the model at epoch 6.
+[TIME]  Training batch on epoch 7 done at 2023-12-16 14:36:17.205856.
+[TIME]  EPOCH: 6/10 at 2023-12-16 14:36:19.071658
+Train loss: 0.108240, Test loss: 0.1065
+[INFO]  We are saving the model at epoch 6.
+[TIME]  Training batch on epoch 7 done at 2023-12-16 14:36:19.098325.
+[TIME]  Testing batch on epoch 7 done at 2023-12-16 14:48:16.200694.
+[TIME]  Testing batch on epoch 7 done at 2023-12-16 14:48:16.228956.
+[TIME]  Testing batch on epoch 7 done at 2023-12-16 14:48:35.675171.
+[TIME]  EPOCH: 7/10 at 2023-12-16 14:50:21.555741
+Train loss: 0.106461, Test loss: 0.1047
+[INFO]  We are saving the model at epoch 7.
+[TIME]  Training batch on epoch 8 done at 2023-12-16 14:50:21.577812.
+[TIME]  EPOCH: 7/10 at 2023-12-16 14:50:25.110707
+Train loss: 0.106294, Test loss: 0.1047
+[INFO]  We are saving the model at epoch 7.
+[TIME]  Training batch on epoch 8 done at 2023-12-16 14:50:25.139139.
+[TIME]  EPOCH: 7/10 at 2023-12-16 14:50:28.905423
+Train loss: 0.106397, Test loss: 0.1047
+[INFO]  We are saving the model at epoch 7.
+[TIME]  Training batch on epoch 8 done at 2023-12-16 14:50:28.924090.
+[TIME]  Testing batch on epoch 8 done at 2023-12-16 15:02:26.924302.
+[TIME]  Testing batch on epoch 8 done at 2023-12-16 15:02:26.989160.
+[TIME]  Testing batch on epoch 8 done at 2023-12-16 15:02:26.991991.
+[TIME]  EPOCH: 8/10 at 2023-12-16 15:04:33.783850
+Train loss: 0.103515, Test loss: 0.1011
+[INFO]  We are saving the model at epoch 8.
+[TIME]  Training batch on epoch 9 done at 2023-12-16 15:04:33.805324.
+[TIME]  EPOCH: 8/10 at 2023-12-16 15:04:37.710112
+Train loss: 0.103583, Test loss: 0.1011
+[INFO]  We are saving the model at epoch 8.
+[TIME]  Training batch on epoch 9 done at 2023-12-16 15:04:37.725220.
+[TIME]  EPOCH: 8/10 at 2023-12-16 15:04:40.606213
+Train loss: 0.103635, Test loss: 0.1011
+[INFO]  We are saving the model at epoch 8.
+[TIME]  Training batch on epoch 9 done at 2023-12-16 15:04:40.626264.
+[TIME]  Testing batch on epoch 9 done at 2023-12-16 15:16:31.801780.
+[TIME]  Testing batch on epoch 9 done at 2023-12-16 15:16:31.918465.
+[TIME]  Testing batch on epoch 9 done at 2023-12-16 15:16:41.943520.
+[TIME]  EPOCH: 9/10 at 2023-12-16 15:18:37.194217
+Train loss: 0.101499, Test loss: 0.0990
+[INFO]  We are saving the model at epoch 9.
+[TIME]  Training batch on epoch 10 done at 2023-12-16 15:18:37.216470.
+[TIME]  EPOCH: 9/10 at 2023-12-16 15:18:43.084360
+Train loss: 0.101401, Test loss: 0.0990
+[INFO]  We are saving the model at epoch 9.
+[TIME]  Training batch on epoch 10 done at 2023-12-16 15:18:43.100719.
+[TIME]  EPOCH: 9/10 at 2023-12-16 15:18:44.687788
+Train loss: 0.101299, Test loss: 0.0990
+[INFO]  We are saving the model at epoch 9.
+[TIME]  Training batch on epoch 10 done at 2023-12-16 15:18:44.704916.
+[TIME]  Testing batch on epoch 10 done at 2023-12-16 15:30:38.563647.
+[TIME]  Testing batch on epoch 10 done at 2023-12-16 15:30:38.610025.
+[TIME]  Testing batch on epoch 10 done at 2023-12-16 15:30:38.633357.
+[TIME]  EPOCH: 10/10 at 2023-12-16 15:32:44.004182
+Train loss: 0.099862, Test loss: 0.0977
+[INFO]  We are saving the model at epoch 10.
+[TIME]  Total time taken to train the model: 8451.95s
+[INFO]  Plotting and saving  the Loss Function...
+[TIME]  EPOCH: 10/10 at 2023-12-16 15:32:44.872827
+Train loss: 0.099835, Test loss: 0.0977
+[INFO]  We are saving the model at epoch 10.
+[TIME]  Total time taken to train the model: 8452.81s
+[INFO]  Plotting and saving  the Loss Function...
+[TIME]  EPOCH: 10/10 at 2023-12-16 15:32:48.198923
+Train loss: 0.099787, Test loss: 0.0977
+[INFO]  We are saving the model at epoch 10.
+[TIME]  Total time taken to train the model: 8456.15s
+[INFO]  Plotting and saving  the Loss Function...
+[INFO]  Training model finished
