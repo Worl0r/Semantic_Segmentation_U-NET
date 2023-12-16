@@ -22,7 +22,7 @@ else:
 ######################################## General Settings ########################################
 # Test or Train the model
 TYPE_PROCESS = "train"  #value: {"train", "test"}
-ID_SESSION = "train_15_12_23_part-3" # unique ID
+ID_SESSION = "train_16_12_23_part-1" # unique ID
 
 # Activate Parallelism
 ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
@@ -35,7 +35,7 @@ else:
 
 # Data Augmentation
 AUG_DATA = True
-GENERATE_AUGMENTED_DATA = False
+GENERATE_AUGMENTED_DATA = True
 AUGMENTED_DATA_SPLIT = 1
 
 ######################################## Training Settings #######################################
@@ -53,7 +53,7 @@ ACTIVATE_LABELED_CLASSES = True
 INPUT_IMAGE_HEIGHT = 128
 INPUT_IMAGE_WIDTH = 128
 BATCH_SIZE = 4
-NUM_EPOCHS = 20
+NUM_EPOCHS = 30
 # Learning rate
 INIT_LR = 0.01
 # Threshold just usefull of one class unlabeled
@@ -74,7 +74,7 @@ PATIENCE = 5
 SELECTED_IMAGE_TEST = 10
 
 # Metrics
-ALL_CONFUSION_MATRIX = False
+ALL_CONFUSION_MATRIX = True
 
 ##################################################################################################
 
