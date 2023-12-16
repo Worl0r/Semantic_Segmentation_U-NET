@@ -32,7 +32,7 @@ NBR_GPU = 3 # Adapt this one for the training mode
 
 # Data Augmentation
 AUG_DATA = True
-GENERATE_AUGMENTED_DATA = False
+GENERATE_AUGMENTED_DATA = True
 AUGMENTED_DATA_SPLIT = 1
 
 ######################################## Training Settings #######################################
