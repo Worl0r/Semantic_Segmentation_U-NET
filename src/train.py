@@ -1,5 +1,3 @@
-# USAGE
-# import the necessary packages
 from torch.utils.data import DataLoader
 from sklearn.model_selection import train_test_split
 from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss
@@ -7,7 +5,6 @@ from torch.nn.parallel import DistributedDataParallel
 from torch.optim import Adam
 from tqdm import tqdm
 from torch.nn import functional as F
-import matplotlib.pyplot as plt
 import torch
 import time
 import os
@@ -24,8 +21,10 @@ class TrainModel:
 		self.model = model
 
 		# Initialize loss function, optimizer and metrics
-		self.lossFunc  = CrossEntropyLoss()
-		# BCEWithLogitsLoss for binary classification
+		if config.NBR_CLASSES == 1:
+			self.lossFunc = BCEWithLogitsLoss()
+		else:
+			self.lossFunc  = CrossEntropyLoss()
 
 		# Define the optimizer
 		self.optimizer = Adam(model.parameters(), lr=config.INIT_LR)
