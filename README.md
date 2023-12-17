@@ -122,6 +122,15 @@ pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio===0.12.1 -
 
 *Note:* It is recommended to desactivate this option. In fact, this is a work in progress and the result is not yet known.
 
+**Data augmentation**
+
+* Switch on/off the generation of the augmented data : *GENERATE_AUGMENTED_DATA = False*
+
+* The data has been augmented : *AUG_DATA = True*
+
+*Note* : To use augmented data, you need to launch the augmentedData script first to create the new data and then activate  *GENERATE_AUGMENTED_DATA = True*
+
+
 ### Testing Settings:
 
 * The number of randomly selected images from the testing set used for the validation. This number has to be lower than your test set stored in test_paths.txt : *SELECTED_IMAGE_TEST = 10*
