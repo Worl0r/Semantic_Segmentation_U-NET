@@ -21,7 +21,7 @@ else:
 
 ######################################## General Settings ########################################
 # Test or Train the model
-TYPE_PROCESS = "train"  #value: {"train", "test"}
+TYPE_PROCESS = "test"  #value: {"train", "test"}
 ID_SESSION = "train_17_12_23_part-4" # unique ID
 
 # Activate Parallelism
@@ -29,6 +29,8 @@ ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
 NBR_WORKERS = 8 # 24 is the maximum for Gricad
 # Number or GPU
 NBR_GPU = 3 # Adapt this one for the training mode
+# Name of GPU's
+os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2"
 
 # Data Augmentation
 AUG_DATA = True

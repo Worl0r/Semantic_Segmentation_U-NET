@@ -76,7 +76,7 @@ class Metrics:
 
         meanCm = meanCm.astype('float') / (meanCm.sum(axis=1)[:, np.newaxis] + self.epsilon)
 
-        path =  os.path.join(config.BASE_OUTPUT, config.ID_SESSION, config.PLOT_METRICS, "ConfusionMatrix.png")
+        path =  os.path.join(config.BASE_OUTPUT, config.ID_SESSION, "ConfusionMatrix.png")
         Metrics.plotConfusionMatrix(meanCm, "Normalized Confusion Matrix for all tested Image", True, path)
 
     def plotConfusionMatrix(cm, title, normalize, path):
@@ -122,7 +122,7 @@ class Metrics:
         return dice.cpu().detach().numpy()
 
     def plotTrainingMetrics(H):
-        utils.logMsg("Plotting and saving  the Loss Function...", "info")
+        utils.logMsg("Plotting and saving the Loss Function, decis and learning rate...", "info")
 
         # plot the training loss and the metrics
         plt.style.use("ggplot") # Loss
