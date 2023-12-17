@@ -1,4 +1,4 @@
-# **Acceleration Material : Semantic Segmentation**
+# **Acceleration Material : Multiclass Semantic Segmentation**
 
 ![Release](https://img.shields.io/badge/Release-1.0-blueviolet)
 ![Language](https://img.shields.io/badge/Language-Python-ffcc14)
@@ -8,8 +8,8 @@
 
 ## **Presentation**
 
-The goal of this project was to build a Semantic Segmentation Model on the drone dataset **[(link)](https://www.kaggle.com/datasets/bulentsiyah/semantic-drone-dataset)** by implementing a UNet model.
-We used the following link as the basis of our architecture : **[(link)](https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/?fbclid=IwAR1N67RjDRDQDR-c7Ih2115m0A2qE7ciVp2aGNzDMZagRdJ-U1ZFFtNFgS0)** and we improved it by implementing classes objects, multiclass classification, metrics, parallelism computation and so on.
+Semantic segmentation is the task of clustering parts of an image together which belong to the same object class. It is a form of pixel-level prediction because each pixel in an image is classified according to a category. The goal of this project was to build a Multiclass Semantic Segmentation Model on the drone dataset: **[Aerial Drone Images[1]](https://www.kaggle.com/datasets/bulentsiyah/semantic-drone-dataset)** by implementing a UNet model.
+We used the following link as the basis of our architecture : **[(U-Net: Training Image Segmentation Models in PyTorch[2]](https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/?fbclid=IwAR1N67RjDRDQDR-c7Ih2115m0A2qE7ciVp2aGNzDMZagRdJ-U1ZFFtNFgS0)** and we improved it by implementing classes objects, multiclass classification, metrics, parallelism computation and also data.
 
 *Here is the architecture of a UNet model :*
 
@@ -18,6 +18,12 @@ We used the following link as the basis of our architecture : **[(link)](https:/
 <p align="center">
 	<img style="border-radius:25px" src="https://media.geeksforgeeks.org/wp-content/uploads/20220614121231/Group14.jpg" width="700">
 </p>
+
+## Semantic Annotation
+
+The images are labeled densely using polygons and contain the following 24 classes:
+
+TODO: expliquer le dataset
 
 ## How to get started
 
@@ -216,3 +222,19 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 ## Troubleshootings:
 
 * When you start a training with the interactive mode. Make sure to be consistent with your number of GPU. In fact, it is recommended to be on the same interactive mode session to test and train, even if in the test mode you use always one GPU.
+
+## References:
+
+[1] [*Aerial Semantic Segmentation Drone Dataset:*](https://www.kaggle.com/datasets/bulentsiyah/semantic-drone-dataset) For the dataset.
+
+[2] [*U-Net: Training Image Segmentation Models in PyTorch :*](https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/) For the U-NET architecutre.
+
+[3] [*Semantic Segmentation Drone Dataset (U-Net) :*](https://www.kaggle.com/code/nicopaolinelli/semantic-segmentation-drone-dataset-u-net) For the augmented data on our project.
+
+[4] [*Lecture's Dawood Al Chanti :*](https://scholar.google.fr/citations?user=osXo54QAAAAJ&hl=en) *Computer Vision :* TD-3: Bag of Visual Words for Scene Recognition
+
+[5] [*Multiclass Semantic Segmentation of Aerial Drone Images Using Deep Learning :*](https://github.com/ayushdabra/drone-images-semantic-segmentation) For the augmented data on our project.
+
+## Authors
+- [Brice Convers](https://briceconvers.com)
+- [Jeanne Lemoine]()

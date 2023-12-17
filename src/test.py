@@ -73,7 +73,17 @@ class TestModel:
 	def openTorchGTImage(self, filename):
 		# Load the ground-truth segmentation mask in grayscale mode
 		# and resize it
-		groundTruthPath = os.path.join(config.MASK_DATASET_PATH, filename)
+		# TODO change that in the future
+		if config.AUG_DATA :
+			path = config.AUGMENTED_DATA_MASK_PATH
+			splitFilename = filename.split("_")
+			filename = ["mask"] + splitFilename[1:]
+			filename = "_".join(filename)
+		else:
+			path = config.MASK_DATASET_PATH
+
+		groundTruthPath = os.path.join(path, filename)
+
 		gtMask = torchvision.io.read_image(groundTruthPath, torchvision.io.ImageReadMode.RGB)
 		# We want to retun a result without a transformation in tensor
 		transformForMaskRGB = torchvision.transforms.Compose(self.transforms.transforms[:-1])

@@ -1,6 +1,6 @@
 #!/bin/bash
 #OAR -n GricadTest
-#OAR -l /nodes=4/gpu=4,walltime=04:00:00
+#OAR -l /nodes=1/gpu=3,walltime=06:00:00
 #OAR --stdout output.out
 #OAR --stderr error.err
 #OAR -p gpumodel='V100'
@@ -9,6 +9,6 @@
 source /applis/environments/cuda_env.sh bigfoot 11.8
 source /applis/environments/conda.sh
 conda activate torch
-cd ~/acceleration_material/model
+cd ~/Semantic_Segmentation_U-NET/src
 set -x
 python main.py
