@@ -164,7 +164,7 @@ class TrainModel:
 			self.optimizer.step()
 
 			# Compute dice coef
-			dice.append(metrics.Metrics.diceCoef(torchMask, pred))
+			dice.append(self.metrics.diceCoef(torchMask, pred))
 
 			# add the loss to the total training loss so far
 			totalTrainLoss += loss
@@ -204,7 +204,7 @@ class TrainModel:
 			totalTestLoss += loss
 
 			# Compute dice coef
-			dice.append(metrics.Metrics.diceCoef(torchMask, pred))
+			dice.append(self.metrics.diceCoef(torchMask, pred))
 
 			if TrainModel.earlyStopping(loss, best_val_loss, config.PATIENCE, counter):
 				# display the total time needed to perform the training
@@ -246,7 +246,7 @@ class TrainModel:
 		torch.save(self.model, config.MODEL_PATH)
 
 		# Plot Loss function, learning rate graph and dice evolution
-		metrics.Metrics.plotTrainingMetrics(H)
+		self.metrics.plotTrainingMetrics(H)
 
 	def checkAugmentedData():
 		utils.logMsg("You activated the option for augmented data.", "info")
@@ -332,7 +332,7 @@ class TrainModel:
 		self.metrics.setMetric("Computation_time_training", endTime - startTime)
 
 		# Plot Loss function, learning rate graph and dice evolution
-		metrics.Metrics.plotTrainingMetrics(H)
+		self.metrics.plotTrainingMetrics(H)
 
 		# Save the model
 		utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
