@@ -1,9 +1,5 @@
 import os
 import config
-import matplotlib
-import platform
-# if platform.system() != 'Linux':
-#     matplotlib.use('TkAgg', force='True')
 import matplotlib.pyplot as plt
 import utils
 

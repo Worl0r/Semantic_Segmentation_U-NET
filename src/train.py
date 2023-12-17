@@ -7,10 +7,6 @@ from torch.nn.parallel import DistributedDataParallel
 from torch.optim import Adam
 from tqdm import tqdm
 from torch.nn import functional as F
-import matplotlib
-import platform
-# if platform.system() != 'Linux':
-#     matplotlib.use('Agg', force='True')
 import matplotlib.pyplot as plt
 import torch
 import time
@@ -20,7 +16,6 @@ import sys
 import config
 import dataset
 from datetime import datetime
-import random
 import metrics
 
 class TrainModel:
@@ -249,6 +244,9 @@ class TrainModel:
 		utils.logMsg(f"We are saving the model at epoch {e+1}.", "info")
 		utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
 		torch.save(self.model, config.MODEL_PATH)
+
+		# Plot Loss function, learning rate graph and dice evolution
+		metrics.Metrics.plotTrainingMetrics(H)
 
 	def checkAugmentedData():
 		utils.logMsg("You activated the option for augmented data.", "info")

@@ -120,7 +120,7 @@ class Metrics:
 
         dice = (2. * intersection + smooth) / (union + smooth)
 
-        return dice
+        return dice.detach().numpy()
 
     def plotTrainingMetrics(H):
         utils.logMsg("Plotting and saving  the Loss Function...", "info")
