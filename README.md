@@ -128,7 +128,7 @@ pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio===0.12.1 -
 
 * The data has been augmented : *AUG_DATA = True*
 
-*Note* : To use augmented data, you need to launch the augmentedData script first to create the new data and then activate  *GENERATE_AUGMENTED_DATA = True*
+*Note* : To use augmented data, you need to launch the *augmentedData.py* script first to create the new data and then activate  *GENERATE_AUGMENTED_DATA = True*
 
 
 ### Testing Settings:
