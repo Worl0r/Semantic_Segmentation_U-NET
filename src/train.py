@@ -170,7 +170,7 @@ class TrainModel:
 			totalTrainLoss += loss
 
 		# Save of the current learning rate
-		current_lr = self.optimizer.param_groups[0]['lr']
+		current_lr = self.optimizer.param_groups[-1]['lr']
 		H["learning_rate"].append(current_lr)
 
 		# Save of the current learning rate

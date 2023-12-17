@@ -76,7 +76,7 @@ class Metrics:
 
         meanCm = meanCm.astype('float') / (meanCm.sum(axis=1)[:, np.newaxis] + self.epsilon)
 
-        path =  os.path.join(config.BASE_OUTPUT, config.ID_SESSION, config.PLOT_METRICS,"ConfusionMatrix.png")
+        path =  os.path.join(config.BASE_OUTPUT, config.ID_SESSION, config.PLOT_METRICS, "ConfusionMatrix.png")
         Metrics.plotConfusionMatrix(meanCm, "Normalized Confusion Matrix for all tested Image", True, path)
 
     def plotConfusionMatrix(cm, title, normalize, path):
@@ -104,13 +104,12 @@ class Metrics:
                 ax.text(j, i, format(cm[i, j], fmt),
                         ha="center", va="center",
                         color="white" if cm[i, j] > thresh else "black")
-        #fig.tight_layout()
+
         utils.folderExists(config.PLOT_METRICS)
-        plt.savefig(config.PLOT_METRICS + "\\ConfusionMatrix.png")
+        plt.savefig(path)
         plt.close()
 
-    def diceCoef(y_true, y_pred):
-        smooth = 1e-5
+    def diceCoef(self, y_true, y_pred):
 
         y_true_flat = y_true.view(-1)
         y_pred_flat = y_pred.view(-1)
@@ -118,9 +117,9 @@ class Metrics:
         intersection = torch.sum(y_true_flat * y_pred_flat)
         union = torch.sum(y_true_flat) + torch.sum(y_pred_flat)
 
-        dice = (2. * intersection + smooth) / (union + smooth)
+        dice = (2. * intersection + self.epsilon) / (union + self.epsilon)
 
-        return dice.detach().numpy()
+        return dice.cpu().detach().numpy()
 
     def plotTrainingMetrics(H):
         utils.logMsg("Plotting and saving  the Loss Function...", "info")

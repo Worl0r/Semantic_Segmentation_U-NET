@@ -49,9 +49,9 @@ ACTIVATE_LABELED_CLASSES = True
 INPUT_IMAGE_HEIGHT = 64
 INPUT_IMAGE_WIDTH = 64
 BATCH_SIZE = 8
-NUM_EPOCHS = 5
+NUM_EPOCHS = 15
 # Learning rate
-INIT_LR = 0.01
+INIT_LR = 0.001
 # Threshold just usefull of one class unlabeled
 THRESHOLD_TYPE = "mean"
 
