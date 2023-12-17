@@ -22,15 +22,15 @@ else:
 ######################################## General Settings ########################################
 # Test or Train the model
 TYPE_PROCESS = "test"  #value: {"train", "test"}
-ID_SESSION = "train_17_12_23_part-4" # unique ID
+ID_SESSION = "train_17_12_23_part-7" # unique ID
 
 # Activate Parallelism
-ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
-NBR_WORKERS = 8 # 24 is the maximum for Gricad
+ACTIVATE_PARALLELISM = True # Recommended to activate just for Gricad
+NBR_WORKERS = 24 # 24 is the maximum for Gricad
 # Number or GPU
-NBR_GPU = 3 # Adapt this one for the training mode
+NBR_GPU = 4 # Adapt this one for the training mode
 # Name of GPU's
-os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2"
+os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2,3"
 
 # Data Augmentation
 AUG_DATA = True
@@ -48,12 +48,12 @@ DEC_CHANNELS = (64, 32, 16)
 NBR_CLASSES = 24
 ACTIVATE_LABELED_CLASSES = True
 # Size of input images
-INPUT_IMAGE_HEIGHT = 64
-INPUT_IMAGE_WIDTH = 64
+INPUT_IMAGE_HEIGHT = 128
+INPUT_IMAGE_WIDTH = 128
 BATCH_SIZE = 8
-NUM_EPOCHS = 15
+NUM_EPOCHS = 50
 # Learning rate
-INIT_LR = 0.001
+INIT_LR = 0.01
 # Threshold just usefull of one class unlabeled
 THRESHOLD_TYPE = "mean"
 
@@ -69,7 +69,7 @@ PATIENCE = 5
 ######################################## Test Settings ###########################################
 # Number of image to test
 
-SELECTED_IMAGE_TEST = 10
+SELECTED_IMAGE_TEST = 25
 
 # Metrics
 ALL_CONFUSION_MATRIX = True
