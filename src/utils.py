@@ -13,13 +13,6 @@ def prepare_plot(plots, plotTitles, path, title="", mode="train"):
             ax[index].imshow(value)
             ax[index].set_title(plotTitles[index])
 
-    # elif len(plots) % 4 == 0:
-    #     figure, ax = plt.subplots(nrows= (len(plots) // 4), ncols=4, figsize=(20, 20))
-
-    #     for index, value in enumerate(plots):
-    #         ax[index].imshow(value)
-    #         ax[index].set_title(plotTitles[index])
-
     else:
         figure, ax = plt.subplots(nrows= (len(plots) // 4) + 1, ncols=4, figsize=(20, 10))
 
@@ -42,7 +35,7 @@ def prepare_plot(plots, plotTitles, path, title="", mode="train"):
 def folderExists(path):
 	CHECK_FOLDER = os.path.isdir(path)
 
-	# If folder doesn't exist, then create it.
+	# If folder doesn't exist, it creates it.
 	if not CHECK_FOLDER:
 		os.makedirs(path)
 		logMsg("You created a new folder : " +  str(path), "data")
