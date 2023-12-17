@@ -1,6 +1,6 @@
 #!/bin/bash
 #OAR -n GricadTest
-#OAR -l /nodes=1/gpu=3,walltime=06:00:00
+#OAR -l /nodes=1/gpu=4,walltime=06:00:00
 #OAR --stdout output.out
 #OAR --stderr error.err
 #OAR -p gpumodel='V100'
