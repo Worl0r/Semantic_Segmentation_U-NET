@@ -246,7 +246,7 @@ class TrainModel:
 		torch.save(self.model, config.MODEL_PATH)
 
 		# Plot Loss function, learning rate graph and dice evolution
-		self.metrics.plotTrainingMetrics(H)
+		metrics.Metrics.plotTrainingMetrics(H)
 
 	def checkAugmentedData():
 		utils.logMsg("You activated the option for augmented data.", "info")
@@ -332,7 +332,7 @@ class TrainModel:
 		self.metrics.setMetric("Computation_time_training", endTime - startTime)
 
 		# Plot Loss function, learning rate graph and dice evolution
-		self.metrics.plotTrainingMetrics(H)
+		metrics.Metrics.plotTrainingMetrics(H)
 
 		# Save the model
 		utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))

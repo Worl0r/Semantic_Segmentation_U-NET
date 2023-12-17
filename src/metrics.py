@@ -123,6 +123,7 @@ class Metrics:
 
     def plotTrainingMetrics(H):
         utils.logMsg("Plotting and saving  the Loss Function...", "info")
+
         # plot the training loss and the metrics
         plt.style.use("ggplot") # Loss
         fig, ax = plt.subplots(1, 3, figsize=(20,5))
