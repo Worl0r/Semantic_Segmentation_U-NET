@@ -22,18 +22,17 @@ else:
 ######################################## General Settings ########################################
 # Test or Train the model
 TYPE_PROCESS = "train"  #value: {"train", "test"}
-ID_SESSION = "train_16_12_23_part-2" # unique ID
+ID_SESSION = "train_17_12_23_part-2" # unique ID
 
 # Activate Parallelism
-ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
-NBR_WORKERS = 8 # 24 is the maximum for Gricad
+ACTIVATE_PARALLELISM = True# Recommended to activate just for Gricad
+NBR_WORKERS = 24 # 24 is the maximum for Gricad
 # Number or GPU
 NBR_GPU = 3 # Adapt this one for the training mode
 
 # Data Augmentation
 AUG_DATA = True
-GENERATE_AUGMENTED_DATA = True
-AUGMENTED_DATA_SPLIT = 1
+GENERATE_AUGMENTED_DATA = False
 
 ######################################## Training Settings #######################################
 # Define some model parameters
@@ -47,10 +46,10 @@ DEC_CHANNELS = (64, 32, 16)
 NBR_CLASSES = 24
 ACTIVATE_LABELED_CLASSES = True
 # Size of input images
-INPUT_IMAGE_HEIGHT = 128
-INPUT_IMAGE_WIDTH = 128
-BATCH_SIZE = 4
-NUM_EPOCHS = 30
+INPUT_IMAGE_HEIGHT = 256
+INPUT_IMAGE_WIDTH = 256
+BATCH_SIZE = 8
+NUM_EPOCHS = 10
 # Learning rate
 INIT_LR = 0.01
 # Threshold just usefull of one class unlabeled

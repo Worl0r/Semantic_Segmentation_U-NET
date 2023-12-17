@@ -1,4 +1,4 @@
-# **Acceleration Material : Semantic Segmentation**
+# **Acceleration Material : Multiclass Semantic Segmentation**
 
 ![Release](https://img.shields.io/badge/Release-1.0-blueviolet)
 ![Language](https://img.shields.io/badge/Language-Python-ffcc14)
@@ -8,8 +8,8 @@
 
 ## **Presentation**
 
-The goal of this project was to build a Semantic Segmentation Model on the drone dataset **[(link)](https://www.kaggle.com/datasets/bulentsiyah/semantic-drone-dataset)** by implementing a UNet model.
-We used the following link as the basis of our architecture : **[(link)](https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/?fbclid=IwAR1N67RjDRDQDR-c7Ih2115m0A2qE7ciVp2aGNzDMZagRdJ-U1ZFFtNFgS0)** and we improved it by implementing classes objects, multiclass classification, metrics, parallelism computation and so on.
+Semantic segmentation is the task of clustering parts of an image together which belong to the same object class. It is a form of pixel-level prediction because each pixel in an image is classified according to a category. The goal of this project was to build a Multiclass Semantic Segmentation Model on the drone dataset: **[Aerial Drone Images[1]](https://www.kaggle.com/datasets/bulentsiyah/semantic-drone-dataset)** by implementing a UNet model.
+We used the following link as the basis of our architecture : **[(U-Net: Training Image Segmentation Models in PyTorch[2]](https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/?fbclid=IwAR1N67RjDRDQDR-c7Ih2115m0A2qE7ciVp2aGNzDMZagRdJ-U1ZFFtNFgS0)** and we improved it by implementing classes objects, multiclass classification, metrics, parallelism computation and also data.
 
 *Here is the architecture of a UNet model :*
 

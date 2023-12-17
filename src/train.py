@@ -6,6 +6,7 @@ from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss
 from torch.nn.parallel import DistributedDataParallel
 from torch.optim import Adam
 from tqdm import tqdm
+from torch.nn import functional as F
 import matplotlib
 import platform
 # if platform.system() != 'Linux':
@@ -20,6 +21,7 @@ import config
 import dataset
 from datetime import datetime
 import random
+import metrics
 
 class TrainModel:
 	def __init__(self, model, transforms, metrics, device = config.DEVICE):
@@ -41,19 +43,6 @@ class TrainModel:
 
 	def setDevice(self, device):
 		self.device = device
-
-	def plotLoss(H):
-		utils.logMsg("Plotting and saving  the Loss Function...", "info")
-		# plot the training loss and the metrics
-		plt.style.use("ggplot") # Loss
-		plt.figure()
-		plt.plot(H["train_loss"], label="train_loss")
-		plt.plot(H["test_loss"], label="test_loss")
-		plt.title("Training Loss on Dataset")
-		plt.xlabel("Epoch #")
-		plt.ylabel("Loss")
-		plt.legend(loc="lower left")
-		plt.savefig(os.path.join(config.BASE_OUTPUT, config.ID_SESSION, "TrainingLoss.png"))
 
 	@staticmethod
 	def plotSampleTraining(input, torchMask, pred, maskRGB, name, index="", epoch=""):
@@ -152,10 +141,11 @@ class TrainModel:
 
 		return False
 
-	def batchTraining(self, trainLoader, epoch):
+	def batchTraining(self, trainLoader, epoch, H):
 		utils.logMsg(f"Training batch on epoch {epoch+1} done at " + str(datetime.now()) + ".","time")
 
 		totalTrainLoss = 0
+		dice = []
 
 		# Loop over the training set
 		for index, (input, torchMask, maskRGB) in enumerate(trainLoader):
@@ -178,14 +168,26 @@ class TrainModel:
 			loss.backward()
 			self.optimizer.step()
 
+			# Compute dice coef
+			dice.append(metrics.Metrics.diceCoef(torchMask, pred))
+
 			# add the loss to the total training loss so far
 			totalTrainLoss += loss
+
+		# Save of the current learning rate
+		current_lr = self.optimizer.param_groups[0]['lr']
+		H["learning_rate"].append(current_lr)
+
+		# Save of the current learning rate
+		diceMean = sum(dice) / len(dice)
+		H["train_dice_metric"].append(diceMean)
 
 		return totalTrainLoss
 
 	def batchTesting(self, testLoader, startTime, H, epoch):
 		utils.logMsg(f"Testing batch on epoch {epoch+1} done at " + str(datetime.now()) + ".","time")
 		totalTestLoss = 0
+		dice = []
 
 		# set the model in evaluation mode
 		self.model.eval()
@@ -206,19 +208,16 @@ class TrainModel:
 			loss = self.lossFunc(pred, torchMask)
 			totalTestLoss += loss
 
-			# Set Metrics
-			# self.metrics.setMetric("F1-score", self.metrics.metricF1(pred, torchMask))
-			# self.metrics.setMetric("Confusion_matrix", self.metrics.metricConfusionMatrix(pred, torchMask))
-			# self.metrics.setMetric("Precision-Recall curve", self.metrics.metricPrecisionRecallCruve(pred, torchMask.int()))
-			#self.metrics.setMetric("mAP", self.metricAveragePrecision(pred, torchMask))
+			# Compute dice coef
+			dice.append(metrics.Metrics.diceCoef(torchMask, pred))
 
 			if TrainModel.earlyStopping(loss, best_val_loss, config.PATIENCE, counter):
 				# display the total time needed to perform the training
 				endTime = time.time()
-				utils.logMsg("total time taken to train the model: {:.2f}s".format(endTime - startTime), "time")
+				utils.logMsg("Total time taken to train the model: {:.2f}s".format(endTime - startTime), "time")
 
-				# Plot Loss function
-				TrainModel.plotLoss(H)
+				# Plot Loss function, learning rate graph and dice evolution
+				metrics.Metrics.plotTrainingMetrics(H)
 
 				# Save the model
 				utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
@@ -226,6 +225,10 @@ class TrainModel:
 
 				# Stop the script
 				sys.exit()
+
+		# Save of the current learning rate
+		diceMean = sum(dice) / len(dice)
+		H["test_dice_metric"].append(diceMean)
 
 		return totalTestLoss
 
@@ -263,10 +266,6 @@ class TrainModel:
 		maskPaths = sorted(list(utils.list_images(config.MASK_DATASET_PATH)))
 		utils.logMsg(f"Original images:  {len(imagePaths)} - Original masks: {len(maskPaths)}", "data")
 
-		# Create more data
-		# if config.GENERATE_AUGMENTED_DATA == True:
-		# 	dataset.SegmentationDataset.augment_data(imagePaths, maskPaths, path, augment=True)
-
 		# Load new images
 		imagePaths = sorted(list(utils.list_images(os.path.join(path, "images"))))
 		maskPaths = sorted(list(utils.list_images(os.path.join(path, "masks"))))
@@ -290,16 +289,6 @@ class TrainModel:
 			# We import new augmented data
 			imagePaths, maskPaths = TrainModel.checkAugmentedData()
 
-			# # We shuffle them
-			# shuffledImagePaths = imagePaths.copy()
-			# shuffledMaskPaths = maskPaths.copy()
-			# random.shuffle(shuffledImagePaths)
-			# random.shuffle(shuffledMaskPaths)
-
-			# # We crop this dataset accoding the config file
-			# imagePaths = shuffledImagePaths[:int(config.AUGMENTED_DATA_SPLIT*len(shuffledImagePaths))]
-			# maskPaths = shuffledMaskPaths[:int(config.AUGMENTED_DATA_SPLIT*len(shuffledMaskPaths))]
-
 		else:
 			# load the image and mask filepaths in a sorted manner
 			imagePaths = sorted(list(utils.list_images(config.IMAGE_DATASET_PATH)))
@@ -315,7 +304,7 @@ class TrainModel:
 			testSteps = 1
 
 		# Initialize a dictionary to store training history
-		H = {"train_loss": [], "test_loss": []}
+		H = {"train_loss": [], "test_loss": [], "train_dice_metric": [], "test_dice_metric": [],"learning_rate": []}
 
 		# loop over epochs
 		utils.logMsg("Training the network...", 'info')
@@ -326,7 +315,7 @@ class TrainModel:
 			self.model.train()
 
 			# Compute one batch of training
-			totalTrainLoss = TrainModel.batchTraining(self, trainLoader, e)
+			totalTrainLoss = TrainModel.batchTraining(self, trainLoader, e, H)
 
 			# switch off autograd
 			with torch.no_grad():
@@ -344,8 +333,8 @@ class TrainModel:
 		# Set the computation time metric
 		self.metrics.setMetric("Computation_time_training", endTime - startTime)
 
-		# Plot Loss function
-		TrainModel.plotLoss(H)
+		# Plot Loss function, learning rate graph and dice evolution
+		metrics.Metrics.plotTrainingMetrics(H)
 
 		# Save the model
 		utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))

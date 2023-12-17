@@ -100,7 +100,6 @@ def main():
 
     # Create more data
     if config.GENERATE_AUGMENTED_DATA == True:
-        #dataset.SegmentationDataset.augment_data(imagePaths, maskPaths, path, augment=True)
         augment_data(imagePaths, maskPaths, path, augment=True)
     else:
         utils.logMsg("You did not activate the config option to create new data.", "info")
