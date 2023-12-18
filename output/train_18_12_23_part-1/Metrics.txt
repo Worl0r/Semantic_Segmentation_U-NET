@@ -1,4 +1,4 @@
 Mean Metrics :
-F1: 0.04815194010734558
+F1: 0.04402814507484436
 Precision-Recall_curve: []
 mAP: []
