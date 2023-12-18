@@ -201,4 +201,5 @@ class TestModel:
 		self.metrics.writeMeanMetrics()
 
 		# We save all logs and errors in our specific id file
+		# Useful just for Gricad
 		#utils.saveLogs()

@@ -29,6 +29,7 @@ class CustomDataset(Dataset):
 
         return image, mask
 
+# Apply transformations
 def augment_data(images, masks, save_path, augment=True):
     H = 1024
     W = 1536
@@ -63,12 +64,14 @@ def augment_data(images, masks, save_path, augment=True):
         # Original
         save_image_and_mask(image, mask, image_name + "_4", mask_name + "_4", idx, save_path)
 
+# In order to apply the same transform for maska and image we keep the random coefs
 def random_crop(image, mask, size):
     i, j, h, w = transforms.RandomCrop.get_params(image, output_size=size)
     img_crop = TF.crop(image, i, j, h, w)
     msk_crop = TF.crop(mask, i, j, h, w)
     return img_crop, msk_crop
 
+# Save inputs and masks in png
 def save_image_and_mask(image, mask, image_name, mask_name, idx, save_path):
     save_images = [image, mask]
     save_names = [f"image_{image_name}_{idx}.png", f"mask_{mask_name}_{idx}.png"]
