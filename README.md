@@ -8,22 +8,26 @@
 
 ## **Presentation**
 
-Semantic segmentation is the task of clustering parts of an image together which belong to the same object class. It is a form of pixel-level prediction because each pixel in an image is classified according to a category. The goal of this project was to build a Multiclass Semantic Segmentation Model on the drone dataset: **[*Aerial Drone Images[1]*](https://www.kaggle.com/datasets/bulentsiyah/semantic-drone-dataset)** by implementing a UNet model.
-We used the following link as the basis of our architecture : **[*U-Net: Training Image Segmentation Models in PyTorch[2]*](https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/?fbclid=IwAR1N67RjDRDQDR-c7Ih2115m0A2qE7ciVp2aGNzDMZagRdJ-U1ZFFtNFgS0)** and we improved it by implementing classes objects, multiclass classification, metrics, parallelism computation and also data.
+Semantic segmentation is the task of clustering parts of an image together which belong to the same object class. It is a form of pixel-level prediction because each pixel in an image is classified according to a category. The goal of this project was to build a **Multiclass Semantic Segmentation Model** on the drone dataset: **[*Aerial Drone Images [1]*](https://www.kaggle.com/datasets/bulentsiyah/semantic-drone-dataset)** by implementing a **U-NET** model.
+We used the following link as the basis of our architecture : **[*U-Net: Training Image Segmentation Models in PyTorch [2]*](https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/?fbclid=IwAR1N67RjDRDQDR-c7Ih2115m0A2qE7ciVp2aGNzDMZagRdJ-U1ZFFtNFgS0)** and we improved it by implementing **classes objects**, **multiclass classification**, **metrics**, **parallelism computation** and also **data augmentation**.
 
-*Here is the architecture of a UNet model :*
+*Here is the architecture of a **U-NET** model :*
 
 <br/>
 
 <p align="center">
 	<img style="border-radius:25px" src="https://media.geeksforgeeks.org/wp-content/uploads/20220614121231/Group14.jpg" width="700">
 </p>
+<p>&nbsp;</p>
 
 ## Semantic Annotation
 
-The images are labeled densely using polygons and contain the following 24 classes:
+* This is an example of what we want to segment semantically :
 
-TODO: expliquer le dataset
+<p align="center">
+	<img style="border-radius: 25px" src="./assets/example.jpeg" width="1200">
+</p>
+<p>&nbsp;</p>
 
 ## How to get started
 
@@ -198,61 +202,6 @@ Finally, deactivate GENERATE_AUGMENTED_DATA = False for safty and continue as us
 
 * *unet_tgs_paths_salt.pth* is the output serialized model path
 
-## Useful command lines
-
-0. Connect to GRICAD
-
-```bash
-ssh bigfoot.ciment
-```
-
-1. Activate virtual environement
-
-```bash
-source /applis/environments/conda.sh
-source /applis/environments/cuda_env.sh bigfoot  11.2
-conda activate torch
-```
-
-2. Send your script to GRICAD
-```bash
-oarsub -S ./GricadScript.sh
-```
-
-3. See the status of your script
-```bash
-oarstat -fj [ID]
-```
-
-4. Delete your script execution
-```bash
-oardel [ID]
-```
-
-5. Send files
-```bash
-rsync -avxH data alchantd@cargo.univ-grenoble-alpes.fr:/bettik/PROJECTS/pr-material-acceleration/alchantd/data
-```
-
-6. Bonus
-```bash
-# List of GPU for Gricad: : -p "gpumodel='A100'"  or -p "gpumodel='V100'"  or -p "gpumodel!='T4'"
-
-#Make executable the script bash:
-chmod +x SingleGPUScript.sh
-
-# See the status of your session:
-oarstat -u
-
-# Go to interactive mode:
-oarsub -l /nodes=1/gpu=1 -p "gpumodel='A100'"  -I --project pr-material-acceleration
-```
-
-7. Find the dataset at:
-```bash
-# replace login by your login.
-cd /bettik/PROJECTS/pr-material-acceleration/login/
-```
 ## Results
 
 ### Unlabel Binary Segmentation
@@ -323,6 +272,62 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 
 <p>&nbsp;</p>
 
+## Useful command lines
+
+0. Connect to GRICAD
+
+```bash
+ssh bigfoot.ciment
+```
+
+1. Activate virtual environement
+
+```bash
+source /applis/environments/conda.sh
+source /applis/environments/cuda_env.sh bigfoot  11.2
+conda activate torch
+```
+
+2. Send your script to GRICAD
+```bash
+oarsub -S ./GricadScript.sh
+```
+
+3. See the status of your script
+```bash
+oarstat -fj [ID]
+```
+
+4. Delete your script execution
+```bash
+oardel [ID]
+```
+
+5. Send files
+```bash
+rsync -avxH data alchantd@cargo.univ-grenoble-alpes.fr:/bettik/PROJECTS/pr-material-acceleration/alchantd/data
+```
+
+6. Bonus
+```bash
+# List of GPU for Gricad: : -p "gpumodel='A100'"  or -p "gpumodel='V100'"  or -p "gpumodel!='T4'"
+
+#Make executable the script bash:
+chmod +x SingleGPUScript.sh
+
+# See the status of your session:
+oarstat -u
+
+# Go to interactive mode:
+oarsub -l /nodes=1/gpu=1 -p "gpumodel='A100'"  -I --project pr-material-acceleration
+```
+
+7. Find the dataset at:
+```bash
+# replace login by your login.
+cd /bettik/PROJECTS/pr-material-acceleration/login/
+```
+
 ## Troubleshootings:
 
 * When you start a training with the interactive mode. Make sure to be consistent with your number of GPU. In fact, it is recommended to be on the same interactive mode session to test and train, even if in the test mode you use always one GPU.
@@ -335,6 +340,7 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 - [ ] Fix some TODO part in the code
 - [ ] Write a report
 - [ ] Add new test metrics (**MulticlassPrecisionRecallCurve** and **MeanAveragePrecision**)
+- [ ] Try L2 regularisation or dropout
 
 ## References:
 
