@@ -334,6 +334,7 @@ class TrainModel:
 		metrics.Metrics.plotTrainingMetrics(H)
 
 		# Save the model
+		utils.logMsg("We are saving the model...", "info")
 		utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
 		torch.save(self.model, config.MODEL_PATH)
 
