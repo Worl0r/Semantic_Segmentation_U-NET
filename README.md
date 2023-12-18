@@ -259,7 +259,7 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 
 **1. nbr_classes = 1 Learningrate = 0.0001 batch = 64 epoch = 10**
 <p align="center">
-	<img style="border-radius: 25px" src="assets/results/binary_classification/binarySegmentation.png" width="900">
+	<img style="border-radius: 25px" src="./assets/results/binary_classification/binarySegmentation.png" width="900">
 </p>
 
 * We classify each pixel of our prediction with an average threshold so as to have 50% of each class. The main result of this part is a highlighting of the image contours.
@@ -272,7 +272,7 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 <br/>
 
 <p align="center">
-	<img style="border-radius: 25px" src="assets/results/semantic_classification/multiSeg.png" width="1200">
+	<img style="border-radius: 25px" src="./assets/results/semantic_classification/multiSeg.png" width="1200">
 </p>
 
 * We classify each pixel with 24 classes and we obtain a good contouring for our images.
@@ -280,7 +280,7 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 <p>&nbsp;</p>
 
 <p align="center">
-	<img style="border-radius: 25px" src="assets/results/semantic_classification/TrainingLoss.png" width="400">
+	<img style="border-radius: 25px" src="./assets/results/semantic_classification/TrainingLoss.png" width="400">
 </p>
 
 
@@ -289,7 +289,7 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 <p>&nbsp;</p>
 
 <p align="center">
-	<img style="border-radius: 25px" src="assets/results/semantic_classification/TrainingMetrics.png" width="700">
+	<img style="border-radius: 25px" src="./assets/results/semantic_classification/TrainingMetrics.png" width="700">
 </p>
 
 * We also plot the DICE metric during learning, which proves that we are converging on a good solution. It measures the similarity between the prediction and the terrain. This metric should be between 0 and 1 (no debugging), but the shape is correct.
@@ -297,7 +297,7 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 <p>&nbsp;</p>
 
 <p align="center">
-	<img style="border-radius: 25px" src="assets/results/semantic_classification/rogneMatriceConfusion.png" width="900">
+	<img style="border-radius: 25px" src="./assets/results/semantic_classification/rogneMatriceConfusion.png" width="900">
 </p>
 
 * This confusion matrix is a really good metric to see that we really detect just few classes (just 3 above 63%). And during the test we have a F1 metric of 0.953.
@@ -312,11 +312,11 @@ cd /bettik/PROJECTS/pr-material-acceleration/login/
 <br/>
 
 <p align="center">
-	<img style="border-radius: 25px" src="assets/results/augmented_data/prediction.png" width="1200">
+	<img style="border-radius: 25px" src="./assets/results/augmented_data/prediction.png" width="1200">
 </p>
 <p>&nbsp;</p>
 <p align="center">
-	<img style="border-radius: 25px" src="assets/results/augmented_data/dataAugmented.png" width="900">
+	<img style="border-radius: 25px" src="./assets/results/augmented_data/dataAugmented.png" width="900">
 </p>
 
 * With this new learning process using augmented data, we have improved three classes, but the result is still very approximate. F1 = 0.10 (up to 7.1%)
