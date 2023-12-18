@@ -3,7 +3,7 @@ import os
 import torch
 import platform
 
-# The device to be used for training and evaluation (Windows)
+# The device to be used for training and evaluation (Windows, MacOS and Linux)
 if platform.system() == "Darwin":
     if torch.backends.mps.is_available():
         DEVICE = torch.device("cpu")
@@ -34,7 +34,8 @@ os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2,3"
 
 # Data Augmentation
 AUG_DATA = True
-GENERATE_AUGMENTED_DATA = False
+GENERATE_AUGMENTED_DATA = False # Active just once to generate the data.
+#Sometimes there are bugs, so if this is the case, try again and it will be okay.
 
 ######################################## Training Settings #######################################
 # Define some model parameters
