@@ -48,8 +48,8 @@ DEC_CHANNELS = (512, 256, 128, 64, 32, 16)
 NBR_CLASSES = 24
 ACTIVATE_LABELED_CLASSES = True
 # Size of input images
-INPUT_IMAGE_HEIGHT = 512
-INPUT_IMAGE_WIDTH = 512
+INPUT_IMAGE_HEIGHT = 1024
+INPUT_IMAGE_WIDTH = 1024
 BATCH_SIZE = 16
 NUM_EPOCHS = 10
 # Learning rate
@@ -69,7 +69,7 @@ PATIENCE = 5
 ######################################## Test Settings ###########################################
 # Number of image to test
 
-SELECTED_IMAGE_TEST = 5
+SELECTED_IMAGE_TEST = 8
 
 # Metrics
 ALL_CONFUSION_MATRIX = False
@@ -103,7 +103,7 @@ AUGMENTED_DATA_MASK_PATH = os.path.join(WORKING_DIRECTORY_PATH, "dataset", "sema
 IMAGE_TYPES = (".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff")
 
 # Work on gricad just with one GPU for testing
-if TYPE_PROCESS == "test":
+if TYPE_PROCESS == "train":
     NBR_GPU = 1
 
 # If we will be pinning memory during data loading
