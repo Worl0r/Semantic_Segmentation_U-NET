@@ -6,6 +6,7 @@ from torchvision import transforms
 from tqdm import tqdm
 from torch.utils.data import Dataset
 from PIL import Image
+import random
 
 class CustomDataset(Dataset):
     def __init__(self, images, masks, transform=None):
@@ -58,8 +59,13 @@ def augment_data(images, masks, save_path, augment=True):
 
             # Random Crop
             img_crop, msk_crop = random_crop(image, mask, (2 * H // 3, 2 * W // 3))
-
             save_image_and_mask(img_crop, msk_crop, image_name + "_3", mask_name + "_3", idx, save_path)
+
+            # Random Brightness
+            rnd = random.randint(1, 2)
+            img_bright = transforms.functional.adjust_brightness(image, rnd)
+            msk_bright = transforms.functional.adjust_brightness(mask, rnd)
+            save_image_and_mask(img_bright, msk_bright, image_name + "_4", mask_name + "_4", idx, save_path)
 
         # Original
         save_image_and_mask(image, mask, image_name + "_4", mask_name + "_4", idx, save_path)

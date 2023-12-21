@@ -58,7 +58,6 @@ def funcParallelism(rank, world_size):
 
 
 def main():
-
     # Time
     utils.logMsg("Script stats at: " + str(datetime.now()), "time")
     utils.logMsg("You start a process related with the ID: " + str(config.ID_SESSION), "info")

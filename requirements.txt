@@ -4,6 +4,7 @@ imutils
 tqdm
 matplotlib
 torchmetrics
+pytorch-ignite
 time
 torch
 numpy
