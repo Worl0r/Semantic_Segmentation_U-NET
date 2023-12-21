@@ -84,12 +84,38 @@ class TestModel:
 
 		groundTruthPath = os.path.join(path, filename)
 
-		gtMask = torchvision.io.read_image(groundTruthPath, torchvision.io.ImageReadMode.RGB)
-		# We want to retun a result without a transformation in tensor
-		transformForMaskRGB = torchvision.transforms.Compose(self.transforms.transforms[:-1])
-		return  self.transforms(gtMask), transformForMaskRGB(gtMask)
+		if config.ACTIVATE_LABELED_CLASSES == False:
+			gtMask = torchvision.io.read_image(groundTruthPath, torchvision.io.ImageReadMode.GRAY)
 
-	def plotPrediction(input, torchMask, pred, maskRGB, name, index=""):
+			gtMask = self.transforms(gtMask)
+
+			# Compute mean and std for images
+			mean, std = torch.mean(gtMask.float(), dim=(1, 2)), torch.std(gtMask.float(), dim=(1, 2))
+
+			# Add Normalization transformation just for the mask
+			normalization = torchvision.transforms.Compose([torchvision.transforms.Normalize(mean, std)])
+			gtMask = normalization(gtMask)
+
+			# We make the training mask dataset according the right number of class
+			gtMask = dataset.SegmentationDataset.convertToAdaptedTensorMask(
+				mask=gtMask,
+				shape = [
+					config.NBR_CLASSES,
+					config.INPUT_IMAGE_HEIGHT,
+					config.INPUT_IMAGE_WIDTH
+				]
+			)
+
+			return gtMask, None
+
+		else:
+			gtMask = torchvision.io.read_image(groundTruthPath, torchvision.io.ImageReadMode.RGB)
+
+			# We want to retun a result without a transformation in tensor
+			transformForMaskRGB = torchvision.transforms.Compose(self.transforms.transforms[:-1])
+			return  self.transforms(gtMask), transformForMaskRGB(gtMask)
+
+	def plotPrediction(input, torchMask, pred, maskRGB, name, errorMap):
 		plots =[]
 		plotTitles = []
 
@@ -101,10 +127,11 @@ class TestModel:
 
 		# We plot just one dimension for nbr_classes egual to 1
 		if config.NBR_CLASSES == 1:
-			plots.append(torchMask[0, 0].cpu().T)
+			plots.append(torchMask[0].cpu().T)
 			plotTitles.append("Binary mask")
-			plots.append(pred[0, 0].cpu().detach().numpy().T)
-			plotTitles.append("Probabilistic Prediction")
+			#plots.append(pred[0].cpu().detach().numpy().T)
+			plots.append(errorMap.T)
+			plotTitles.append("Error Map")
 
 		else:
 
@@ -121,7 +148,7 @@ class TestModel:
 		utils.prepare_plot(
 			plots,
 			plotTitles,
-			os.path.join(config.PLOT_TEST_PATH, name + str(index)),
+			os.path.join(config.PLOT_TEST_PATH, name),
 			"Plot training model samples for the first image of each batch",
 			mode="test"
 		)
@@ -133,7 +160,7 @@ class TestModel:
 		# turn off gradient tracking
 		with torch.no_grad():
 
-			# Open the image
+			# Open the original image
 			image = TestModel.openTorchImage(self, imagePath)
 
 			# Save an original image
@@ -141,6 +168,9 @@ class TestModel:
 
 			# Find the filename for the image
 			filename = TestModel.createFilename(imagePath)
+
+			# Define a name
+			name = "Prediction_img_" + filename.split(".")[0] + "_index_" + str(index)
 
 			# Open the ground-truth related with the image
 			gtMask, gtMask255range = TestModel.openTorchGTImage(self, filename)
@@ -154,8 +184,37 @@ class TestModel:
 			# We change the prediction matrix in colored image instead of class matrix
 			colorPred = TestModel.classToColorForPred(prediction)
 
-			# Add value to metrics class
-			gtMaskTensor = dataset.SegmentationDataset.convertToLabeledTensorMask(
+			utils.folderExists(config.PLOT_METRICS)
+
+			if config.NBR_CLASSES == 1 and config.ACTIVATE_LABELED_CLASSES == False:
+				# Compute binary mask
+				gtUnlabeledClass = dataset.SegmentationDataset.convertToAdaptedTensorMask(
+					gtMask,
+					shape = [
+						config.NBR_CLASSES,
+						config.INPUT_IMAGE_HEIGHT,
+						config.INPUT_IMAGE_WIDTH
+					]
+					)
+
+				# Indices
+				gt_indices = gtUnlabeledClass.squeeze() == 1
+				gt_indices = gt_indices.int()
+				pred_indices = prediction > np.mean(prediction)
+				pred_indices = torch.from_numpy(pred_indices).int()
+
+				# Plot confusion matrix
+				self.metrics.confusionMatrix(name, pred_indices.flatten(), gt_indices.flatten(), True)
+
+				# Compute error map
+				errorMap =  pred_indices - gt_indices
+
+				# Save other metrics
+				self.metrics.addValueToMetrics(pred_indices, gt_indices, prediction, gt_indices, name)
+
+			else:
+				# Add value to metrics class
+				gtMaskTensor = dataset.SegmentationDataset.convertToLabeledTensorMask(
 				gtMask255range,
 				shape=[
 					config.NBR_CLASSES,
@@ -164,16 +223,18 @@ class TestModel:
 				]
 				)
 
-			# We want a matrix who code index labels
-			pred_indices = torch.argmax(torch.from_numpy(prediction), dim=0)
-			gt_indices = torch.argmax(gtMaskTensor, dim=0)
-			utils.folderExists(config.PLOT_METRICS)
+				# We want a matrix who code index labels
+				pred_indices = torch.argmax(torch.from_numpy(prediction), dim=0)
+				gt_indices = torch.argmax(gtMaskTensor, dim=0)
 
-			# Plot confusion matrix
-			self.metrics.confusionMatrix("PlotPrediction_" + str(index), pred_indices, gt_indices, True)
+				# Plot confusion matrix
+				self.metrics.confusionMatrix(name, pred_indices, gt_indices, True)
 
-			# Save other metrics
-			self.metrics.addValueToMetrics(pred_indices, gt_indices)
+				# Define error map
+				errorMap = None
+
+				# Save other metrics TODO: it is wrong here
+				self.metrics.addValueToMetrics(pred_indices, gt_indices, prediction, gtMaskTensor, name)
 
 			# We plot our predictions
 			TestModel.plotPrediction(
@@ -181,18 +242,18 @@ class TestModel:
 				torch.tensor(colorPred).unsqueeze(dim=0),
 				torch.tensor(prediction).unsqueeze(dim=0),
 				gtMask.unsqueeze(dim=0),
-				"TestPrediction_",
-				index
+				name,
+				errorMap
 			)
 
 	def makePredictionDataset(self, imagePaths):
 		# iterate over the randomly selected test image paths
-		print("[INFO] [TEST] Start of predictions...")
+		utils.logMsg("Start of predictions...", "test")
 
 		for index, path in enumerate(imagePaths):
 			# make predictions and visualize the results
 			TestModel.make_predictions(self, path, index)
-			print(f"[INFO] [TEST] Prediction {index+1} on {len(imagePaths)} done.")
+			utils.logMsg(f"Prediction {index+1} on {len(imagePaths)} done.", "test")
 
 		# Plot mean metrics
 		self.metrics.meanConfusionMatrix()

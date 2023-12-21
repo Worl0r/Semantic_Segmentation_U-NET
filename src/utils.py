@@ -6,12 +6,17 @@ import utils
 def prepare_plot(plots, plotTitles, path, title="", mode="train"):
 	# Initialize our figures
     if len(plots) <=4:
-        figure, ax = plt.subplots(nrows= 1, ncols=4, figsize=(20, 20))
+        figure, ax = plt.subplots(nrows= 1, ncols=4, figsize=(20, 10))
         figure.suptitle(title, fontsize=32)
 
         for index, value in enumerate(plots):
             ax[index].imshow(value)
             ax[index].set_title(plotTitles[index])
+
+            if index == 3:
+                im = ax[index].imshow(value, cmap=plt.cm.inferno)
+                cbar = figure.colorbar(im, ax=ax[index])
+                cbar.set_label("-1=FN 0=T 1=FP", size=16)
 
     else:
         figure, ax = plt.subplots(nrows= (len(plots) // 4) + 1, ncols=4, figsize=(20, 10))
@@ -24,10 +29,10 @@ def prepare_plot(plots, plotTitles, path, title="", mode="train"):
         figure.tight_layout()
         #figure.show()
 
-        # Check if the file exists
-        folderExists(config.PLOT_TRAIN_PATH)
-        if mode == "test":
-             folderExists(config.PLOT_TEST_PATH)
+    # Check if the file exists
+    folderExists(config.PLOT_TRAIN_PATH)
+    if mode == "test":
+        folderExists(config.PLOT_TEST_PATH)
 
     figure.savefig(path)
     plt.close()
@@ -77,6 +82,8 @@ def logMsg(msg, type):
         print("[SAVE] ", msg)
     elif type == "parallelism":
         print("[PARALLELISM] ", msg)
+    elif type == "test":
+        print("[TEST] ", msg)
     else :
         print("[INFO] ", msg)
 

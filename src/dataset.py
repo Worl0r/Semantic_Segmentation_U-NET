@@ -49,6 +49,7 @@ class SegmentationDataset(Dataset):
 				classes.append([row[0],[int(i) for i in row[1:4]]])
 		return dict(classes)
 
+	@staticmethod
 	def convertToAdaptedTensorMask(mask, shape):
 		mask = mask.numpy()
 
@@ -108,7 +109,7 @@ class SegmentationDataset(Dataset):
 			image = self.transforms(image)
 			mask = self.transforms(mask)
 
-			# IMPORTANT: We suppose in that case that the transformation ToTensor() si the last of transform
+			# IMPORTANT: We suppose in that case that the transformation ToTensor() si the last of transforms
 			transformForMaskRGB = torchvision.transforms.Compose(self.transforms.transforms[:-1])
 			maskRGB = transformForMaskRGB(maskRGB)
 
