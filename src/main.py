@@ -45,13 +45,13 @@ def funcParallelism(rank, world_size):
 
         else:
             # load the image paths in our testing file and randomly select n images
-            print("[INFO] [TEST] loading up test image paths...")
+            utils.logMsg("Loading up test image paths...", "test")
             imagePaths = open(config.TEST_PATHS).read().strip().split("\n")
             imagePaths = np.random.choice(imagePaths, size=config.SELECTED_IMAGE_TEST)
 
             unet = torch.load(config.MODEL_PATH).to(rank)
 
-            print("[INFO] [TEST] Creation of the TestModel class...")
+            utils.logMsg("Creation of the TestModel class...", "test")
             testModel = test.TestModel(unet, transform, metricsClass)
 
             testModel.makePredictionDataset(imagePaths)

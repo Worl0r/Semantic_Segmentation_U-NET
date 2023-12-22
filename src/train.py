@@ -151,7 +151,7 @@ class TrainModel:
 			# Perform a forward pass and calculate the training loss
 			pred = self.model(input)
 
-			pred = torch.sigmoid(pred)
+			#pred = torch.sigmoid(pred)
 
 			loss = self.lossFunc(pred, torchMask)
 
@@ -201,7 +201,7 @@ class TrainModel:
 			# make the predictions and calculate the validation loss
 			pred = self.model(input)
 
-			pred = torch.sigmoid(pred)
+			#pred = torch.sigmoid(pred)
 
 			# TestLoss
 			loss = self.lossFunc(pred, torchMask)
