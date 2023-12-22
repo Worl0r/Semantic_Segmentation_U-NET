@@ -21,8 +21,8 @@ else:
 
 ######################################## General Settings ########################################
 # Test or Train the model
-TYPE_PROCESS = "test"  #value: {"train", "test"}
-ID_SESSION = "binaire-1" # unique ID
+TYPE_PROCESS = "train"  #value: {"train", "test"}
+ID_SESSION = "multiclass-2" # unique ID
 
 # Activate Parallelism
 ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
@@ -46,13 +46,13 @@ TEST_SPLIT = 0.15
 ENC_CHANNELS= (3, 16, 32, 64)
 DEC_CHANNELS = (64, 32, 16)
 # Number of class
-NBR_CLASSES = 1
-ACTIVATE_LABELED_CLASSES = False
+NBR_CLASSES = 5
+ACTIVATE_LABELED_CLASSES = True
 # Size of input images
 INPUT_IMAGE_HEIGHT = 256
 INPUT_IMAGE_WIDTH = 256
 BATCH_SIZE = 8
-NUM_EPOCHS = 1
+NUM_EPOCHS = 10
 # Learning rate
 INIT_LR = 0.01
 # Threshold just usefull of one class unlabeled

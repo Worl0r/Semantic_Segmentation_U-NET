@@ -90,6 +90,10 @@ class SegmentationDataset(Dataset):
 					]
 			maskRGBChanged[index] = np.array(mask).astype(int)
 
+		# We do not want a dimension for the void class
+		if config.NBR_CLASSES < len(labeledClasses):
+			maskRGBChanged[0]= np.ones(shape[1:]) - np.sum(maskRGBChanged[1:], axis=0)
+
 		return torch.tensor(maskRGBChanged, dtype=torch.float32)
 
 	def __getitem__(self, idx):
@@ -121,7 +125,7 @@ class SegmentationDataset(Dataset):
 			mask = normalization(mask)
 
 		# Check the number of class
-		if config.NBR_CLASSES == 1 or config.ACTIVATE_LABELED_CLASSES == False:
+		if config.ACTIVATE_LABELED_CLASSES == False or (config.NBR_CLASSES == 1 and config.ACTIVATE_LABELED_CLASSES == False):
 			# We make the training mask dataset according the right number of class
 			mask = SegmentationDataset.convertToAdaptedTensorMask(
 				mask=mask,

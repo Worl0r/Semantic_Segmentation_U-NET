@@ -115,7 +115,7 @@ def main():
     elif config.TYPE_PROCESS == "test":
         ##################### TEST #####################
 
-        print("[INFO] [TEST] load up model...")
+        utils.logMsg("Load up model...", "test")
 
         # Activate Parallelism
         if config.ACTIVATE_PARALLELISM:
@@ -125,19 +125,19 @@ def main():
         else:
             # load the image paths in our testing file and randomly select 10
             # image paths
-            print("[INFO] [TEST] loading up test image paths...")
+            utils.logMsg("Loading up test image paths...", "test")
             imagePaths = open(config.TEST_PATHS).read().strip().split("\n")
             imagePaths = np.random.choice(imagePaths, size=config.SELECTED_IMAGE_TEST)
 
             # load our model from disk and flash it to the current device
             unet = torch.load(config.MODEL_PATH).to(device)
 
-            print("[INFO] [TEST] Creation of the TestModel class...")
+            utils.logMsg("Creation of the TestModel class...", "test")
             testModel = test.TestModel(unet, transform, metricsClass)
 
             testModel.makePredictionDataset(imagePaths)
 
-        print("[INFO] [TEST] Test model finished.")
+        utils.logMsg("Test model finished.", "Test")
 
         ################################################
 
