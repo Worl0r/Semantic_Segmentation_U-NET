@@ -14,6 +14,7 @@ import config
 import dataset
 from datetime import datetime
 import metrics
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 class TrainModel:
 	def __init__(self, model, transforms, metrics, device = config.DEVICE):
@@ -21,7 +22,7 @@ class TrainModel:
 		self.model = model
 
 		# Initialize loss function, optimizer and metrics
-		if config.NBR_CLASSES == 1:
+		if (config.NBR_CLASSES == 1 and config.ACTIVATE_LABELED_CLASSES == False) or (config.NBR_CLASSES == 2 and config.ACTIVATE_LABELED_CLASSES == True) :
 			self.lossFunc = BCEWithLogitsLoss()
 		else:
 			self.lossFunc  = CrossEntropyLoss()
@@ -150,6 +151,8 @@ class TrainModel:
 			# Perform a forward pass and calculate the training loss
 			pred = self.model(input)
 
+			pred = torch.sigmoid(pred)
+
 			loss = self.lossFunc(pred, torchMask)
 
 			# We plot some exemple during the training
@@ -163,7 +166,7 @@ class TrainModel:
 			self.optimizer.step()
 
 			# Compute dice coef
-			dice.append(self.metrics.diceCoef(torchMask, pred))
+			dice.append(self.metrics.diceCoef(torchMask, pred, config.NBR_CLASSES))
 
 			# add the loss to the total training loss so far
 			totalTrainLoss += loss
@@ -198,12 +201,14 @@ class TrainModel:
 			# make the predictions and calculate the validation loss
 			pred = self.model(input)
 
+			pred = torch.sigmoid(pred)
+
 			# TestLoss
 			loss = self.lossFunc(pred, torchMask)
 			totalTestLoss += loss
 
 			# Compute dice coef
-			dice.append(self.metrics.diceCoef(torchMask, pred))
+			dice.append(self.metrics.diceCoef(torchMask, pred, config.NBR_CLASSES))
 
 			if TrainModel.earlyStopping(loss, best_val_loss, config.PATIENCE, counter):
 				# display the total time needed to perform the training
@@ -303,6 +308,9 @@ class TrainModel:
 		# Initialize a dictionary to store training history
 		H = {"train_loss": [], "test_loss": [], "train_dice_metric": [], "test_dice_metric": [],"learning_rate": []}
 
+		# Define the scheduler
+		scheduler = ReduceLROnPlateau(self.optimizer, 'min')
+
 		# loop over epochs
 		utils.logMsg("Training the network...", 'info')
 		startTime = time.time()
@@ -313,6 +321,9 @@ class TrainModel:
 
 			# Compute one batch of training
 			totalTrainLoss = TrainModel.batchTraining(self, trainLoader, e, H)
+
+			# Step the scheduler
+			scheduler.step(totalTrainLoss)
 
 			# switch off autograd
 			with torch.no_grad():
@@ -328,7 +339,7 @@ class TrainModel:
 		utils.logMsg("Total time taken to train the model: {:.2f}s".format(endTime - startTime), "time")
 
 		# Set the computation time metric
-		self.metrics.setMetric("Computation_time_training", endTime - startTime)
+		self.metrics.setTrainingTime(endTime - startTime)
 
 		# Plot Loss function, learning rate graph and dice evolution
 		metrics.Metrics.plotTrainingMetrics(H)

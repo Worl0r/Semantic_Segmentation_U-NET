@@ -2,6 +2,7 @@ import os
 import config
 import matplotlib.pyplot as plt
 import utils
+import shutil
 
 def prepare_plot(plots, plotTitles, path, title="", mode="train"):
 	# Initialize our figures
@@ -45,6 +46,15 @@ def folderExists(path):
 		os.makedirs(path)
 		logMsg("You created a new folder : " +  str(path), "data")
 
+def deleteFolder(path):
+    # Check if the folder exists
+    if os.path.exists(path):
+        # Remove the folder and its contents
+        shutil.rmtree(path)
+        logMsg("Folder deleted : " + str(path), "delete")
+    else:
+        logMsg("Folder does not exist : " + str(path), "delete")
+
 def list_files(basePath, validExts=None, contains=None):
     # loop over the directory structure
     for (rootDir, dirNames, filenames) in os.walk(basePath):
@@ -69,7 +79,6 @@ def list_images(basePath, contains=None):
     return list_files(basePath, validExts=config.IMAGE_TYPES, contains=contains)
 
 def logMsg(msg, type):
-
     if type == "info":
         print("[INFO] ", msg)
     elif type == "data":
@@ -84,6 +93,8 @@ def logMsg(msg, type):
         print("[PARALLELISM] ", msg)
     elif type == "test":
         print("[TEST] ", msg)
+    elif type == "delete":
+        print("[DELETE] ", msg)
     else :
         print("[INFO] ", msg)
 

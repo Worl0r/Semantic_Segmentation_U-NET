@@ -126,7 +126,7 @@ class TestModel:
 		plotTitles.append("Original Mask RGB")
 
 		# We plot just one dimension for nbr_classes egual to 1
-		if config.NBR_CLASSES == 1:
+		if (config.NBR_CLASSES == 1 and config.ACTIVATE_LABELED_CLASSES == False) or config.NBR_CLASSES == 2:
 			plots.append(torchMask[0].cpu().T)
 			plotTitles.append("Binary mask")
 			#plots.append(pred[0].cpu().detach().numpy().T)
@@ -204,13 +204,37 @@ class TestModel:
 				pred_indices = torch.from_numpy(pred_indices).int()
 
 				# Plot confusion matrix
-				self.metrics.confusionMatrix(name, pred_indices.flatten(), gt_indices.flatten(), True)
+				self.metrics.confusionMatrix(name, pred_indices.flatten(), gt_indices.flatten())
 
 				# Compute error map
 				errorMap =  pred_indices - gt_indices
 
 				# Save other metrics
 				self.metrics.addValueToMetrics(pred_indices, gt_indices, prediction, gt_indices, name)
+
+			elif config.NBR_CLASSES == 2 and config.ACTIVATE_LABELED_CLASSES == True:
+				# Add value to metrics class
+				gtMaskTensor = dataset.SegmentationDataset.convertToLabeledTensorMask(
+				gtMask255range,
+				shape=[
+					config.NBR_CLASSES,
+					config.INPUT_IMAGE_HEIGHT,
+					config.INPUT_IMAGE_WIDTH
+				]
+				)
+
+				# We want a matrix who code index labels
+				pred_indices = torch.argmax(torch.from_numpy(prediction), dim=0)
+				gt_indices = torch.argmax(gtMaskTensor, dim=0)
+
+				# Plot confusion matrix
+				self.metrics.confusionMatrix(name, pred_indices, gt_indices)
+
+				# Compute error map
+				errorMap =  pred_indices - gt_indices
+
+				# Save other metrics
+				self.metrics.addValueToMetrics(pred_indices, gt_indices, np.max(prediction, axis=0), gt_indices, name)
 
 			else:
 				# Add value to metrics class
@@ -228,7 +252,7 @@ class TestModel:
 				gt_indices = torch.argmax(gtMaskTensor, dim=0)
 
 				# Plot confusion matrix
-				self.metrics.confusionMatrix(name, pred_indices, gt_indices, True)
+				self.metrics.confusionMatrix(name, pred_indices, gt_indices)
 
 				# Define error map
 				errorMap = None
@@ -249,6 +273,10 @@ class TestModel:
 	def makePredictionDataset(self, imagePaths):
 		# iterate over the randomly selected test image paths
 		utils.logMsg("Start of predictions...", "test")
+
+		# Delete old plots for metrics and test
+		utils.deleteFolder(config.PLOT_METRICS)
+		utils.deleteFolder(config.PLOT_TEST_PATH)
 
 		for index, path in enumerate(imagePaths):
 			# make predictions and visualize the results
