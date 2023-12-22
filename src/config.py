@@ -22,7 +22,7 @@ else:
 ######################################## General Settings ########################################
 # Test or Train the model
 TYPE_PROCESS = "train"  #value: {"train", "test"}
-ID_SESSION = "multiclass-2" # unique ID
+ID_SESSION = "multiclass-1" # unique ID
 
 # Activate Parallelism
 ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
@@ -33,7 +33,7 @@ NBR_GPU = 1 # Adapt this one for the training mode
 os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2,3"
 
 # Data Augmentation
-AUG_DATA = False
+AUG_DATA = True
 GENERATE_AUGMENTED_DATA = False # Active just once to generate the data.
 #Sometimes there are bugs, so if this is the case, try again and it will be okay.
 
@@ -69,7 +69,7 @@ PATIENCE = 5
 
 ######################################## Test Settings ###########################################
 # Number of image to test
-SELECTED_IMAGE_TEST = 3
+SELECTED_IMAGE_TEST = 10
 
 # Metrics
 ALL_METRICS = True
