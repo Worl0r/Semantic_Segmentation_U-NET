@@ -12,8 +12,6 @@ import torch
 from skimage.metrics import structural_similarity as ssim
 from sklearn.metrics import roc_curve, auc
 import matplotlib.pyplot as plt
-from ignite.metrics import mIoU
-from ignite.engine import Engine
 
 class Metrics:
     def __init__(self, device):

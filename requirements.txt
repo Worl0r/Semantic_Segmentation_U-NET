@@ -1,4 +1,5 @@
 scikit-learn
+scikit-image
 torchvision
 imutils
 tqdm
@@ -9,3 +10,4 @@ time
 torch
 numpy
 csv
+
