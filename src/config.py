@@ -22,15 +22,15 @@ else:
 ######################################## General Settings ########################################
 # Test or Train the model
 TYPE_PROCESS = "train"  #value: {"train", "test"}
-ID_SESSION = "multiclass-1" # unique ID
+ID_SESSION = "multiclass-3" # unique ID
 
 # Activate Parallelism
 ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
-NBR_WORKERS = 8 # 24 is the maximum for Gricad
+NBR_WORKERS = 24 # 24 is the maximum for Gricad
 # Number or GPU
 NBR_GPU = 1 # Adapt this one for the training mode
 # Name of GPU's
-os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2,3"
+os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 
 # Data Augmentation
 AUG_DATA = True
@@ -46,15 +46,15 @@ TEST_SPLIT = 0.15
 ENC_CHANNELS= (3, 16, 32, 64)
 DEC_CHANNELS = (64, 32, 16)
 # Number of class
-NBR_CLASSES = 5
+NBR_CLASSES = 6
 ACTIVATE_LABELED_CLASSES = True
 # Size of input images
-INPUT_IMAGE_HEIGHT = 256
-INPUT_IMAGE_WIDTH = 256
-BATCH_SIZE = 8
-NUM_EPOCHS = 10
+INPUT_IMAGE_HEIGHT = 512
+INPUT_IMAGE_WIDTH = 512
+BATCH_SIZE = 16
+NUM_EPOCHS = 45
 # Learning rate
-INIT_LR = 0.01
+INIT_LR = 0.001
 # Threshold just usefull of one class unlabeled
 THRESHOLD_TYPE = "mean"
 
@@ -69,7 +69,7 @@ PATIENCE = 5
 
 ######################################## Test Settings ###########################################
 # Number of image to test
-SELECTED_IMAGE_TEST = 10
+SELECTED_IMAGE_TEST = 12
 
 # Metrics
 ALL_METRICS = True
