@@ -1,2 +1,10 @@
 Mean Metrics :
-TrainingTime: 1635.3868291378021
+ssim: nan
+F1: 0.5092701514561971
+dice: 0.7360770534723997
+mIoU: nan
+roc: [nan, array([0.  , 0.11, 1.  ]), array([nan, nan, nan])]
+mi: 0.1291157731791915
+cc: nan
+ls: 0.12398815155029297
+sad: 0.12398815155029297
