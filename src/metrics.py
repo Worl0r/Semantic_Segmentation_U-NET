@@ -30,6 +30,7 @@ class Metrics:
             "Confusion_matrix": [],
             "Precision-Recall_curve": [],
             "mAP":[],
+            "mIoU":[],
             "Computation_time_training":[]
             }
 
@@ -132,9 +133,14 @@ class Metrics:
         # mean of mAP
         Metrics.plotMAP(self, "Mean_Average_Precision_For_All_Images.png")
 
+        # mean of mIoU
+        meanmIoU = np.array(self.metrics["mIoU"])
+        meanmIoU = np.sum(meanmIoU) / meanmIoU.shape[0]
+
         meanMetrics = {
                 "F1": meanF1,
-                "dice": meanDice
+                "dice": meanDice,
+                "mIoU": meanmIoU
                 }
 
         if (config.NBR_CLASSES == 1 and config.ACTIVATE_LABELED_CLASSES == False) or (config.NBR_CLASSES == 2 and config.ACTIVATE_LABELED_CLASSES == True):
@@ -183,6 +189,7 @@ class Metrics:
                 "ssim": meanSsim,
                 "F1": meanF1,
                 "dice": meanDice,
+                "mIoU": meanmIoU,
                 "roc": self.metrics["roc"][-1],
                 "mi": meanMI, "cc": meanCC,
                 "ls": meanLS,
@@ -203,6 +210,9 @@ class Metrics:
             path = os.path.join(config.PLOT_METRICS, name + "_ConfusionMatrix.png")
 
             Metrics.plotCMNormalizedAndNot(self, cm, name, path)
+
+        # mIoU
+        self.metrics["mIoU"] = round(100*np.mean(np.nan_to_num(np.array([Metrics.iou(cm.tolist(), i) for i in range(23)]))),  4)
 
     def meanConfusionMatrix(self):
         meanCm = np.zeros((config.NBR_CLASSES, config.NBR_CLASSES))
@@ -394,3 +404,6 @@ class Metrics:
             dice_scores.append(dice.item())
 
         return sum(dice_scores) / num_classes
+
+    def iou(cm, i):
+        return cm[i,i] / (sum(cm[i]) + sum(cm[:,i]) - cm[i,i])
