@@ -5,6 +5,7 @@ import torch
 import os
 import utils
 import torchvision
+import platform
 
 class TestModel:
 	def __init__(self, model, transforms, metrics):
@@ -291,4 +292,5 @@ class TestModel:
 
 		# We save all logs and errors in our specific id file
 		# Useful just for Gricad
-		#utils.saveLogs()
+		if platform.system() == 'Linux':
+			utils.saveLogs()

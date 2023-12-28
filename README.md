@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 * Install the right version of torch :
 ```bash
-pip3 install torch==1.12.1+cu113 torchmetrics=1.12.1 torchvision==0.13.1+cu113 torchaudio===0.12.1 -f https://download.pytorch.org/whl/torch_stable.html
+pip3 install torch==1.12.1+cu113 torchmetrics==1.2.1 torchvision==0.13.1+cu113 torchaudio==0.12.1 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
 *Note:* These version are mandatory for the **[Gricad Calculator]( https://gricad.univ-grenoble-alpes.fr/)**. Feel free to adapt these versions to your own environment.
