@@ -68,7 +68,7 @@ def augment_data(images, masks, save_path, augment=True):
             save_image_and_mask(img_bright, msk_bright, image_name + "_4", mask_name + "_4", idx, save_path)
 
         # Original
-        save_image_and_mask(image, mask, image_name + "_4", mask_name + "_4", idx, save_path)
+        save_image_and_mask(image, mask, image_name + "_5", mask_name + "_5", idx, save_path)
 
 # In order to apply the same transform for maska and image we keep the random coefs
 def random_crop(image, mask, size):
