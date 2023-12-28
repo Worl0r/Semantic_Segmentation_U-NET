@@ -1,11 +1,11 @@
 scikit-learn
 scikit-image
 torchvision
+torchmetrics[detection]
 imutils
 tqdm
 matplotlib
 torchmetrics
-pytorch-ignite
 time
 torch
 numpy

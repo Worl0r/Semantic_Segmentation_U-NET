@@ -51,7 +51,7 @@ class Metrics:
         self.metrics["Computation_time_training"].append(value)
         trainingTime = {"TrainingTime": value}
 
-        path =  os.path.join(config.BASE_OUTPUT, config.ID_SESSION, "Metrics.txt")
+        path =  os.path.join(config.BASE_OUTPUT, config.ID_SESSION, "TrainingTime.txt")
 
         utils.writeFile(trainingTime, path)
 
