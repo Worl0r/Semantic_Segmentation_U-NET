@@ -135,7 +135,7 @@ class Metrics:
 
         # mean of mIoU
         meanmIoU = np.array(self.metrics["mIoU"])
-        meanmIoU = np.sum(meanmIoU) / meanmIoU.shape[0]
+        meanmIoU = np.sum(meanmIoU) / meanmIoU.shape
 
         meanMetrics = {
                 "F1": meanF1,
@@ -212,7 +212,7 @@ class Metrics:
             Metrics.plotCMNormalizedAndNot(self, cm, name, path)
 
         # mIoU
-        self.metrics["mIoU"] = round(100*np.mean(np.nan_to_num(np.array([Metrics.iou(cm.tolist(), i) for i in range(23)]))),  4)
+        self.metrics["mIoU"] = round(100*np.mean(np.nan_to_num(np.array([Metrics.iou(cm.tolist(), i) for i in range(config.NBR_CLASSES)]))),  4)
 
     def meanConfusionMatrix(self):
         meanCm = np.zeros((config.NBR_CLASSES, config.NBR_CLASSES))
@@ -405,5 +405,10 @@ class Metrics:
 
         return sum(dice_scores) / num_classes
 
+    #def iou(cm, i):
+        #return cm[i,i] / (sum(cm[i]) + sum(cm[:,i]) - cm[i,i])
+    
     def iou(cm, i):
-        return cm[i,i] / (sum(cm[i]) + sum(cm[:,i]) - cm[i,i])
+        row_sum = sum(cm[i])
+        column_sum = sum(row[i] for row in cm)
+        return cm[i][i] / (row_sum + column_sum - cm[i][i] + 10e-8)

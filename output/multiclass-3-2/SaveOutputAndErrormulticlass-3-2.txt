@@ -1,0 +1,1135 @@
+Toolkit 11.8 doesn't exist for cluster bigfoot.
+[TIME]  Script stats at: 2023-12-28 18:47:51.731483
+[INFO]  You start a process related with the ID: multiclass-3-2
+[PARALLELISM]  The status of cuda is: True.
+[PARALLELISM]  The status of MPS is: False.
+[PARALLELISM]  There are: 1 devices.
+[PARALLELISM]  Parallelism is activated : False
+[SAVE]  The config.py file has been saved in the id session folder.
+[INFO]  Start of model training
+[INFO]  You activated the option for augmented data.
+[DATA]  Original images:  400 - Original masks: 400
+[DATA]  Augmented images:  1599 - Augmented masks: 1599
+[INFO]  Train and test paths spliting...
+[INFO]  Saving testing image paths...
+[INFO]  Segmentation in Dataset...
+[INFO]  found 1359 examples in the training set...
+[INFO]  found 240 examples in the test set...
+[INFO]  Creation of Torch DataLoader...
+[INFO]  Training the network...
+[TIME]  Training batch on epoch 1 done at 2023-12-28 18:47:54.402159.
+[TIME]  Testing batch on epoch 1 done at 2023-12-28 18:56:49.706914.
+[TIME]  EPOCH: 1/1 at 2023-12-28 18:58:30.221748
+Train loss: 1.476277, Test loss: 1.3793
+[INFO]  We are saving the model at epoch 1.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Total time taken to train the model: 636.29s
+[DATA]  We save metrics file.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[INFO]  We are saving the model...
+[INFO]  Training model finished
+Toolkit 11.8 doesn't exist for cluster bigfoot.
+[TIME]  Script stats at: 2023-12-28 19:03:21.570806
+[INFO]  You start a process related with the ID: multiclass-3-2
+[PARALLELISM]  The status of cuda is: True.
+[PARALLELISM]  The status of MPS is: False.
+[PARALLELISM]  There are: 1 devices.
+[PARALLELISM]  Parallelism is activated : False
+[SAVE]  The config.py file has been saved in the id session folder.
+[INFO]  Start of model training
+[INFO]  You activated the option for augmented data.
+[DATA]  Original images:  400 - Original masks: 400
+[DATA]  Augmented images:  1599 - Augmented masks: 1599
+[INFO]  Train and test paths spliting...
+[INFO]  Saving testing image paths...
+[INFO]  Segmentation in Dataset...
+[INFO]  found 1359 examples in the training set...
+[INFO]  found 240 examples in the test set...
+[INFO]  Creation of Torch DataLoader...
+[INFO]  Training the network...
+[TIME]  Training batch on epoch 1 done at 2023-12-28 19:03:24.004963.
+[TIME]  Testing batch on epoch 1 done at 2023-12-28 19:12:18.864608.
+[TIME]  EPOCH: 1/45 at 2023-12-28 19:13:56.697629
+Train loss: 1.441166, Test loss: 1.3687
+[INFO]  We are saving the model at epoch 1.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 2 done at 2023-12-28 19:13:57.165915.
+[TIME]  Testing batch on epoch 2 done at 2023-12-28 19:23:03.316661.
+[TIME]  EPOCH: 2/45 at 2023-12-28 19:24:45.691029
+Train loss: 1.288868, Test loss: 1.2488
+[INFO]  We are saving the model at epoch 2.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 3 done at 2023-12-28 19:24:46.104890.
+[TIME]  Testing batch on epoch 3 done at 2023-12-28 19:34:08.425435.
+[TIME]  EPOCH: 3/45 at 2023-12-28 19:35:54.260734
+Train loss: 1.215744, Test loss: 1.2083
+[INFO]  We are saving the model at epoch 3.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 4 done at 2023-12-28 19:35:54.687261.
+[TIME]  Testing batch on epoch 4 done at 2023-12-28 19:45:21.575790.
+[TIME]  EPOCH: 4/45 at 2023-12-28 19:47:07.583809
+Train loss: 1.160764, Test loss: 1.1337
+[INFO]  We are saving the model at epoch 4.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 5 done at 2023-12-28 19:47:07.995001.
+[TIME]  Testing batch on epoch 5 done at 2023-12-28 19:56:33.214537.
+[TIME]  EPOCH: 5/45 at 2023-12-28 19:58:12.899313
+Train loss: 1.118294, Test loss: 1.1493
+[INFO]  We are saving the model at epoch 5.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 6 done at 2023-12-28 19:58:13.344156.
+[TIME]  Testing batch on epoch 6 done at 2023-12-28 20:07:30.619384.
+[TIME]  EPOCH: 6/45 at 2023-12-28 20:09:13.809086
+Train loss: 1.064168, Test loss: 1.1466
+[INFO]  We are saving the model at epoch 6.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 7 done at 2023-12-28 20:09:14.228400.
+[TIME]  Testing batch on epoch 7 done at 2023-12-28 20:18:34.014717.
+[TIME]  EPOCH: 7/45 at 2023-12-28 20:20:13.729437
+Train loss: 1.004341, Test loss: 0.9725
+[INFO]  We are saving the model at epoch 7.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 8 done at 2023-12-28 20:20:14.124001.
+[TIME]  Testing batch on epoch 8 done at 2023-12-28 20:29:27.684994.
+[TIME]  EPOCH: 8/45 at 2023-12-28 20:31:10.098260
+Train loss: 0.963506, Test loss: 1.0396
+[INFO]  We are saving the model at epoch 8.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 9 done at 2023-12-28 20:31:10.504943.
+[TIME]  Testing batch on epoch 9 done at 2023-12-28 20:40:30.276944.
+[TIME]  EPOCH: 9/45 at 2023-12-28 20:42:16.220245
+Train loss: 0.920331, Test loss: 0.9151
+[INFO]  We are saving the model at epoch 9.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 10 done at 2023-12-28 20:42:16.640516.
+[TIME]  Testing batch on epoch 10 done at 2023-12-28 20:51:40.285421.
+[TIME]  EPOCH: 10/45 at 2023-12-28 20:53:22.269721
+Train loss: 0.868465, Test loss: 0.9773
+[INFO]  We are saving the model at epoch 10.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 11 done at 2023-12-28 20:53:22.653655.
+[TIME]  Testing batch on epoch 11 done at 2023-12-28 21:02:49.205204.
+[TIME]  EPOCH: 11/45 at 2023-12-28 21:04:35.591580
+Train loss: 0.868967, Test loss: 0.9479
+[INFO]  We are saving the model at epoch 11.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 12 done at 2023-12-28 21:04:35.981433.
+[TIME]  Testing batch on epoch 12 done at 2023-12-28 21:14:07.039267.
+[TIME]  EPOCH: 12/45 at 2023-12-28 21:15:57.110502
+Train loss: 0.862589, Test loss: 0.8150
+[INFO]  We are saving the model at epoch 12.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 13 done at 2023-12-28 21:15:57.507268.
+[TIME]  Testing batch on epoch 13 done at 2023-12-28 21:25:26.564079.
+[TIME]  EPOCH: 13/45 at 2023-12-28 21:27:09.785062
+Train loss: 0.770186, Test loss: 0.8133
+[INFO]  We are saving the model at epoch 13.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 14 done at 2023-12-28 21:27:10.296867.
+[TIME]  Testing batch on epoch 14 done at 2023-12-28 21:36:32.718010.
+[TIME]  EPOCH: 14/45 at 2023-12-28 21:38:20.210021
+Train loss: 0.743230, Test loss: 0.7332
+[INFO]  We are saving the model at epoch 14.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 15 done at 2023-12-28 21:38:20.619538.
+[TIME]  Testing batch on epoch 15 done at 2023-12-28 21:47:42.664397.
+[TIME]  EPOCH: 15/45 at 2023-12-28 21:49:26.269098
+Train loss: 0.719145, Test loss: 0.7518
+[INFO]  We are saving the model at epoch 15.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 16 done at 2023-12-28 21:49:26.686694.
+[TIME]  Testing batch on epoch 16 done at 2023-12-28 21:58:54.921263.
+[TIME]  EPOCH: 16/45 at 2023-12-28 22:00:42.921482
+Train loss: 0.696549, Test loss: 0.6858
+[INFO]  We are saving the model at epoch 16.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 17 done at 2023-12-28 22:00:43.344759.
+[TIME]  Testing batch on epoch 17 done at 2023-12-28 22:10:11.202296.
+[TIME]  EPOCH: 17/45 at 2023-12-28 22:11:56.392794
+Train loss: 0.682401, Test loss: 0.7088
+[INFO]  We are saving the model at epoch 17.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 18 done at 2023-12-28 22:11:56.822100.
+[TIME]  Testing batch on epoch 18 done at 2023-12-28 22:21:13.125840.
+[TIME]  EPOCH: 18/45 at 2023-12-28 22:22:56.301399
+Train loss: 0.711525, Test loss: 0.6903
+[INFO]  We are saving the model at epoch 18.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 19 done at 2023-12-28 22:22:56.728010.
+[TIME]  Testing batch on epoch 19 done at 2023-12-28 22:32:25.245348.
+[TIME]  EPOCH: 19/45 at 2023-12-28 22:34:10.063293
+Train loss: 0.674348, Test loss: 0.6835
+[INFO]  We are saving the model at epoch 19.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 20 done at 2023-12-28 22:34:10.492904.
+[TIME]  Testing batch on epoch 20 done at 2023-12-28 22:43:26.976520.
+[TIME]  EPOCH: 20/45 at 2023-12-28 22:45:10.438196
+Train loss: 0.677516, Test loss: 0.6673
+[INFO]  We are saving the model at epoch 20.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 21 done at 2023-12-28 22:45:10.995461.
+[TIME]  Testing batch on epoch 21 done at 2023-12-28 22:54:38.718491.
+[TIME]  EPOCH: 21/45 at 2023-12-28 22:56:22.461034
+Train loss: 0.655227, Test loss: 0.6966
+[INFO]  We are saving the model at epoch 21.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 22 done at 2023-12-28 22:56:22.899445.
+[TIME]  Testing batch on epoch 22 done at 2023-12-28 23:05:50.035013.
+[TIME]  EPOCH: 22/45 at 2023-12-28 23:07:34.230836
+Train loss: 0.636470, Test loss: 0.6662
+[INFO]  We are saving the model at epoch 22.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 23 done at 2023-12-28 23:07:34.620718.
+[TIME]  Testing batch on epoch 23 done at 2023-12-28 23:16:52.164771.
+[TIME]  EPOCH: 23/45 at 2023-12-28 23:18:32.356469
+Train loss: 0.685580, Test loss: 0.6531
+[INFO]  We are saving the model at epoch 23.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 24 done at 2023-12-28 23:18:32.751492.
+[TIME]  Testing batch on epoch 24 done at 2023-12-28 23:27:50.721439.
+[TIME]  EPOCH: 24/45 at 2023-12-28 23:29:34.703167
+Train loss: 0.650157, Test loss: 0.6525
+[INFO]  We are saving the model at epoch 24.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 25 done at 2023-12-28 23:29:35.098335.
+[TIME]  Testing batch on epoch 25 done at 2023-12-28 23:38:45.641502.
+[TIME]  EPOCH: 25/45 at 2023-12-28 23:40:30.344292
+Train loss: 0.627255, Test loss: 0.6354
+[INFO]  We are saving the model at epoch 25.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 26 done at 2023-12-28 23:40:30.750341.
+[TIME]  Testing batch on epoch 26 done at 2023-12-28 23:49:44.308800.
+[TIME]  EPOCH: 26/45 at 2023-12-28 23:51:27.564946
+Train loss: 0.621342, Test loss: 0.6408
+[INFO]  We are saving the model at epoch 26.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 27 done at 2023-12-28 23:51:27.957702.
+[TIME]  Testing batch on epoch 27 done at 2023-12-29 00:00:53.934239.
+[TIME]  EPOCH: 27/45 at 2023-12-29 00:02:39.674686
+Train loss: 0.641942, Test loss: 0.6170
+[INFO]  We are saving the model at epoch 27.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 28 done at 2023-12-29 00:02:40.064345.
+[TIME]  Testing batch on epoch 28 done at 2023-12-29 00:11:58.937909.
+[TIME]  EPOCH: 28/45 at 2023-12-29 00:13:43.231872
+Train loss: 0.615283, Test loss: 0.6042
+[INFO]  We are saving the model at epoch 28.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 29 done at 2023-12-29 00:13:43.625784.
+[TIME]  Testing batch on epoch 29 done at 2023-12-29 00:22:51.398245.
+[TIME]  EPOCH: 29/45 at 2023-12-29 00:24:34.875653
+Train loss: 0.618125, Test loss: 0.6231
+[INFO]  We are saving the model at epoch 29.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 30 done at 2023-12-29 00:24:35.461041.
+[TIME]  Testing batch on epoch 30 done at 2023-12-29 00:34:06.825534.
+[TIME]  EPOCH: 30/45 at 2023-12-29 00:35:51.931972
+Train loss: 0.605840, Test loss: 0.5996
+[INFO]  We are saving the model at epoch 30.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 31 done at 2023-12-29 00:35:52.336937.
+[TIME]  Testing batch on epoch 31 done at 2023-12-29 00:45:09.395225.
+[TIME]  EPOCH: 31/45 at 2023-12-29 00:46:54.765030
+Train loss: 0.592776, Test loss: 0.6672
+[INFO]  We are saving the model at epoch 31.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 32 done at 2023-12-29 00:46:55.163075.
+[TIME]  Testing batch on epoch 32 done at 2023-12-29 00:56:24.945925.
+[TIME]  EPOCH: 32/45 at 2023-12-29 00:58:10.831376
+Train loss: 0.611281, Test loss: 0.6286
+[INFO]  We are saving the model at epoch 32.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 33 done at 2023-12-29 00:58:11.230198.
+[TIME]  Testing batch on epoch 33 done at 2023-12-29 01:07:28.284216.
+[TIME]  EPOCH: 33/45 at 2023-12-29 01:09:11.265510
+Train loss: 0.603364, Test loss: 0.6220
+[INFO]  We are saving the model at epoch 33.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 34 done at 2023-12-29 01:09:11.666302.
+[TIME]  Testing batch on epoch 34 done at 2023-12-29 01:18:42.375729.
+[TIME]  EPOCH: 34/45 at 2023-12-29 01:20:26.467642
+Train loss: 0.585928, Test loss: 0.5707
+[INFO]  We are saving the model at epoch 34.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 35 done at 2023-12-29 01:20:26.869980.
+[TIME]  Testing batch on epoch 35 done at 2023-12-29 01:29:49.083667.
+[TIME]  EPOCH: 35/45 at 2023-12-29 01:31:34.660253
+Train loss: 0.557507, Test loss: 0.5954
+[INFO]  We are saving the model at epoch 35.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 36 done at 2023-12-29 01:31:35.072652.
+[TIME]  Testing batch on epoch 36 done at 2023-12-29 01:41:13.215280.
+[TIME]  EPOCH: 36/45 at 2023-12-29 01:42:56.737430
+Train loss: 0.554059, Test loss: 0.5705
+[INFO]  We are saving the model at epoch 36.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 37 done at 2023-12-29 01:42:57.147884.
+[TIME]  Testing batch on epoch 37 done at 2023-12-29 01:52:24.018178.
+[TIME]  EPOCH: 37/45 at 2023-12-29 01:54:08.145859
+Train loss: 0.580183, Test loss: 0.5870
+[INFO]  We are saving the model at epoch 37.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 38 done at 2023-12-29 01:54:08.558910.
+[TIME]  Testing batch on epoch 38 done at 2023-12-29 02:03:29.976974.
+[TIME]  EPOCH: 38/45 at 2023-12-29 02:05:15.657375
+Train loss: 0.557477, Test loss: 0.5978
+[INFO]  We are saving the model at epoch 38.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 39 done at 2023-12-29 02:05:16.067988.
+[TIME]  Testing batch on epoch 39 done at 2023-12-29 02:14:37.741415.
+[TIME]  EPOCH: 39/45 at 2023-12-29 02:16:20.156188
+Train loss: 0.551233, Test loss: 0.5675
+[INFO]  We are saving the model at epoch 39.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 40 done at 2023-12-29 02:16:20.810978.
+[TIME]  Testing batch on epoch 40 done at 2023-12-29 02:25:39.223245.
+[TIME]  EPOCH: 40/45 at 2023-12-29 02:27:22.450306
+Train loss: 0.531587, Test loss: 0.5557
+[INFO]  We are saving the model at epoch 40.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 41 done at 2023-12-29 02:27:22.874252.
+[TIME]  Testing batch on epoch 41 done at 2023-12-29 02:36:44.223446.
+[TIME]  EPOCH: 41/45 at 2023-12-29 02:38:30.583052
+Train loss: 0.526899, Test loss: 0.5568
+[INFO]  We are saving the model at epoch 41.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 42 done at 2023-12-29 02:38:31.003963.
+[TIME]  Testing batch on epoch 42 done at 2023-12-29 02:47:40.240586.
+[TIME]  EPOCH: 42/45 at 2023-12-29 02:49:24.748756
+Train loss: 0.532938, Test loss: 0.5747
+[INFO]  We are saving the model at epoch 42.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 43 done at 2023-12-29 02:49:25.125415.
+[TIME]  Testing batch on epoch 43 done at 2023-12-29 02:58:46.767253.
+[TIME]  EPOCH: 43/45 at 2023-12-29 03:00:27.329571
+Train loss: 0.533931, Test loss: 0.5418
+[INFO]  We are saving the model at epoch 43.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 44 done at 2023-12-29 03:00:27.704284.
+[TIME]  Testing batch on epoch 44 done at 2023-12-29 03:09:47.063869.
+[TIME]  EPOCH: 44/45 at 2023-12-29 03:11:31.663633
+Train loss: 0.530216, Test loss: 0.5549
+[INFO]  We are saving the model at epoch 44.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Training batch on epoch 45 done at 2023-12-29 03:11:32.044817.
+[TIME]  Testing batch on epoch 45 done at 2023-12-29 03:20:58.412744.
+[TIME]  EPOCH: 45/45 at 2023-12-29 03:22:42.002450
+Train loss: 0.520000, Test loss: 0.5411
+[INFO]  We are saving the model at epoch 45.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[TIME]  Total time taken to train the model: 29958.38s
+[DATA]  We save metrics file.
+[INFO]  Plotting and saving the Loss Function, decis and learning rate...
+[INFO]  We are saving the model...
+[INFO]  Training model finished
++ python main.py
+
+  0%|          | 0/10 [00:00<?, ?it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]
+ 10%|█         | 1/10 [45:46<6:52:01, 2746.85s/it]
+ 10%|█         | 1/10 [45:47<6:52:07, 2747.55s/it]
+ 10%|█         | 1/10 [45:59<6:53:59, 2759.89s/it]
+ 10%|█         | 1/10 [46:32<6:58:56, 2793.00s/it]
+ 20%|██        | 2/10 [1:30:54<6:03:08, 2723.52s/it]
+ 20%|██        | 2/10 [1:31:05<6:03:42, 2727.79s/it]
+ 20%|██        | 2/10 [1:31:13<6:04:36, 2734.62s/it]
+ 20%|██        | 2/10 [1:31:51<6:06:34, 2749.33s/it]
+ 30%|███       | 3/10 [2:16:11<5:17:05, 2717.94s/it]
+ 30%|███       | 3/10 [2:16:14<5:16:09, 2709.92s/it]
+ 30%|███       | 3/10 [2:16:25<5:17:52, 2724.69s/it]
+ 30%|███       | 3/10 [2:16:48<5:19:23, 2737.61s/it]
+ 40%|████      | 4/10 [3:01:12<4:30:51, 2708.52s/it]
+ 40%|████      | 4/10 [3:01:45<4:32:24, 2724.15s/it]
+ 40%|████      | 4/10 [3:01:57<4:32:43, 2727.27s/it]
+ 40%|████      | 4/10 [3:01:59<4:32:21, 2723.64s/it]
+ 50%|█████     | 5/10 [3:46:31<3:46:02, 2712.41s/it]
+ 50%|█████     | 5/10 [3:46:51<3:46:29, 2717.85s/it]
+ 50%|█████     | 5/10 [3:46:54<3:46:22, 2716.57s/it]
+ 50%|█████     | 5/10 [3:47:06<3:46:28, 2717.64s/it]
+ 60%|██████    | 6/10 [4:32:25<3:01:24, 2721.21s/it]
+ 60%|██████    | 6/10 [4:32:38<3:02:04, 2731.02s/it]
+ 60%|██████    | 6/10 [4:32:48<3:01:44, 2726.01s/it]
+ 60%|██████    | 6/10 [4:32:56<3:02:14, 2733.66s/it]
+ 70%|███████   | 7/10 [5:17:09<2:15:33, 2711.23s/it]
+ 70%|███████   | 7/10 [5:17:24<2:15:41, 2713.97s/it]
+ 70%|███████   | 7/10 [5:17:26<2:15:39, 2713.01s/it]
+ 70%|███████   | 7/10 [5:17:29<2:15:33, 2711.14s/it]
+ 80%|████████  | 8/10 [6:02:02<1:30:10, 2705.35s/it]
+ 80%|████████  | 8/10 [6:02:30<1:30:20, 2710.03s/it]
+ 80%|████████  | 8/10 [6:02:30<1:30:16, 2708.12s/it]
+ 80%|████████  | 8/10 [6:02:36<1:30:26, 2713.32s/it]
+ 90%|█████████ | 9/10 [6:47:17<45:03, 2703.46s/it]  
+ 90%|█████████ | 9/10 [6:47:18<45:01, 2701.75s/it]  
+ 90%|█████████ | 9/10 [6:47:28<45:06, 2706.46s/it]  
+ 90%|█████████ | 9/10 [6:47:30<45:12, 2712.47s/it]  
+100%|██████████| 10/10 [7:33:09<00:00, 2716.97s/it]
+100%|██████████| 10/10 [7:33:09<00:00, 2718.94s/it]
+
+100%|██████████| 10/10 [7:33:29<00:00, 2724.59s/it]
+100%|██████████| 10/10 [7:33:29<00:00, 2720.97s/it]
+
+100%|██████████| 10/10 [7:33:43<00:00, 2727.29s/it]
+100%|██████████| 10/10 [7:33:43<00:00, 2722.31s/it]
+
+100%|██████████| 10/10 [7:33:52<00:00, 2734.10s/it]
+100%|██████████| 10/10 [7:33:52<00:00, 2723.27s/it]
++ python main.py
+
+  0%|          | 0/10 [00:00<?, ?it/s]
+ 10%|█         | 1/10 [1:30:29<13:34:26, 5429.63s/it]
+ 20%|██        | 2/10 [3:03:43<12:16:49, 5526.14s/it]
+ 30%|███       | 3/10 [4:29:26<10:24:19, 5351.36s/it]
+ 40%|████      | 4/10 [5:59:25<8:56:59, 5369.93s/it] 
+ 50%|█████     | 5/10 [7:23:40<7:18:02, 5256.48s/it]
+ 60%|██████    | 6/10 [8:48:24<5:46:31, 5197.87s/it]
+ 70%|███████   | 7/10 [10:19:04<4:23:50, 5276.86s/it]## OAR [2023-12-18 17:15:29] Job 724353 KILLED ##
++ python main.py
+/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  0%|          | 0/25 [00:00<?, ?it/s]
+  4%|▍         | 1/25 [09:02<3:37:11, 543.00s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  8%|▊         | 2/25 [18:16<3:30:37, 549.44s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 12%|█▏        | 3/25 [27:22<3:20:51, 547.78s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+## OAR [2023-12-22 23:41:43] Job 891411 KILLED ##
++ python main.py
+/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  0%|          | 0/30 [00:00<?, ?it/s]
+  3%|▎         | 1/30 [09:20<4:30:44, 560.14s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  7%|▋         | 2/30 [18:51<4:24:24, 566.60s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 10%|█         | 3/30 [28:17<4:14:53, 566.42s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 13%|█▎        | 4/30 [37:44<4:05:34, 566.69s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 17%|█▋        | 5/30 [47:05<3:55:12, 564.50s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+## OAR [2023-12-23 00:38:52] Job 891412 KILLED ##
++ python main.py
+/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  0%|          | 0/30 [00:00<?, ?it/s]
+  3%|▎         | 1/30 [09:15<4:28:21, 555.22s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  7%|▋         | 2/30 [18:40<4:21:45, 560.91s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 10%|█         | 3/30 [28:06<4:13:34, 563.50s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 13%|█▎        | 4/30 [37:27<4:03:38, 562.24s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 17%|█▋        | 5/30 [46:56<3:55:18, 564.74s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 20%|██        | 6/30 [56:15<3:45:07, 562.83s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 23%|██▎       | 7/30 [1:05:29<3:34:39, 560.00s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 27%|██▋       | 8/30 [1:14:50<3:25:24, 560.19s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 30%|███       | 9/30 [1:24:06<3:15:40, 559.05s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 33%|███▎      | 10/30 [1:33:30<3:06:52, 560.63s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 37%|███▋      | 11/30 [1:42:56<2:58:01, 562.20s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 40%|████      | 12/30 [1:52:22<2:49:01, 563.42s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 43%|████▎     | 13/30 [2:01:48<2:39:49, 564.09s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 47%|████▋     | 14/30 [2:11:10<2:30:15, 563.46s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 50%|█████     | 15/30 [2:20:44<2:21:40, 566.71s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 53%|█████▎    | 16/30 [2:30:00<2:11:29, 563.55s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 57%|█████▋    | 17/30 [2:39:17<2:01:37, 561.36s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 60%|██████    | 18/30 [2:48:37<1:52:12, 561.06s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 63%|██████▎   | 19/30 [2:58:01<1:43:01, 561.93s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 67%|██████▋   | 20/30 [3:07:27<1:33:50, 563.03s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/conversb/Semantic_Segmentation_U-NET/src/metrics.py:309: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  fig, ax = plt.subplots(1, 3, figsize=(20,5))
+
+ 70%|███████   | 21/30 [3:16:49<1:24:25, 562.84s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 73%|███████▎  | 22/30 [3:26:08<1:14:53, 561.71s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 77%|███████▋  | 23/30 [3:35:22<1:05:15, 559.37s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 80%|████████  | 24/30 [3:44:39<55:52, 558.76s/it]  /home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 83%|████████▎ | 25/30 [3:54:04<46:42, 560.46s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 87%|████████▋ | 26/30 [4:03:29<37:28, 562.06s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 90%|█████████ | 27/30 [4:12:44<27:59, 559.87s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 93%|█████████▎| 28/30 [4:22:06<18:41, 560.56s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 97%|█████████▋| 29/30 [4:31:28<09:20, 560.95s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+100%|██████████| 30/30 [4:40:48<00:00, 560.51s/it]
+100%|██████████| 30/30 [4:40:48<00:00, 561.61s/it]
+/bin/bash: line 1: GricadScript.sh: command not found
++ python main.py
+/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  0%|          | 0/30 [00:00<?, ?it/s]
+  3%|▎         | 1/30 [08:57<4:19:59, 537.93s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  7%|▋         | 2/30 [18:17<4:17:01, 550.75s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 10%|█         | 3/30 [27:26<4:07:27, 549.92s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 13%|█▎        | 4/30 [36:50<4:00:36, 555.26s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 17%|█▋        | 5/30 [45:55<3:49:55, 551.81s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 20%|██        | 6/30 [55:05<3:40:29, 551.22s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 23%|██▎       | 7/30 [1:04:25<3:32:21, 553.96s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 27%|██▋       | 8/30 [1:13:46<3:23:55, 556.16s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 30%|███       | 9/30 [1:23:03<3:14:44, 556.43s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 33%|███▎      | 10/30 [1:32:22<3:05:45, 557.27s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 37%|███▋      | 11/30 [1:41:25<2:55:05, 552.90s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 40%|████      | 12/30 [1:50:20<2:44:13, 547.40s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 43%|████▎     | 13/30 [1:59:13<2:33:51, 543.01s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 47%|████▋     | 14/30 [2:08:05<2:23:57, 539.83s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 50%|█████     | 15/30 [2:17:02<2:14:45, 539.01s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 53%|█████▎    | 16/30 [2:25:58<2:05:33, 538.08s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 57%|█████▋    | 17/30 [2:34:53<1:56:22, 537.14s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 60%|██████    | 18/30 [2:43:47<1:47:13, 536.14s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 63%|██████▎   | 19/30 [2:52:38<1:38:00, 534.56s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 67%|██████▋   | 20/30 [3:01:35<1:29:14, 535.41s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/conversb/Semantic_Segmentation_U-NET/src/metrics.py:309: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  fig, ax = plt.subplots(1, 3, figsize=(20,5))
+
+ 70%|███████   | 21/30 [3:10:23<1:19:58, 533.21s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 73%|███████▎  | 22/30 [3:19:15<1:11:01, 532.72s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 77%|███████▋  | 23/30 [3:28:05<1:02:03, 531.99s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 80%|████████  | 24/30 [3:36:53<53:04, 530.74s/it]  /home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 83%|████████▎ | 25/30 [3:45:43<44:12, 530.53s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 87%|████████▋ | 26/30 [3:54:36<35:24, 531.18s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 90%|█████████ | 27/30 [4:03:26<26:33, 531.03s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 93%|█████████▎| 28/30 [4:12:15<17:40, 530.44s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 97%|█████████▋| 29/30 [4:21:04<08:49, 529.76s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+100%|██████████| 30/30 [4:30:00<00:00, 531.76s/it]
+100%|██████████| 30/30 [4:30:00<00:00, 540.02s/it]
++ python main.py
+/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  0%|          | 0/45 [00:00<?, ?it/s]
+  2%|▏         | 1/45 [10:45<7:53:28, 645.66s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  4%|▍         | 2/45 [21:53<7:52:01, 658.65s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  7%|▋         | 3/45 [32:57<7:42:49, 661.19s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  9%|▉         | 4/45 [44:00<7:32:21, 662.00s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 11%|█         | 5/45 [55:05<7:21:59, 662.99s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 13%|█▎        | 6/45 [1:06:15<7:12:34, 665.50s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 16%|█▌        | 7/45 [1:17:19<7:01:06, 664.91s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 18%|█▊        | 8/45 [1:28:16<6:48:27, 662.37s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 20%|██        | 9/45 [1:39:15<6:36:44, 661.24s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 22%|██▏       | 10/45 [1:50:20<6:26:30, 662.59s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 24%|██▍       | 11/45 [2:01:32<6:16:58, 665.24s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 27%|██▋       | 12/45 [2:12:45<6:07:16, 667.77s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 29%|██▉       | 13/45 [2:23:47<5:55:14, 666.07s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 31%|███       | 14/45 [2:34:55<5:44:18, 666.39s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 33%|███▎      | 15/45 [2:46:01<5:33:09, 666.30s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 36%|███▌      | 16/45 [2:57:13<5:22:56, 668.16s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 38%|███▊      | 17/45 [3:08:26<5:12:27, 669.54s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 40%|████      | 18/45 [3:19:29<5:00:24, 667.58s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 42%|████▏     | 19/45 [3:30:25<4:47:51, 664.28s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 44%|████▍     | 20/45 [3:41:36<4:37:36, 666.27s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/conversb/Semantic_Segmentation_U-NET/src/metrics.py:309: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  fig, ax = plt.subplots(1, 3, figsize=(20,5))
+
+ 47%|████▋     | 21/45 [3:52:49<4:27:13, 668.05s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 49%|████▉     | 22/45 [4:03:56<4:16:00, 667.86s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 51%|█████     | 23/45 [4:15:07<4:05:11, 668.69s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 53%|█████▎    | 24/45 [4:26:12<3:53:43, 667.79s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 56%|█████▌    | 25/45 [4:37:13<3:41:55, 665.80s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 58%|█████▊    | 26/45 [4:48:21<3:30:57, 666.20s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 60%|██████    | 27/45 [4:59:22<3:19:27, 664.87s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 62%|██████▏   | 28/45 [5:10:33<3:08:50, 666.50s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 64%|██████▍   | 29/45 [5:21:40<2:57:47, 666.69s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 67%|██████▋   | 30/45 [5:32:51<2:46:58, 667.93s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 69%|██████▉   | 31/45 [5:43:58<2:35:48, 667.74s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 71%|███████   | 32/45 [5:54:59<2:24:13, 665.65s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 73%|███████▎  | 33/45 [6:06:26<2:14:24, 672.02s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 76%|███████▌  | 34/45 [6:17:36<2:03:05, 671.43s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 78%|███████▊  | 35/45 [6:28:44<1:51:45, 670.59s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 80%|████████  | 36/45 [6:40:16<1:41:31, 676.85s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 82%|████████▏ | 37/45 [6:51:25<1:29:56, 674.57s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 84%|████████▍ | 38/45 [7:02:30<1:18:21, 671.58s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 87%|████████▋ | 39/45 [7:13:44<1:07:14, 672.40s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 89%|████████▉ | 40/45 [7:24:49<55:51, 670.30s/it]  /home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 91%|█████████ | 41/45 [7:35:55<44:35, 668.82s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 93%|█████████▎| 42/45 [7:46:57<33:20, 666.99s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 96%|█████████▌| 43/45 [7:58:09<22:16, 668.33s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+## OAR [2023-12-25 02:42:25] Job 891524 KILLED ##
++ python main.py
+Traceback (most recent call last):
+  File "/home/conversb/Semantic_Segmentation_U-NET/src/main.py", line 148, in <module>
+    main()
+  File "/home/conversb/Semantic_Segmentation_U-NET/src/main.py", line 79, in main
+    metricsClass = metrics.Metrics(config.DEVICE)
+  File "/home/conversb/Semantic_Segmentation_U-NET/src/metrics.py", line 45, in __init__
+    self.metricF1 = MulticlassF1Score(num_classes=config.NBR_CLASSES)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torchmetrics/classification/f_beta.py", line 804, in __init__
+    super().__init__(
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torchmetrics/classification/f_beta.py", line 319, in __init__
+    _multiclass_fbeta_score_arg_validation(beta, num_classes, top_k, average, multidim_average, ignore_index)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torchmetrics/functional/classification/f_beta.py", line 156, in _multiclass_fbeta_score_arg_validation
+    _multiclass_stat_scores_arg_validation(num_classes, top_k, average, multidim_average, ignore_index)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torchmetrics/functional/classification/stat_scores.py", line 234, in _multiclass_stat_scores_arg_validation
+    raise ValueError(f"Expected argument `num_classes` to be an integer larger than 1, but got {num_classes}")
+ValueError: Expected argument `num_classes` to be an integer larger than 1, but got 1
++ python main.py
+Traceback (most recent call last):
+  File "/home/conversb/Semantic_Segmentation_U-NET/src/main.py", line 148, in <module>
+    main()
+  File "/home/conversb/Semantic_Segmentation_U-NET/src/main.py", line 79, in main
+    metricsClass = metrics.Metrics(config.DEVICE)
+  File "/home/conversb/Semantic_Segmentation_U-NET/src/metrics.py", line 42, in __init__
+    self.metricAveragePrecision = MeanAveragePrecision(iou_type="segm")
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torchmetrics/detection/mean_ap.py", line 374, in __init__
+    raise ModuleNotFoundError(
+ModuleNotFoundError: `MAP` metric requires that `pycocotools` or `faster-coco-eval` installed. Please install with `pip install pycocotools` or `pip install faster-coco-eval` or `pip install torchmetrics[detection]`.
++ python main.py
+Traceback (most recent call last):
+  File "/home/conversb/Semantic_Segmentation_U-NET/src/main.py", line 2, in <module>
+    import train
+  File "/home/conversb/Semantic_Segmentation_U-NET/src/train.py", line 16, in <module>
+    import metrics
+  File "/home/conversb/Semantic_Segmentation_U-NET/src/metrics.py", line 1, in <module>
+    from torchmetrics.classification import BinaryF1Score, BinaryConfusionMatrix, BinaryPrecisionRecallCurve, MulticlassF1Score, MulticlassPrecisionRecallCurve
+  File "/home/conversb/.local/lib/python3.9/site-packages/torchmetrics/__init__.py", line 22, in <module>
+    from torchmetrics import functional  # noqa: E402
+  File "/home/conversb/.local/lib/python3.9/site-packages/torchmetrics/functional/__init__.py", line 14, in <module>
+    from torchmetrics.functional.audio._deprecated import _permutation_invariant_training as permutation_invariant_training
+  File "/home/conversb/.local/lib/python3.9/site-packages/torchmetrics/functional/audio/__init__.py", line 14, in <module>
+    from torchmetrics.functional.audio.pit import permutation_invariant_training, pit_permutate
+  File "/home/conversb/.local/lib/python3.9/site-packages/torchmetrics/functional/audio/pit.py", line 22, in <module>
+    from torchmetrics.utilities import rank_zero_warn
+  File "/home/conversb/.local/lib/python3.9/site-packages/torchmetrics/utilities/__init__.py", line 14, in <module>
+    from torchmetrics.utilities.checks import check_forward_full_state_property
+  File "/home/conversb/.local/lib/python3.9/site-packages/torchmetrics/utilities/checks.py", line 25, in <module>
+    from torchmetrics.metric import Metric
+  File "/home/conversb/.local/lib/python3.9/site-packages/torchmetrics/metric.py", line 30, in <module>
+    from torchmetrics.utilities.data import (
+  File "/home/conversb/.local/lib/python3.9/site-packages/torchmetrics/utilities/data.py", line 22, in <module>
+    from torchmetrics.utilities.imports import _TORCH_GREATER_EQUAL_1_12, _XLA_AVAILABLE
+  File "/home/conversb/.local/lib/python3.9/site-packages/torchmetrics/utilities/imports.py", line 54, in <module>
+    _TORCHAUDIO_GREATER_EQUAL_0_10: Optional[bool] = compare_version("torchaudio", operator.ge, "0.10.0")
+  File "/home/conversb/.local/lib/python3.9/site-packages/lightning_utilities/core/imports.py", line 77, in compare_version
+    pkg = importlib.import_module(package)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torchaudio/__init__.py", line 1, in <module>
+    from torchaudio import (  # noqa: F401
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torchaudio/_extension.py", line 103, in <module>
+    _init_extension()
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torchaudio/_extension.py", line 88, in _init_extension
+    _load_lib("libtorchaudio")
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torchaudio/_extension.py", line 51, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/conversb/.local/lib/python3.9/site-packages/torch/_ops.py", line 852, in load_library
+    ctypes.CDLL(path)
+  File "/home/conversb/.conda/envs/torch/lib/python3.9/ctypes/__init__.py", line 382, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libcudart.so.11.0: cannot open shared object file: No such file or directory
++ python main.py
+/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  0%|          | 0/5 [00:00<?, ?it/s]
+ 20%|██        | 1/5 [00:27<01:49, 27.49s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 40%|████      | 2/5 [00:52<01:17, 25.95s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 60%|██████    | 3/5 [01:17<00:50, 25.43s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 80%|████████  | 4/5 [01:41<00:25, 25.14s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+100%|██████████| 5/5 [02:06<00:00, 25.07s/it]
+100%|██████████| 5/5 [02:06<00:00, 25.36s/it]
+/bin/bash: line 1: GricadScript.sh: command not found
+/bin/bash: line 1: GricadScript.sh: command not found
++ python main.py
+/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  0%|          | 0/30 [00:00<?, ?it/s]
+  3%|▎         | 1/30 [00:27<13:26, 27.80s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  7%|▋         | 2/30 [00:52<12:02, 25.80s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 10%|█         | 3/30 [01:16<11:23, 25.33s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 13%|█▎        | 4/30 [01:41<10:49, 25.00s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 17%|█▋        | 5/30 [02:05<10:18, 24.76s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 20%|██        | 6/30 [02:30<09:54, 24.77s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 23%|██▎       | 7/30 [02:54<09:26, 24.61s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 27%|██▋       | 8/30 [03:19<09:02, 24.64s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 30%|███       | 9/30 [03:44<08:36, 24.61s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 33%|███▎      | 10/30 [04:08<08:11, 24.59s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 37%|███▋      | 11/30 [04:33<07:49, 24.70s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 40%|████      | 12/30 [04:58<07:27, 24.84s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 43%|████▎     | 13/30 [05:23<07:03, 24.89s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 47%|████▋     | 14/30 [05:48<06:38, 24.92s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 50%|█████     | 15/30 [06:13<06:15, 25.01s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 53%|█████▎    | 16/30 [06:38<05:48, 24.90s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 57%|█████▋    | 17/30 [07:02<05:20, 24.68s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 60%|██████    | 18/30 [07:26<04:53, 24.49s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 63%|██████▎   | 19/30 [07:51<04:30, 24.58s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 67%|██████▋   | 20/30 [08:16<04:07, 24.70s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/conversb/Semantic_Segmentation_U-NET/src/metrics.py:319: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  fig, ax = plt.subplots(1, 3, figsize=(20,5))
+
+ 70%|███████   | 21/30 [08:41<03:42, 24.67s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 73%|███████▎  | 22/30 [09:05<03:16, 24.56s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 77%|███████▋  | 23/30 [09:30<02:52, 24.62s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 80%|████████  | 24/30 [09:55<02:28, 24.78s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 83%|████████▎ | 25/30 [10:19<02:03, 24.72s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 87%|████████▋ | 26/30 [10:44<01:38, 24.65s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 90%|█████████ | 27/30 [11:09<01:14, 24.71s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 93%|█████████▎| 28/30 [11:33<00:49, 24.67s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 97%|█████████▋| 29/30 [11:58<00:24, 24.63s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+100%|██████████| 30/30 [12:23<00:00, 24.68s/it]
+100%|██████████| 30/30 [12:23<00:00, 24.77s/it]
++ python main.py
+/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  0%|          | 0/15 [00:00<?, ?it/s]
+  7%|▋         | 1/15 [01:47<25:07, 107.67s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 13%|█▎        | 2/15 [03:35<23:22, 107.91s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 20%|██        | 3/15 [05:23<21:34, 107.89s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 27%|██▋       | 4/15 [07:11<19:48, 108.06s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 33%|███▎      | 5/15 [09:00<18:02, 108.20s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 40%|████      | 6/15 [10:49<16:17, 108.66s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 47%|████▋     | 7/15 [12:40<14:33, 109.13s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 53%|█████▎    | 8/15 [14:28<12:42, 108.99s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 60%|██████    | 9/15 [16:18<10:56, 109.36s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 67%|██████▋   | 10/15 [18:09<09:09, 109.82s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 73%|███████▎  | 11/15 [19:58<07:17, 109.45s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 80%|████████  | 12/15 [21:48<05:28, 109.56s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 87%|████████▋ | 13/15 [23:37<03:39, 109.56s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 93%|█████████▎| 14/15 [25:27<01:49, 109.53s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+100%|██████████| 15/15 [27:15<00:00, 109.12s/it]
+100%|██████████| 15/15 [27:15<00:00, 109.03s/it]
++ python main.py
+/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [10:36<00:00, 636.28s/it]
+100%|██████████| 1/1 [10:36<00:00, 636.28s/it]
++ python main.py
+/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  0%|          | 0/45 [00:00<?, ?it/s]
+  2%|▏         | 1/45 [10:33<7:44:19, 633.16s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  4%|▍         | 2/45 [21:22<7:40:24, 642.44s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  7%|▋         | 3/45 [32:30<7:38:03, 654.38s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+  9%|▉         | 4/45 [43:43<7:32:15, 661.85s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 11%|█         | 5/45 [54:49<7:22:04, 663.11s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 13%|█▎        | 6/45 [1:05:50<7:10:31, 662.35s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 16%|█▌        | 7/45 [1:16:50<6:58:58, 661.55s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 18%|█▊        | 8/45 [1:27:46<6:46:56, 659.91s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 20%|██        | 9/45 [1:38:52<6:37:06, 661.85s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 22%|██▏       | 10/45 [1:49:58<6:26:49, 663.14s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 24%|██▍       | 11/45 [2:01:11<6:17:32, 666.26s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 27%|██▋       | 12/45 [2:12:33<6:08:59, 670.90s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 29%|██▉       | 13/45 [2:23:46<5:58:07, 671.47s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 31%|███       | 14/45 [2:34:56<5:46:44, 671.13s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 33%|███▎      | 15/45 [2:46:02<5:34:48, 669.60s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 36%|███▌      | 16/45 [2:57:19<5:24:40, 671.73s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 38%|███▊      | 17/45 [3:08:32<5:13:43, 672.25s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 40%|████      | 18/45 [3:19:32<5:00:50, 668.54s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 42%|████▏     | 19/45 [3:30:46<4:50:22, 670.11s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 44%|████▍     | 20/45 [3:41:46<4:38:00, 667.23s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/conversb/Semantic_Segmentation_U-NET/src/metrics.py:319: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  fig, ax = plt.subplots(1, 3, figsize=(20,5))
+
+ 47%|████▋     | 21/45 [3:52:58<4:27:27, 668.63s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 49%|████▉     | 22/45 [4:04:10<4:16:39, 669.56s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 51%|█████     | 23/45 [4:15:08<4:04:14, 666.13s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 53%|█████▎    | 24/45 [4:26:11<3:52:44, 664.99s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 56%|█████▌    | 25/45 [4:37:06<3:40:43, 662.19s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 58%|█████▊    | 26/45 [4:48:03<3:29:13, 660.70s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 60%|██████    | 27/45 [4:59:16<3:19:14, 664.12s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 62%|██████▏   | 28/45 [5:10:19<3:08:07, 663.95s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 64%|██████▍   | 29/45 [5:21:11<2:56:05, 660.32s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 67%|██████▋   | 30/45 [5:32:28<2:46:19, 665.28s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 69%|██████▉   | 31/45 [5:43:31<2:35:03, 664.55s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 71%|███████   | 32/45 [5:54:47<2:24:44, 668.00s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 73%|███████▎  | 33/45 [6:05:47<2:13:08, 665.73s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 76%|███████▌  | 34/45 [6:17:02<2:02:34, 668.57s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 78%|███████▊  | 35/45 [6:28:11<1:51:24, 668.46s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 80%|████████  | 36/45 [6:39:33<1:40:52, 672.55s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 82%|████████▏ | 37/45 [6:50:44<1:29:37, 672.21s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 84%|████████▍ | 38/45 [7:01:52<1:18:15, 670.80s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 87%|████████▋ | 39/45 [7:12:56<1:06:53, 668.98s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 89%|████████▉ | 40/45 [7:23:58<55:34, 666.91s/it]  /home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 91%|█████████ | 41/45 [7:35:06<44:29, 667.27s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 93%|█████████▎| 42/45 [7:46:01<33:09, 663.33s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 96%|█████████▌| 43/45 [7:57:03<22:06, 663.10s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+ 98%|█████████▊| 44/45 [8:08:08<11:03, 663.47s/it]/home/conversb/.conda/envs/torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 24 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+100%|██████████| 45/45 [8:19:18<00:00, 665.53s/it]
+100%|██████████| 45/45 [8:19:18<00:00, 665.74s/it]
