@@ -21,8 +21,8 @@ else:
 
 ######################################## General Settings ########################################
 # Test or Train the model
-TYPE_PROCESS = "test"  #value: {"train", "test"}
-ID_SESSION = "multiclass-3-2" # unique ID
+TYPE_PROCESS = "train"  #value: {"train", "test"}
+ID_SESSION = "binaire-0-1" # unique ID
 
 # Activate Parallelism
 ACTIVATE_PARALLELISM = False # Recommended to activate just for Gricad
@@ -43,16 +43,16 @@ GENERATE_AUGMENTED_DATA = False # Active just once to generate the data.
 TEST_SPLIT = 0.15
 
 # Unet Architecture
-ENC_CHANNELS= (3, 16, 32, 64, 128)
-DEC_CHANNELS = (128, 64, 32, 16)
+ENC_CHANNELS= (3, 16, 32, 64)
+DEC_CHANNELS = (64, 32, 16)
 # Number of class
-NBR_CLASSES = 6
-ACTIVATE_LABELED_CLASSES = True
+NBR_CLASSES = 1
+ACTIVATE_LABELED_CLASSES = False
 # Size of input images
-INPUT_IMAGE_HEIGHT = 512
-INPUT_IMAGE_WIDTH = 512
+INPUT_IMAGE_HEIGHT = 128
+INPUT_IMAGE_WIDTH = 128
 BATCH_SIZE = 16
-NUM_EPOCHS = 45
+NUM_EPOCHS = 1
 # Learning rate
 INIT_LR = 0.001
 # Threshold just usefull of one class unlabeled
@@ -72,7 +72,7 @@ PATIENCE = 5
 SELECTED_IMAGE_TEST = 12
 
 # Metrics
-ALL_METRICS = False
+ALL_METRICS = True
 
 ##################################################################################################
 
@@ -93,6 +93,7 @@ PLOT_TRAIN_PATH = os.path.sep.join([BASE_OUTPUT, ID_SESSION, "train_plots"])
 PLOT_TEST_PATH = os.path.sep.join([BASE_OUTPUT, ID_SESSION, "test_plots"])
 # The output serialized model path to save it
 MODEL_PATH = os.path.join(BASE_OUTPUT, ID_SESSION, "unet_tgs_salt.pth")
+MODEL_PATH_BIS = os.path.join(BASE_OUTPUT, ID_SESSION, "unet_tgs_salt_bis.pth")
 # metric plot path
 PLOT_METRICS = os.path.join(BASE_OUTPUT, ID_SESSION, "metrics_plots")
 # Path augmented data

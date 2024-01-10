@@ -2,6 +2,7 @@ from torch.utils.data import DataLoader
 from sklearn.model_selection import train_test_split
 from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss
 from torch.nn.parallel import DistributedDataParallel
+from torch.utils.data.distributed import DistributedSampler
 from torch.optim import Adam
 from tqdm import tqdm
 from torch.nn import functional as F
@@ -102,12 +103,24 @@ class TrainModel:
 
 		# create the training and test data loaders
 		utils.logMsg("Creation of Torch DataLoader...", 'info')
-		trainLoader = DataLoader(self.trainDS, shuffle=True,
-			batch_size=config.BATCH_SIZE, pin_memory=config.PIN_MEMORY,
-			num_workers=config.NBR_WORKERS)
-		testLoader = DataLoader(self.testDS, shuffle=True,
-			batch_size=config.BATCH_SIZE, pin_memory=config.PIN_MEMORY,
-			num_workers=config.NBR_WORKERS)
+		if (config.ACTIVATE_PARALLELISM):
+			trainLoader = DataLoader(self.trainDS, shuffle=False,
+				batch_size=config.BATCH_SIZE, pin_memory=config.PIN_MEMORY,
+				num_workers=config.NBR_WORKERS,
+				sampler=DistributedSampler(self.trainDS))
+
+			testLoader = DataLoader(self.testDS, shuffle=False,
+				batch_size=config.BATCH_SIZE, pin_memory=config.PIN_MEMORY,
+				num_workers=config.NBR_WORKERS,
+				sampler=DistributedSampler(self.trainDS))
+		else:
+			trainLoader = DataLoader(self.trainDS, shuffle=True,
+				batch_size=config.BATCH_SIZE, pin_memory=config.PIN_MEMORY,
+				num_workers=config.NBR_WORKERS)
+
+			testLoader = DataLoader(self.testDS, shuffle=True,
+				batch_size=config.BATCH_SIZE, pin_memory=config.PIN_MEMORY,
+				num_workers=config.NBR_WORKERS)
 
 		return trainLoader, testLoader
 
@@ -284,7 +297,7 @@ class TrainModel:
 
 		if config.ACTIVATE_PARALLELISM:
 			# We parallelize the model and it works even if there is just a single node
-			self.model = DistributedDataParallel(self.model)
+			self.model = DistributedDataParallel(self.model, device_ids=[self.device])
 
 		# We can use another special dataset with more data
 		if config.AUG_DATA == True:
@@ -334,18 +347,22 @@ class TrainModel:
 				TrainModel.endTestBatch(self, totalTrainLoss, totalTestLoss, trainSteps, testSteps, H, e)
 
 
-		# display the total time needed to perform the training
-		endTime = time.time()
-		utils.logMsg("Total time taken to train the model: {:.2f}s".format(endTime - startTime), "time")
+		if (self.device == "gpu:0" and config.ACTIVATE_PARALLELISM == True) or (config.ACTIVATE_PARALLELISM == False):
+			# display the total time needed to perform the training
+			endTime = time.time()
+			utils.logMsg("Total time taken to train the model: {:.2f}s".format(endTime - startTime), "time")
 
-		# Set the computation time metric
-		self.metrics.setTrainingTime(endTime - startTime)
+			# Set the computation time metric
+			self.metrics.setTrainingTime(endTime - startTime)
 
-		# Plot Loss function, learning rate graph and dice evolution
-		metrics.Metrics.plotTrainingMetrics(H)
+			# Plot Loss function, learning rate graph and dice evolution
+			metrics.Metrics.plotTrainingMetrics(H)
 
-		# Save the model
-		utils.logMsg("We are saving the model...", "info")
-		utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
-		torch.save(self.model, config.MODEL_PATH)
+			# Save the model
+			utils.logMsg("We are saving the model...", "info")
+			utils.folderExists(os.path.join(config.BASE_OUTPUT, config.ID_SESSION))
+
+			ckp = self.model.module.state_dict() if config.ACTIVATE_PARALLELISM else self.model.state_dict()
+			torch.save(ckp, config.MODEL_PATH_BIS)
+			torch.save(self.model, config.MODEL_PATH)
 

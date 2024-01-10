@@ -10,6 +10,7 @@ import torch
 import torchvision
 import torch.multiprocessing as mp
 import torch.distributed as dist
+import os
 
 def funcParallelism(rank, world_size):
         transform = torchvision.transforms.Compose(
@@ -22,6 +23,9 @@ def funcParallelism(rank, world_size):
                 )),
             torchvision.transforms.ToTensor()
         ])
+
+        os.environ['MASTER_ADDR'] = "localhost"
+        os.environ['MASTER_PORT'] = "12355"
 
         # Init the process to parallize
         dist.init_process_group(backend='nccl', init_method='tcp://127.0.0.1:29500', rank=rank, world_size=world_size)
@@ -55,6 +59,11 @@ def funcParallelism(rank, world_size):
             testModel = test.TestModel(unet, transform, metricsClass)
 
             testModel.makePredictionDataset(imagePaths)
+
+        # Clean the process
+        utils.logMsg("Cleaning the process group...", "parallelism")
+        dist.destroy_process_group()
+        utils.logMsg("End at " + str(datetime.now()), "log")
 
 
 def main():
